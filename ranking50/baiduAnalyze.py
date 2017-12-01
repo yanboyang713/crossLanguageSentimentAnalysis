@@ -15,12 +15,12 @@ def main():
 
     for line_counter in range(input_selection[0], input_selection[1]):
         try:
-            sentence = sheet.cell(row=line_counter, column=7).value
+            sentence = sheet.cell(row=line_counter, column=8).value
             baidu.analyze(sentence)
-            sheet.cell(row = line_counter, column = 9).value = baidu.getPositiveProb()
-            sheet.cell(row = line_counter, column = 10).value = baidu.getConfidence()
-            sheet.cell(row = line_counter, column = 11).value = baidu.getNegativeProb()
-            sheet.cell(row = line_counter, column = 12).value = baidu.getSentiment()
+            sheet.cell(row = line_counter, column = 13).value = baidu.getPositiveProb()
+            sheet.cell(row = line_counter, column = 14).value = baidu.getConfidence()
+            sheet.cell(row = line_counter, column = 15).value = baidu.getNegativeProb()
+            sheet.cell(row = line_counter, column = 16).value = baidu.getSentiment()
         except Exception as exception:
             print (exception)
             continue
