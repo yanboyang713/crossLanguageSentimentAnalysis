@@ -1,0 +1,5 @@
+-*- mode: org -*-
+#+LaTeX_CLASS: book
+* test
+** test
+*** test
