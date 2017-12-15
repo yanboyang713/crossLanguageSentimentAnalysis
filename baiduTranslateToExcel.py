@@ -16,7 +16,7 @@ def main():
     for line_counter in range(input_selection[0], input_selection[1]):
         try:
             sentence = sheet.cell(row=line_counter, column=7).value
-            sheet.cell(row = line_counter, column = 9).value = baidu.translate("zh", "en", sentence)
+            sheet.cell(row = line_counter, column = 24).value = baidu.translate("zh", "en", sentence)
         except Exception as exception:
             print (exception)
             continue
