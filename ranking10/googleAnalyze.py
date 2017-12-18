@@ -15,13 +15,13 @@ def main():
 
     for line_counter in range(input_selection[0], input_selection[1]):
         try:
-            sentence = sheet.cell(row=line_counter, column=21).value
+            sentence = sheet.cell(row=line_counter, column=24).value
             sentence = sentence.encode()
             #zh for Chinese es for English
             languageIn = "es"
             google.analyze(sentence, languageIn)
-            sheet.cell(row = line_counter, column = 22).value = google.getScore()
-            sheet.cell(row = line_counter, column = 23).value = google.getMagnitude()
+            sheet.cell(row = line_counter, column = 25).value = google.getScore()
+            sheet.cell(row = line_counter, column = 26).value = google.getMagnitude()
         except Exception as exception:
             print (exception)
             continue
