@@ -1,5 +1,18 @@
 -*- mode: org -*-
-#+LaTeX_CLASS: book
-* test
-** test
-*** test
+* Each colom represent mean
+| Column | Mean                   | remark |
+|--------+------------------------+--------|
+| F      | ranking                |        |
+| G      | Chinese origin data    |        |
+| H      | Google translated data |        |
+|        |                        |        |
+
+
+
+Column I is for Baidu Chinese sentiment analysis positive probability. Column J is for Baidu Chinese sentiment analysis confidence, Column K is for Baidu Chinese sentiment analysis Negative probability, and the column L is for Baidu Chinese sentiment analysis the category, 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category.
+
+Column M is for Baidu English sentiment analysis positive probability. Column N is for Baidu English sentiment analysis confidence, Column O is for Baidu English sentiment analysis Negative probability, and the column P is for Baidu English sentiment analysis the category, 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category.
+
+Column Q is Google sentiment analysis Chinese score, Column R is Google sentiment analysis English magnitude.
+
+Column S is Google sentiment analysis Chinese score, Column T is Google sentiment analysis English magnitude.
