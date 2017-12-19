@@ -1,18 +1,75 @@
 -*- mode: org -*-
 * Each colom represent mean
-| Column | Mean                   | remark |
-|--------+------------------------+--------|
-| F      | ranking                |        |
-| G      | Chinese origin data    |        |
-| H      | Google translated data |        |
-|        |                        |        |
+| Column | Mean                                                  | remark                         |
+|--------+-------------------------------------------------------+--------------------------------|
+| F      | ranking                                               |                                |
+| G      | Chinese origin data                                   |                                |
+| H      | Google translated data                                |                                |
+| I      | Baidu Chinese sentiment analysis positive probability | base on Chinese origin data    |
+| J      | Baidu Chinese sentiment analysis confidence           | base on Chinese origin data    |
+| K      | Baidu Chinese sentiment analysis Negative probability | base on Chinese origin data    |
+| L      | Baidu Chinese sentiment analysis the category         | base on Chinese origin data    |
+| M      | Baidu English sentiment analysis positive probability | base on Google translated data |
+| N      | Baidu English sentiment analysis confidence           | base on Google translated data |
+| O      | Baidu English sentiment analysis Negative probability | base on Google translated data |
+| P      | Baidu English sentiment analysis the category         | base on Google translated data |
+| Q      | Google Chinese sentiment analysis score               | base on Chinese origin data    |
+| R      | Google Chinese sentiment analysis manitude            | base on Chinese origin data    |
+| S      | Google English sentiment analysis score               | base on Google translated data |
+| T      | Google English sentiment analysis manitude            | base on Google translated data |
+| U      | Yandex translated data                                | base on Chinese origin data    |
+| V      | Google English sentiment analysis score               | base on Yandex translated data |
+| W      | Google English sentiment analysis manitude            | base on Yandex translated data |
+| X      | Baidu translated data                                 |                                |
+| Y      | Google English sentiment analysis score               | base on Baidu translated data  |
+| Z      | Google English sentiment analysis manitude            | base on Baidu translated data  |
 
+** note
++ Baidu sentiment analysis Category Note
+ - 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category
++ Google sentiment analysis Note
+ - The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.
+ - A document with a neutral score (around 0.0) may indicate a low-emotion document, or may indicate mixed emotions, with both high positive and negative values which cancel each out. Generally, you can use magnitude values to disambiguate these cases, as truly neutral documents will have a low magnitude value, while mixed documents will have higher magnitude values.
+ - “Clearly positive” and “clearly negative” sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.
 
+#+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
+     | Sede      | Max cites | H-index |
+     |-----------+-----------+---------|
+     | Chile     |    257.72 |   21.39 |
+     | Leeds     |    165.77 |   19.68 |
+     | Sao Paolo |     71.00 |   11.50 |
+     | Stockholm |    134.19 |   14.33 |
+     | Morelia   |    257.56 |   17.67 |
 
-Column I is for Baidu Chinese sentiment analysis positive probability. Column J is for Baidu Chinese sentiment analysis confidence, Column K is for Baidu Chinese sentiment analysis Negative probability, and the column L is for Baidu Chinese sentiment analysis the category, 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category.
+| Date      | Distance |
+|-----------+----------|
+| 8/25/2010 |      3.2 |
+| 8/29/2010 |      3.0 |
+| 9/1/2010  |      2.4 |
+| 9/2/2010  |      2.5 |
+| 9/5/2010  |      2.3 |
+| 9/3/2010  |      2.0 |
+#+begin_src gnuplot :var data=xtics :exports code :file file.png
+  reset
 
-Column M is for Baidu English sentiment analysis positive probability. Column N is for Baidu English sentiment analysis confidence, Column O is for Baidu English sentiment analysis Negative probability, and the column P is for Baidu English sentiment analysis the category, 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category.
+  set title "Running Stats"
 
-Column Q is Google sentiment analysis Chinese score, Column R is Google sentiment analysis English magnitude.
+  set xlabel "Date"
+  set xtics rotate by -45
 
-Column S is Google sentiment analysis Chinese score, Column T is Google sentiment analysis English magnitude.
+  set yrange [1:5]
+  set ylabel "Distance (mi)"
+
+  plot data u 2:xticlabels(1) w lp lw 2 notitle
+#+end_src
+
+#+BEGIN_SRC C++
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+    cout << "hello word!!!" << endl;
+    return 0;
+  }
+
+#+END_SRC
