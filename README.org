@@ -1,28 +1,32 @@
 -*- mode: org -*-
 * Each colom represent mean
-| Column | Mean                                                  | remark                         |
-|--------+-------------------------------------------------------+--------------------------------|
-| F      | ranking                                               |                                |
-| G      | Chinese origin data                                   |                                |
-| H      | Google translated data                                |                                |
-| I      | Baidu Chinese sentiment analysis positive probability | base on Chinese origin data    |
-| J      | Baidu Chinese sentiment analysis confidence           | base on Chinese origin data    |
-| K      | Baidu Chinese sentiment analysis Negative probability | base on Chinese origin data    |
-| L      | Baidu Chinese sentiment analysis the category         | base on Chinese origin data    |
-| M      | Baidu English sentiment analysis positive probability | base on Google translated data |
-| N      | Baidu English sentiment analysis confidence           | base on Google translated data |
-| O      | Baidu English sentiment analysis Negative probability | base on Google translated data |
-| P      | Baidu English sentiment analysis the category         | base on Google translated data |
-| Q      | Google Chinese sentiment analysis score               | base on Chinese origin data    |
-| R      | Google Chinese sentiment analysis manitude            | base on Chinese origin data    |
-| S      | Google English sentiment analysis score               | base on Google translated data |
-| T      | Google English sentiment analysis manitude            | base on Google translated data |
-| U      | Yandex translated data                                | base on Chinese origin data    |
-| V      | Google English sentiment analysis score               | base on Yandex translated data |
-| W      | Google English sentiment analysis manitude            | base on Yandex translated data |
-| X      | Baidu translated data                                 |                                |
-| Y      | Google English sentiment analysis score               | base on Baidu translated data  |
-| Z      | Google English sentiment analysis manitude            | base on Baidu translated data  |
+| Column | Mean                                                   | remark                         |
+|--------+--------------------------------------------------------+--------------------------------|
+| F      | ranking                                                |                                |
+| G      | Chinese origin data                                    |                                |
+| H      | Google translated data                                 |                                |
+| I      | Baidu Chinese sentiment analysis positive probability  | base on Chinese origin data    |
+| J      | Baidu Chinese sentiment analysis confidence            | base on Chinese origin data    |
+| K      | Baidu Chinese sentiment analysis Negative probability  | base on Chinese origin data    |
+| L      | Baidu Chinese sentiment analysis the category          | base on Chinese origin data    |
+| M      | Baidu English sentiment analysis positive probability  | base on Google translated data |
+| N      | Baidu English sentiment analysis confidence            | base on Google translated data |
+| O      | Baidu English sentiment analysis Negative probability  | base on Google translated data |
+| P      | Baidu English sentiment analysis the category          | base on Google translated data |
+| Q      | Google Chinese sentiment analysis score                | base on Chinese origin data    |
+| R      | Google Chinese sentiment analysis manitude             | base on Chinese origin data    |
+| S      | Google English sentiment analysis score                | base on Google translated data |
+| T      | Google English sentiment analysis manitude             | base on Google translated data |
+| U      | Yandex translated data                                 | base on Chinese origin data    |
+| V      | Google English sentiment analysis score                | base on Yandex translated data |
+| W      | Google English sentiment analysis manitude             | base on Yandex translated data |
+| X      | Baidu translated data                                  |                                |
+| Y      | Google English sentiment analysis score                | base on Baidu translated data  |
+| Z      | Google English sentiment analysis manitude             | base on Baidu translated data  |
+| AA     | Baidu English sentiment analysis postitive probability | base on baidu translated data  |
+| AB     | Baidu English sentiment analysis confidence            | base on baidu translated data  |
+| AC     | Baidu English sentiment analysis Negative probability  | base on baidu translated data  |
+| AD     | Baidu English sentiment analysis the category          | base on baidu translated data  |
 
 ** note
 + Baidu sentiment analysis Category Note
@@ -31,6 +35,27 @@
  - The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.
  - A document with a neutral score (around 0.0) may indicate a low-emotion document, or may indicate mixed emotions, with both high positive and negative values which cancel each out. Generally, you can use magnitude values to disambiguate these cases, as truly neutral documents will have a low magnitude value, while mixed documents will have higher magnitude values.
  - “Clearly positive” and “clearly negative” sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.
+
+* Baidu Chinese sentiment analysis postitive probability average compare with different ranking(origin data)
+| Ranking    |           Mean | Valid N |   std.deviation | Total N |  Minimum |  Maximum |
+|------------+----------------+---------+-----------------+---------+----------+----------|
+| Ranking 10 | 0.239365965000 |    8525 | 0.2219412270000 |    8572 | 0.000106 | 1.000000 |
+| Ranking 20 | 0.292751426000 |   13141 | 0.2357115580000 |   13226 | 0.000162 | 1.000000 |
+| Ranking 30 |       0.394234 |   18821 |        0.273685 |   18974 | 0.000214 | 1.000000 |
+| Ranking 40 |       0.511990 |    8717 |        0.300618 |    8790 | 0.001050 | 1.000000 |
+| Ranking 50 |       0.568988 |    4271 |        0.312815 |    4307 | 0.000536 | 1.000000 |
+
+** Error Rate
+| Ranking    |   Error Rate |
+|------------+--------------|
+| Ranking 10 | 0.0054829678 |
+| Ranking 20 | 0.0064267352 |
+| Ranking 30 | 0.0080636661 |
+| Ranking 40 | 0.0083048919 |
+| Ranking 50 | 0.0083584862 |
+
+Total Rrror Rate 0.0073140396
+
 
 #+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
      | Sede      | Max cites | H-index |
