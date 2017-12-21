@@ -35,8 +35,8 @@
  - The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.
  - A document with a neutral score (around 0.0) may indicate a low-emotion document, or may indicate mixed emotions, with both high positive and negative values which cancel each out. Generally, you can use magnitude values to disambiguate these cases, as truly neutral documents will have a low magnitude value, while mixed documents will have higher magnitude values.
  - “Clearly positive” and “clearly negative” sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.
-
-* Baidu Chinese sentiment analysis postitive probability average compare with different ranking(origin data)
+* Baidu Chinese sentiment analysis VS Google Chinese sentiment analysis
+** Baidu Chinese sentiment analysis postitive probability compare with different ranking(origin data)
 | Ranking    |           Mean | Valid N |   std.deviation | Total N |  Minimum |  Maximum |
 |------------+----------------+---------+-----------------+---------+----------+----------|
 | Ranking 10 | 0.239365965000 |    8525 | 0.2219412270000 |    8572 | 0.000106 | 1.000000 |
@@ -45,7 +45,8 @@
 | Ranking 40 |       0.511990 |    8717 |        0.300618 |    8790 | 0.001050 | 1.000000 |
 | Ranking 50 |       0.568988 |    4271 |        0.312815 |    4307 | 0.000536 | 1.000000 |
 
-** Error Rate
+[[./img/MarginalMeansOfBaiduPositiveProbabilityForOriginData.jpg]]
+*** Error Rate
 | Ranking    |   Error Rate |
 |------------+--------------|
 | Ranking 10 | 0.0054829678 |
@@ -54,47 +55,36 @@
 | Ranking 40 | 0.0083048919 |
 | Ranking 50 | 0.0083584862 |
 
-Total Rrror Rate 0.0073140396
+Total Error Rate: 0.0073140396
 
+** Google Chinese sentiment analysis scores compare with different ranking (origin data)
+| Ranking    |      Mean | Valid N | std.deviation | Total N |   Minimum |  Maximum |
+|------------+-----------+---------+---------------+---------+-----------+----------|
+| Ranking 10 | -0.238742 |    8567 |      0.445384 |    8572 | -0.900000 | 0.900000 |
+| Ranking 20 | -0.118380 |   13210 |      0.448064 |   13226 | -0.900000 | 0.900000 |
+| Ranking 30 |  0.117291 |   18940 |      0.462095 |   18974 | -0.900000 | 0.900000 |
+| Ranking 40 |  0.315915 |    8778 |      0.458128 |    8790 | -0.900000 | 0.900000 |
+| Ranking 50 |  0.361626 |    4305 |      0.441309 |    4307 | -0.900000 | 0.900000 |
 
-#+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
-     | Sede      | Max cites | H-index |
-     |-----------+-----------+---------|
-     | Chile     |    257.72 |   21.39 |
-     | Leeds     |    165.77 |   19.68 |
-     | Sao Paolo |     71.00 |   11.50 |
-     | Stockholm |    134.19 |   14.33 |
-     | Morelia   |    257.56 |   17.67 |
+[[./img/MarginalMeansOfGoogleScoreForOriginData.jpg]]
+*** Error Rate
+| Ranking    |   Error Rate |
+|------------+--------------|
+| Ranking 10 | 0.0005832944 |
+| Ranking 20 | 0.0012097384 |
+| Ranking 30 | 0.0017919258 |
+| Ranking 40 | 0.0013651877 |
+| Ranking 50 | 0.0004643603 |
 
-| Date      | Distance |
-|-----------+----------|
-| 8/25/2010 |      3.2 |
-| 8/29/2010 |      3.0 |
-| 9/1/2010  |      2.4 |
-| 9/2/2010  |      2.5 |
-| 9/5/2010  |      2.3 |
-| 9/3/2010  |      2.0 |
-#+begin_src gnuplot :var data=xtics :exports code :file file.png
-  reset
+Total Error Rate: 0.0012808851
 
-  set title "Running Stats"
-
-  set xlabel "Date"
-  set xtics rotate by -45
-
-  set yrange [1:5]
-  set ylabel "Distance (mi)"
-
-  plot data u 2:xticlabels(1) w lp lw 2 notitle
-#+end_src
-
-#+BEGIN_SRC C++
-  #include <iostream>
-  using namespace std;
-  int main()
-  {
-    cout << "hello word!!!" << endl;
-    return 0;
-  }
-
-#+END_SRC
+* Baidu English sentiment analysis VS Google English sentiment analysis
+** Base on Google translated data
+*** Baidu English sentiment analysis postitive probability compare with different ranking
+| Ranking    |     Mean | Valid N | Std.deviation | Total N |  Minimum |  Maximum | Variance |
+|------------+----------+---------+---------------+---------+----------+----------+----------|
+| Ranking 10 | 0.517526 |    7968 |      0.134711 |         | 0.005045 | 1.000000 | 0.018147 |
+| Ranking 20 | 0.531020 |   12225 |      0.141214 |         | 0.037275 | 1.000000 | 0.019941 |
+| Ranking 30 | 0.540824 |   17457 |      0.137174 |         | 0.014443 | 1.000000 | 0.018817 |
+| Ranking 40 | 0.567782 |    8163 |      0.144971 |         | 0.051860 | 1.000000 | 0.021016 |
+| Ranking 50 | 0.589054 |    4006 |      0.150737 |         | 0.086614 | 1.000000 | 0.022722 |

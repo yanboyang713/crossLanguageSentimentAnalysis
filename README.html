@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-12-19 Tue 16:26 -->
+<!-- 2017-12-21 Thu 11:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -233,9 +233,32 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbfc34eb">1. Each colom represent mean</a>
+<li><a href="#orgde34f0a">1. Each colom represent mean</a>
 <ul>
-<li><a href="#orgcb2f955">1.1. note</a></li>
+<li><a href="#org176af6c">1.1. note</a></li>
+</ul>
+</li>
+<li><a href="#org0f28096">2. Baidu Chinese sentiment analysis VS Google Chinese sentiment analysis</a>
+<ul>
+<li><a href="#org412b7de">2.1. Baidu Chinese sentiment analysis postitive probability compare with different ranking(origin data)</a>
+<ul>
+<li><a href="#org55894ed">2.1.1. Error Rate</a></li>
+</ul>
+</li>
+<li><a href="#org7621164">2.2. Google Chinese sentiment analysis scores compare with different ranking (origin data)</a>
+<ul>
+<li><a href="#org0526c6e">2.2.1. Error Rate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge2fb7cb">3. Baidu English sentiment analysis VS Google English sentiment analysis</a>
+<ul>
+<li><a href="#org4dd040e">3.1. Base on Google translated data</a>
+<ul>
+<li><a href="#org2d3000f">3.1.1. Baidu English sentiment analysis postitive probability compare with different ranking</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -244,8 +267,8 @@ for the JavaScript code in this tag.
 <p>
 -<b>- mode: org -</b>-
 </p>
-<div id="orgbfc34eb" class="outline-2">
-<h2 id="orgbfc34eb"><span class="section-number-2">1</span> Each colom represent mean</h2>
+<div id="orgde34f0a" class="outline-2">
+<h2 id="orgde34f0a"><span class="section-number-2">1</span> Each colom represent mean</h2>
 <div class="outline-text-2" id="text-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -390,12 +413,36 @@ for the JavaScript code in this tag.
 <td class="org-left">Google English sentiment analysis manitude</td>
 <td class="org-left">base on Baidu translated data</td>
 </tr>
+
+<tr>
+<td class="org-left">AA</td>
+<td class="org-left">Baidu English sentiment analysis postitive probability</td>
+<td class="org-left">base on baidu translated data</td>
+</tr>
+
+<tr>
+<td class="org-left">AB</td>
+<td class="org-left">Baidu English sentiment analysis confidence</td>
+<td class="org-left">base on baidu translated data</td>
+</tr>
+
+<tr>
+<td class="org-left">AC</td>
+<td class="org-left">Baidu English sentiment analysis Negative probability</td>
+<td class="org-left">base on baidu translated data</td>
+</tr>
+
+<tr>
+<td class="org-left">AD</td>
+<td class="org-left">Baidu English sentiment analysis the category</td>
+<td class="org-left">base on baidu translated data</td>
+</tr>
 </tbody>
 </table>
 </div>
 
-<div id="orgcb2f955" class="outline-3">
-<h3 id="orgcb2f955"><span class="section-number-3">1.1</span> note</h3>
+<div id="org176af6c" class="outline-3">
+<h3 id="org176af6c"><span class="section-number-3">1.1</span> note</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Baidu sentiment analysis Category Note
@@ -409,7 +456,16 @@ for the JavaScript code in this tag.
 <li>“Clearly positive” and “clearly negative” sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.</li>
 </ul></li>
 </ul>
-
+</div>
+</div>
+</div>
+<div id="org0f28096" class="outline-2">
+<h2 id="org0f28096"><span class="section-number-2">2</span> Baidu Chinese sentiment analysis VS Google Chinese sentiment analysis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="org412b7de" class="outline-3">
+<h3 id="org412b7de"><span class="section-number-3">2.1</span> Baidu Chinese sentiment analysis postitive probability compare with different ranking(origin data)</h3>
+<div class="outline-text-3" id="text-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -419,47 +475,88 @@ for the JavaScript code in this tag.
 <col  class="org-right" />
 
 <col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Sede</th>
-<th scope="col" class="org-right">Max cites</th>
-<th scope="col" class="org-right">H-index</th>
+<th scope="col" class="org-left">Ranking</th>
+<th scope="col" class="org-right">Mean</th>
+<th scope="col" class="org-right">Valid N</th>
+<th scope="col" class="org-right">std.deviation</th>
+<th scope="col" class="org-right">Total N</th>
+<th scope="col" class="org-right">Minimum</th>
+<th scope="col" class="org-right">Maximum</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left">Chile</td>
-<td class="org-right">257.72</td>
-<td class="org-right">21.39</td>
+<td class="org-left">Ranking 10</td>
+<td class="org-right">0.239365965000</td>
+<td class="org-right">8525</td>
+<td class="org-right">0.2219412270000</td>
+<td class="org-right">8572</td>
+<td class="org-right">0.000106</td>
+<td class="org-right">1.000000</td>
 </tr>
 
 <tr>
-<td class="org-left">Leeds</td>
-<td class="org-right">165.77</td>
-<td class="org-right">19.68</td>
+<td class="org-left">Ranking 20</td>
+<td class="org-right">0.292751426000</td>
+<td class="org-right">13141</td>
+<td class="org-right">0.2357115580000</td>
+<td class="org-right">13226</td>
+<td class="org-right">0.000162</td>
+<td class="org-right">1.000000</td>
 </tr>
 
 <tr>
-<td class="org-left">Sao Paolo</td>
-<td class="org-right">71.00</td>
-<td class="org-right">11.50</td>
+<td class="org-left">Ranking 30</td>
+<td class="org-right">0.394234</td>
+<td class="org-right">18821</td>
+<td class="org-right">0.273685</td>
+<td class="org-right">18974</td>
+<td class="org-right">0.000214</td>
+<td class="org-right">1.000000</td>
 </tr>
 
 <tr>
-<td class="org-left">Stockholm</td>
-<td class="org-right">134.19</td>
-<td class="org-right">14.33</td>
+<td class="org-left">Ranking 40</td>
+<td class="org-right">0.511990</td>
+<td class="org-right">8717</td>
+<td class="org-right">0.300618</td>
+<td class="org-right">8790</td>
+<td class="org-right">0.001050</td>
+<td class="org-right">1.000000</td>
 </tr>
 
 <tr>
-<td class="org-left">Morelia</td>
-<td class="org-right">257.56</td>
-<td class="org-right">17.67</td>
+<td class="org-left">Ranking 50</td>
+<td class="org-right">0.568988</td>
+<td class="org-right">4271</td>
+<td class="org-right">0.312815</td>
+<td class="org-right">4307</td>
+<td class="org-right">0.000536</td>
+<td class="org-right">1.000000</td>
 </tr>
 </tbody>
 </table>
 
+
+<div class="figure">
+<p><img src="./img/MarginalMeansOfBaiduPositiveProbabilityForOriginData.jpg" alt="MarginalMeansOfBaiduPositiveProbabilityForOriginData.jpg" />
+</p>
+</div>
+</div>
+<div id="org55894ed" class="outline-4">
+<h4 id="org55894ed"><span class="section-number-4">2.1.1</span> Error Rate</h4>
+<div class="outline-text-4" id="text-2-1-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -470,67 +567,289 @@ for the JavaScript code in this tag.
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Date</th>
-<th scope="col" class="org-right">Distance</th>
+<th scope="col" class="org-left">Ranking</th>
+<th scope="col" class="org-right">Error Rate</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left">8/25/2010</td>
-<td class="org-right">3.2</td>
+<td class="org-left">Ranking 10</td>
+<td class="org-right">0.0054829678</td>
 </tr>
 
 <tr>
-<td class="org-left">8/29/2010</td>
-<td class="org-right">3.0</td>
+<td class="org-left">Ranking 20</td>
+<td class="org-right">0.0064267352</td>
 </tr>
 
 <tr>
-<td class="org-left">9/1/2010</td>
-<td class="org-right">2.4</td>
+<td class="org-left">Ranking 30</td>
+<td class="org-right">0.0080636661</td>
 </tr>
 
 <tr>
-<td class="org-left">9/2/2010</td>
-<td class="org-right">2.5</td>
+<td class="org-left">Ranking 40</td>
+<td class="org-right">0.0083048919</td>
 </tr>
 
 <tr>
-<td class="org-left">9/5/2010</td>
-<td class="org-right">2.3</td>
-</tr>
-
-<tr>
-<td class="org-left">9/3/2010</td>
-<td class="org-right">2.0</td>
+<td class="org-left">Ranking 50</td>
+<td class="org-right">0.0083584862</td>
 </tr>
 </tbody>
 </table>
-<div class="org-src-container">
-<pre class="src src-gnuplot"><span style="color: #268bd2; font-weight: bold;">reset</span>
 
-<span style="color: #268bd2; font-weight: bold;">set</span> <span style="color: #b58900;">title</span> <span style="color: #2aa198;">"Running Stats"</span>
-
-<span style="color: #268bd2; font-weight: bold;">set</span> xlabel <span style="color: #2aa198;">"Date"</span>
-<span style="color: #268bd2; font-weight: bold;">set</span> xtics rotate by -45
-
-<span style="color: #268bd2; font-weight: bold;">set</span> yrange [<span style="color: #268bd2; font-weight: bold;">1:5</span>]
-<span style="color: #268bd2; font-weight: bold;">set</span> ylabel <span style="color: #2aa198;">"Distance (mi)"</span>
-
-<span style="color: #859900; font-weight: bold;">plot</span> data u 2:xticlabels(1) w lp <span style="color: #b58900;">lw</span> 2 <span style="color: #b58900;">notitle</span>
-</pre>
+<p>
+Total Error Rate: 0.0073140396
+</p>
+</div>
+</div>
 </div>
 
-<div class="org-src-container">
-<pre class="src src-C++"><span style="color: #268bd2;">#include</span> <span style="color: #2aa198;">&lt;iostream&gt;</span>
-<span style="color: #859900; font-weight: bold;">using</span> <span style="color: #859900; font-weight: bold;">namespace</span> <span style="color: #268bd2; font-weight: bold;">std</span>;
-<span style="color: #b58900;">int</span> <span style="color: #268bd2;">main</span>()
-{
-  cout &lt;&lt; <span style="color: #2aa198;">"hello word!!!"</span> &lt;&lt; endl;
-  <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #6c71c4;">0</span>;
-}
+<div id="org7621164" class="outline-3">
+<h3 id="org7621164"><span class="section-number-3">2.2</span> Google Chinese sentiment analysis scores compare with different ranking (origin data)</h3>
+<div class="outline-text-3" id="text-2-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-</pre>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ranking</th>
+<th scope="col" class="org-right">Mean</th>
+<th scope="col" class="org-right">Valid N</th>
+<th scope="col" class="org-right">std.deviation</th>
+<th scope="col" class="org-right">Total N</th>
+<th scope="col" class="org-right">Minimum</th>
+<th scope="col" class="org-right">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ranking 10</td>
+<td class="org-right">-0.238742</td>
+<td class="org-right">8567</td>
+<td class="org-right">0.445384</td>
+<td class="org-right">8572</td>
+<td class="org-right">-0.900000</td>
+<td class="org-right">0.900000</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 20</td>
+<td class="org-right">-0.118380</td>
+<td class="org-right">13210</td>
+<td class="org-right">0.448064</td>
+<td class="org-right">13226</td>
+<td class="org-right">-0.900000</td>
+<td class="org-right">0.900000</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 30</td>
+<td class="org-right">0.117291</td>
+<td class="org-right">18940</td>
+<td class="org-right">0.462095</td>
+<td class="org-right">18974</td>
+<td class="org-right">-0.900000</td>
+<td class="org-right">0.900000</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 40</td>
+<td class="org-right">0.315915</td>
+<td class="org-right">8778</td>
+<td class="org-right">0.458128</td>
+<td class="org-right">8790</td>
+<td class="org-right">-0.900000</td>
+<td class="org-right">0.900000</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 50</td>
+<td class="org-right">0.361626</td>
+<td class="org-right">4305</td>
+<td class="org-right">0.441309</td>
+<td class="org-right">4307</td>
+<td class="org-right">-0.900000</td>
+<td class="org-right">0.900000</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="figure">
+<p><img src="./img/MarginalMeansOfGoogleScoreForOriginData.jpg" alt="MarginalMeansOfGoogleScoreForOriginData.jpg" />
+</p>
+</div>
+</div>
+<div id="org0526c6e" class="outline-4">
+<h4 id="org0526c6e"><span class="section-number-4">2.2.1</span> Error Rate</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ranking</th>
+<th scope="col" class="org-right">Error Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ranking 10</td>
+<td class="org-right">0.0005832944</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 20</td>
+<td class="org-right">0.0012097384</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 30</td>
+<td class="org-right">0.0017919258</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 40</td>
+<td class="org-right">0.0013651877</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 50</td>
+<td class="org-right">0.0004643603</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Total Error Rate: 0.0012808851
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="orge2fb7cb" class="outline-2">
+<h2 id="orge2fb7cb"><span class="section-number-2">3</span> Baidu English sentiment analysis VS Google English sentiment analysis</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="org4dd040e" class="outline-3">
+<h3 id="org4dd040e"><span class="section-number-3">3.1</span> Base on Google translated data</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="org2d3000f" class="outline-4">
+<h4 id="org2d3000f"><span class="section-number-4">3.1.1</span> Baidu English sentiment analysis postitive probability compare with different ranking</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ranking</th>
+<th scope="col" class="org-right">Mean</th>
+<th scope="col" class="org-right">Valid N</th>
+<th scope="col" class="org-right">Std.deviation</th>
+<th scope="col" class="org-left">Total N</th>
+<th scope="col" class="org-right">Minimum</th>
+<th scope="col" class="org-right">Maximum</th>
+<th scope="col" class="org-right">Variance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ranking 10</td>
+<td class="org-right">0.517526</td>
+<td class="org-right">7968</td>
+<td class="org-right">0.134711</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">0.005045</td>
+<td class="org-right">1.000000</td>
+<td class="org-right">0.018147</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 20</td>
+<td class="org-right">0.531020</td>
+<td class="org-right">12225</td>
+<td class="org-right">0.141214</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">0.037275</td>
+<td class="org-right">1.000000</td>
+<td class="org-right">0.019941</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 30</td>
+<td class="org-right">0.540824</td>
+<td class="org-right">17457</td>
+<td class="org-right">0.137174</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">0.014443</td>
+<td class="org-right">1.000000</td>
+<td class="org-right">0.018817</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 40</td>
+<td class="org-right">0.567782</td>
+<td class="org-right">8163</td>
+<td class="org-right">0.144971</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">0.051860</td>
+<td class="org-right">1.000000</td>
+<td class="org-right">0.021016</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranking 50</td>
+<td class="org-right">0.589054</td>
+<td class="org-right">4006</td>
+<td class="org-right">0.150737</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">0.086614</td>
+<td class="org-right">1.000000</td>
+<td class="org-right">0.022722</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -538,7 +857,7 @@ for the JavaScript code in this tag.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Boyang Yan</p>
-<p class="date">Created: 2017-12-19 Tue 16:26</p>
+<p class="date">Created: 2017-12-21 Thu 11:47</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
