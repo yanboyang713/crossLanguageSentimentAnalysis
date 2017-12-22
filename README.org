@@ -91,3 +91,12 @@ Total Error Rate: 0.0012808851
 [[./img/MarginalMeansOfBaiduPositiveProbabilityForGoogleTranslatedData.jpg]]
 
 *** Google English sentiment analysis score compare with different ranking(based on Google translated data)
+| Ranking    |      Mean | Valid N | Std.deviation | Total N |   Minimum |  Maximum | Variance |
+|------------+-----------+---------+---------------+---------+-----------+----------+----------|
+| Ranking 10 | -0.338431 |    8566 |      0.430581 |         | -0.900000 | 0.900000 | 0.185400 |
+| Ranking 20 | -0.244312 |   13204 |      0.437549 |         | -0.900000 | 0.900000 | 0.191449 |
+| Ranking 30 | -0.057978 |   18940 |      0.447353 |         | -0.900000 | 0.900000 | 0.200125 |
+| Ranking 40 |  0.147830 |    8777 |      0.455342 |         | -0.900000 | 0.900000 | 0.207336 |
+| Ranking 50 |  0.225000 |    4304 |      0.453471 |         | -0.900000 | 0.900000 | 0.205636 |
+
+[[./img/MarginalMeansOfGoogleScoreForGoogleTranslatedData.jpg]]
