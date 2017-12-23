@@ -1,32 +1,34 @@
 -*- mode: org -*-
 * Each colom represent mean
-| Column | Mean                                                   | remark                         |
-|--------+--------------------------------------------------------+--------------------------------|
-| F      | ranking                                                |                                |
-| G      | Chinese origin data                                    |                                |
-| H      | Google translated data                                 |                                |
-| I      | Baidu Chinese sentiment analysis positive probability  | base on Chinese origin data    |
-| J      | Baidu Chinese sentiment analysis confidence            | base on Chinese origin data    |
-| K      | Baidu Chinese sentiment analysis Negative probability  | base on Chinese origin data    |
-| L      | Baidu Chinese sentiment analysis the category          | base on Chinese origin data    |
-| M      | Baidu English sentiment analysis positive probability  | base on Google translated data |
-| N      | Baidu English sentiment analysis confidence            | base on Google translated data |
-| O      | Baidu English sentiment analysis Negative probability  | base on Google translated data |
-| P      | Baidu English sentiment analysis the category          | base on Google translated data |
-| Q      | Google Chinese sentiment analysis score                | base on Chinese origin data    |
-| R      | Google Chinese sentiment analysis manitude             | base on Chinese origin data    |
-| S      | Google English sentiment analysis score                | base on Google translated data |
-| T      | Google English sentiment analysis manitude             | base on Google translated data |
-| U      | Yandex translated data                                 | base on Chinese origin data    |
-| V      | Google English sentiment analysis score                | base on Yandex translated data |
-| W      | Google English sentiment analysis manitude             | base on Yandex translated data |
-| X      | Baidu translated data                                  |                                |
-| Y      | Google English sentiment analysis score                | base on Baidu translated data  |
-| Z      | Google English sentiment analysis manitude             | base on Baidu translated data  |
-| AA     | Baidu English sentiment analysis postitive probability | base on baidu translated data  |
-| AB     | Baidu English sentiment analysis confidence            | base on baidu translated data  |
-| AC     | Baidu English sentiment analysis Negative probability  | base on baidu translated data  |
-| AD     | Baidu English sentiment analysis the category          | base on baidu translated data  |
+| Column  | Mean                                                        | remark                                       |
+|---------+-------------------------------------------------------------+----------------------------------------------|
+| F (6)   | ranking                                                     |                                              |
+| G (7)   | Chinese origin data                                         |                                              |
+| H (8)   | Google translated data                                      |                                              |
+| I (9)   | Baidu Chinese sentiment analysis positive probability       | base on Chinese origin data                  |
+| J (10)  | Baidu Chinese sentiment analysis confidence                 | base on Chinese origin data                  |
+| K (11)  | Baidu Chinese sentiment analysis Negative probability       | base on Chinese origin data                  |
+| L (12)  | Baidu Chinese sentiment analysis the category               | base on Chinese origin data                  |
+| M (13)  | Baidu English sentiment analysis positive probability       | base on Google translated data               |
+| N (14)  | Baidu English sentiment analysis confidence                 | base on Google translated data               |
+| O (15)  | Baidu English sentiment analysis Negative probability       | base on Google translated data               |
+| P (16)  | Baidu English sentiment analysis the category               | base on Google translated data               |
+| Q (17)  | Google Chinese sentiment analysis score                     | base on Chinese origin data                  |
+| R (18)  | Google Chinese sentiment analysis manitude                  | base on Chinese origin data                  |
+| S (19)  | Google English sentiment analysis score                     | base on Google translated data               |
+| T (20)  | Google English sentiment analysis manitude                  | base on Google translated data               |
+| U (21)  | Yandex translated data                                      | base on Chinese origin data                  |
+| V (22)  | Google English sentiment analysis score                     | base on Yandex translated data               |
+| W (23)  | Google English sentiment analysis manitude                  | base on Yandex translated data               |
+| X (24)  | Baidu translated data                                       |                                              |
+| Y (25)  | Google English sentiment analysis score                     | base on Baidu translated data                |
+| Z (26)  | Google English sentiment analysis manitude                  | base on Baidu translated data                |
+| AA (27) | Baidu English sentiment analysis postitive probability      | base on baidu translated data                |
+| AB (28) | Baidu English sentiment analysis confidence                 | base on baidu translated data                |
+| AC (29) | Baidu English sentiment analysis Negative probability       | base on baidu translated data                |
+| AD (30) | Baidu English sentiment analysis the category               | base on baidu translated data                |
+| AE (31) | Baidu postitive probability change to Google score standard | base on origin data Baidu sentiment analysis |
+
 
 ** note
 + Baidu sentiment analysis Category Note
@@ -75,6 +77,8 @@ Total Error Rate: 0.0073140396
 | Ranking 30 | 0.0017919258 |
 | Ranking 40 | 0.0013651877 |
 | Ranking 50 | 0.0004643603 |
+
+**
 
 Total Error Rate: 0.0012808851
 
