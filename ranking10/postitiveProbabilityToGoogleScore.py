@@ -5,8 +5,8 @@ def main():
     fileName = 'Ranking10.xlsx'
     # Select which lines of the input sentences you wish to use
     input_selection = [1, 8573]
-    input_column = 9
-    output_column = 31
+    input_column = 13
+    output_column = 32
     try:
         file = openpyxl.load_workbook(fileName)
     except:

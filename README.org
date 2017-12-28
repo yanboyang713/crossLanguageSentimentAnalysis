@@ -128,6 +128,8 @@ sentiment analysis results given by both Baidu and Google are valid because when
 | Ranking 50 | 0.589054 |    4006 |      0.150737 |         | 0.086614 | 1.000000 | 0.022722 |
 [[./img/MarginalMeansOfBaiduPositiveProbabilityForGoogleTranslatedData.jpg]]
 
+*** Baidu English sentiment analysis positive tranform to Google Score Standard (based on Google translated data)
+
 *** Google English sentiment analysis score compare with different ranking(based on Google translated data)
 | Ranking    |      Mean | Valid N | Std.deviation | Total N |   Minimum |  Maximum | Variance |
 |------------+-----------+---------+---------------+---------+-----------+----------+----------|
