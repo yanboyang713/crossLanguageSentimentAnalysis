@@ -65,6 +65,9 @@
 
 [[./img/MarginalMeansOfBaiduPositiveProbababilityToGoogleScoreStandardForOriginData.jpg]]
 
+*** Baidu Chinese sentiment analysis category value compare with different ranking (origin data)
+[[./img/MarginalMeansOfBaiduCategoryFroOriginData.jpg]]
+
 *** Chinese sentiment analysis Error Rate
 | Ranking    |   Error Rate |
 |------------+--------------|
@@ -99,7 +102,7 @@ Total Error Rate: 0.0073140396
 [[./img/MarginalMeansOfBaiduPositiveProbabilityToGoogleStandardFroGoogleTranslatedData.jpg]]
 
 *** Baidu English sentiment analysis category values compare with different ranking (based on Google translated data)
-
+[[./img/MarginalMeansOfBaiduCategoryFroGoogleTranslatedData.jpg]]
 * Google sentiment analysis
 ** Google Chinese sentiment analysis
 *** Google Chinese sentiment analysis scores compare with different ranking (origin data)
