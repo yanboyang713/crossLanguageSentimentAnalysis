@@ -1,4 +1,3 @@
--*- mode: org -*-
 * Each colom represent mean
 | Column  | Mean                                                        | remark                                       |
 |---------+-------------------------------------------------------------+----------------------------------------------|
@@ -37,7 +36,11 @@
  - The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.
  - A document with a neutral score (around 0.0) may indicate a low-emotion document, or may indicate mixed emotions, with both high positive and negative values which cancel each out. Generally, you can use magnitude values to disambiguate these cases, as truly neutral documents will have a low magnitude value, while mixed documents will have higher magnitude values.
  - “Clearly positive” and “clearly negative” sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.
+
 * Baidu Chinese sentiment analysis
+** Baidu Chinese sentiment analysis positive probability histogram
+[[./img/BaiduPositiveProbababilityHistogramForOriginData.jpg]]
+
 ** Baidu Chinese sentiment analysis postitive probability compare with different ranking(origin data)
 | Ranking    |           Mean | Valid N |   std.deviation | Total N |  Minimum |  Maximum |
 |------------+----------------+---------+-----------------+---------+----------+----------|
@@ -49,7 +52,7 @@
 
 [[./img/MarginalMeansOfBaiduPositiveProbabilityForOriginData.jpg]]
 
-** Baidu Chinese sentiment analysis postitive probability change to Google Score standard compare with different ranking (origin data)
+** Baidu Chinese sentiment analysis postitive probability tranform to Google Score standard compare with different ranking (origin data)
 | Ranking    |      Mean | Valid N | std.deviation | Total N |   Minimum |  Maximum | Variance |
 |------------+-----------+---------+---------------+---------+-----------+----------+----------|
 | Ranking 10 | -0.598875 |    8525 |      0.557595 |         | -0.999894 | 1.000000 | 0.310912 |
@@ -96,12 +99,23 @@ Total Error Rate: 0.0073140396
 Total Error Rate: 0.0012808851
 
 * Baidu Chinese sentiment analysis VS Google Chinese sentiment analysis
+** Mean Value Correlation
+- Pearson Correlation 0.991
+- sig. 0.001
+- N 5
++ Conclusion
+ Baidu Chinese sentiment analysis and Google Chinese sentiment analysis have higher liner relationship.
+
 ** Error Rate
 | Baidu Chinese sentiment analysis Total Error Rate | Google Chinese sentiment analysis Total Error Rate |
 |---------------------------------------------------+----------------------------------------------------|
 |                                      0.0073140396 |                                       0.0012808851 |
 - conclusion
  + Baidu sentiment analysis error rate high than Google sentiment analysis error rate
+
+** Tendency
+sentiment analysis results given by both Baidu and Google are valid because when the ranking group ID increases from 10 to 50, the sentiment analysis score also strictly increases accordingly.
+
 * Baidu English sentiment analysis VS Google English sentiment analysis
 ** Base on Google translated data
 *** Baidu English sentiment analysis postitive probability compare with different ranking(based on Google translated data)
