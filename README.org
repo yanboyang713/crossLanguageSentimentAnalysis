@@ -103,6 +103,7 @@ Total Error Rate: 0.0073140396
 
 *** Baidu English sentiment analysis category values compare with different ranking (based on Google translated data)
 [[./img/MarginalMeansOfBaiduCategoryFroGoogleTranslatedData.jpg]]
+
 * Google sentiment analysis
 ** Google Chinese sentiment analysis
 *** Google Chinese sentiment analysis scores compare with different ranking (origin data)
@@ -138,7 +139,26 @@ Total Error Rate: 0.0012808851
 | Ranking 50 | 0.225000 |    4304 |      0.453471 |         | -0.900000 | 0.900000 | 0.205636 |
 [[./img/MarginalMeansOfGoogleScoreFroGoogleTranslatedData.jpg]]
 
-** Correlations Between Origin data, Google Translated data, Yandex Translated and Baidu Translated data
+*** Google English sentiment analysis score compare with different ranking (base on Yandex translated data)
+| Ranking    |     Mean | Valid N | Std.deviation | Total N |  Minimum |  Maximum | Variance |
+|------------+----------+---------+---------------+---------+----------+----------+----------|
+| Ranking 10 | -0.337873 |    8568 |      0.416416 |         | -0.900000 | 0.900000 | 0.173403 |
+| Ranking 20 | -0.233371 |   13221.000000 |      0.422133 |         | -0.900000 | 0.900000 | 0.178196 |
+| Ranking 30 | -0.055703 |   18972.000000 |      0.429758 |         | -0.900000 | 0.900000 | 0.184692 |
+| Ranking 40 | 0.138917 |    8788.000000 |      0.447876 |         | -0.900000 | 0.900000 | 0.200593 |
+| Ranking 50 | 0.208268 |    4306.000000 |      0.449598 |         | -0.900000 | 0.900000 | 0.202138 |
+
+*** Google English sentiment analysis score compare with different ranking (base on Baidu translated data)
+| Ranking    |     Mean | Valid N | Std.deviation | Total N |  Minimum |  Maximum | Variance |
+|------------+----------+---------+---------------+---------+----------+----------+----------|
+| Ranking 10 | -0.284984 |    8491.000000 |      0.416185 |         | -0.900000 | 0.900000 | 0.173210 |
+| Ranking 20 | -0.192064 |   13092.000000 |      0.417855 |         | -0.900000 | 0.900000 | 0.174603 |
+| Ranking 30 | -0.017125 |   18820.000000 |      0.429167 |         | -0.900000 | 0.900000 | 0.184185 |
+| Ranking 40 | 0.167667 |    8734.000000 |      0.432601 |         | -0.900000 | 0.900000 | 0.187144 |
+| Ranking 50 | 0.244657 |    4286.000000 |      0.430004 |         | -0.900000 | 0.900000 | 0.184904 |
+
+
+*** Correlations Between Origin data, Google Translated data, Yandex Translated and Baidu Translated data
 [[correlationsBetweenOriginGoogleTranslatedYandexTranslatedBaiduTranslatedUsingGoogleSentiment.png]]
 + assumption Google English sentiment analysis tool is total same with Google Chinese sentiment analysis tool
  - Google translation quality > Yandex translation quality > baidu translation quality
