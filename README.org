@@ -35,14 +35,14 @@
 + Google sentiment analysis Note
  - The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.
  - A document with a neutral score (around 0.0) may indicate a low-emotion document, or may indicate mixed emotions, with both high positive and negative values which cancel each out. Generally, you can use magnitude values to disambiguate these cases, as truly neutral documents will have a low magnitude value, while mixed documents will have higher magnitude values.
- - “Clearly positive” and “clearly negative” sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.
+ - "Clearly positive" and "clearly negative" sentiment varies for different use cases and customers. You might find differing results for your specific scenario. We recommend that you define a threshold that works for you, and then adjust the threshold after testing and verifying the results. For example, you may define a threshold of any score over 0.25 as clearly positive, and then modify the score threshold to 0.15 after reviewing your data and results and finding that scores from 0.15-0.25 should be considered positive as well.
 
 * Baidu sentiment analysis
 ** Baidu Chinese sentiment analysis
 *** Baidu Chinese sentiment analysis positive probability histogram
 [[./img/BaiduPositiveProbababilityHistogramForOriginData.jpg]]
 
-** Baidu Chinese sentiment analysis postitive probability compare with different ranking(origin data)
+*** TODO Baidu Chinese sentiment analysis postitive probability compare with different ranking(origin data)
 | Ranking    |           Mean | Valid N |   std.deviation | Total N |  Minimum |  Maximum |
 |------------+----------------+---------+-----------------+---------+----------+----------|
 | Ranking 10 | 0.239365965000 |    8525 | 0.2219412270000 |    8572 | 0.000106 | 1.000000 |
@@ -52,6 +52,9 @@
 | Ranking 50 |       0.568988 |    4271 |        0.312815 |    4307 | 0.000536 | 1.000000 |
 
 [[./img/MarginalMeansOfBaiduPositiveProbabilityForOriginData.jpg]]
+
++ Baidu Chinese sentiment analysis positive probability values are valid.
+
 
 *** Baidu Chinese sentiment analysis postitive probability tranform to Google Score standard compare with different ranking (origin data)
 | Ranking    |      Mean | Valid N | std.deviation | Total N |   Minimum |  Maximum | Variance |
@@ -68,6 +71,8 @@
 *** Baidu Chinese sentiment analysis category value compare with different ranking (origin data)
 [[./img/MarginalMeansOfBaiduCategoryFroOriginData.jpg]]
 
++ Baidu Chinese sentiment analysis category values are valid.
+
 *** Chinese sentiment analysis Error Rate
 | Ranking    |   Error Rate |
 |------------+--------------|
@@ -77,7 +82,10 @@
 | Ranking 40 | 0.0083048919 |
 | Ranking 50 | 0.0083584862 |
 
-Total Error Rate: 0.0073140396
++ Total Error Rate: 0.0073140396
+*** Baidu Chinese sentiment analysis Summary
++ Baidu Chinese sentiment analysis positive probability values are valid.
++ Baidu Chinese sentiment analysis category values are valid.
 
 ** Baidu English sentiment analysis
 *** Baidu English sentiment analysis postitive probability compare with different ranking (based on Google translated data)
@@ -90,6 +98,7 @@ Total Error Rate: 0.0073140396
 | Ranking 50 | 0.589054 |    4006 |      0.150737 |         | 0.086614 | 1.000000 | 0.022722 |
 [[./img/MarginalMeansOfBaiduPositiveProbabilityForGoogleTranslatedData.jpg]]
 
++ Baidu English sentiment analysis positive probability values are valid.
 *** Baidu English sentiment analysis positive probability tranform to Google Score Standard (based on Google translated data)
 | Ranking    |     Mean | Valid N | Std.deviation | Total N |  Minimum |  Maximum | Variance |
 |------------+----------+---------+---------------+---------+----------+----------+----------|
@@ -103,6 +112,10 @@ Total Error Rate: 0.0073140396
 
 *** Baidu English sentiment analysis category values compare with different ranking (based on Google translated data)
 [[./img/MarginalMeansOfBaiduCategoryFroGoogleTranslatedData.jpg]]
++ Baidu English sentiment analysis category values are valid.
+
+** Baidu Chinese sentiment analysis positive probability tranform to Google Score standard Method
+[[./img/baiduPositiveProbabilityTranformToGoogleScoreStandard.png]]
 
 * Google sentiment analysis
 ** Google Chinese sentiment analysis
@@ -117,6 +130,8 @@ Total Error Rate: 0.0073140396
 
 [[./img/MarginalMeansOfGoogleScoreForOriginData.jpg]]
 
++ Google Chinese sentiment analysis score values are valid.
+
 *** Google Chinese sentiment analysis Error Rate
 | Ranking    |   Error Rate |
 |------------+--------------|
@@ -126,7 +141,7 @@ Total Error Rate: 0.0073140396
 | Ranking 40 | 0.0013651877 |
 | Ranking 50 | 0.0004643603 |
 
-Total Error Rate: 0.0012808851
++ Total Error Rate: 0.0012808851
 
 ** Google English sentiment analysis
 *** Google English sentiment analysis score compare with different ranking (based on Google translated data)
@@ -139,6 +154,8 @@ Total Error Rate: 0.0012808851
 | Ranking 50 | 0.225000 |    4304 |      0.453471 |         | -0.900000 | 0.900000 | 0.205636 |
 [[./img/MarginalMeansOfGoogleScoreFroGoogleTranslatedData.jpg]]
 
++ Google English sentiment analysis score values are valid based on Google translated data.
+
 *** Google English sentiment analysis score compare with different ranking (base on Yandex translated data)
 | Ranking    |     Mean | Valid N | Std.deviation | Total N |  Minimum |  Maximum | Variance |
 |------------+----------+---------+---------------+---------+----------+----------+----------|
@@ -148,6 +165,7 @@ Total Error Rate: 0.0012808851
 | Ranking 40 | 0.138917 |    8788.000000 |      0.447876 |         | -0.900000 | 0.900000 | 0.200593 |
 | Ranking 50 | 0.208268 |    4306.000000 |      0.449598 |         | -0.900000 | 0.900000 | 0.202138 |
 
++ Google English sentiment analysis score values are valid based on Yandex translated data.
 *** Google English sentiment analysis score compare with different ranking (base on Baidu translated data)
 | Ranking    |     Mean | Valid N | Std.deviation | Total N |  Minimum |  Maximum | Variance |
 |------------+----------+---------+---------------+---------+----------+----------+----------|
@@ -157,13 +175,19 @@ Total Error Rate: 0.0012808851
 | Ranking 40 | 0.167667 |    8734.000000 |      0.432601 |         | -0.900000 | 0.900000 | 0.187144 |
 | Ranking 50 | 0.244657 |    4286.000000 |      0.430004 |         | -0.900000 | 0.900000 | 0.184904 |
 
++ Google English sentiment analysis score values are valid based on Baidu translated data.
 
-*** Correlations Between Origin data, Google Translated data, Yandex Translated and Baidu Translated data
+*** Correlations Between Origin data, Google Translated data, Yandex Translated and Baidu Translated data (each element)
 [[correlationsBetweenOriginGoogleTranslatedYandexTranslatedBaiduTranslatedUsingGoogleSentiment.png]]
-+ assumption Google English sentiment analysis tool is total same with Google Chinese sentiment analysis tool
- - Google translation quality > Yandex translation quality > baidu translation quality
-+ Google one side English sentiment analysis corrlations always bigger than Google two side between English and Chinese sentiment analysis corrlations between different translation tools.
- - analysis same langeuage corrlations always bigger than cross langeuage corrlations
++ assumption Google English sentiment analysis tool and Google Chinese sentiment analysis tool are same
+  - Google translation sentence quality > Yandex translation sentence quality > baidu translation sentence quality
+  - analysis same langeuage corrlations always bigger than cross langeuage corrlations
+
+*** Correlations between origin data Mean, Google translated data Mean, Yandex translated Mean and baidu translated data Mean
+[[./img/correlationsBetweenOriginGoogleTranslatedYandexTranslatedBaiduTranslatedMeanUsingGoogleSentiment.png]]
++ translation sentence tools' quality have NOT significant impact sentiment analysis results
++ I guess translation key word quality more importance compare with sentence translation quality
++ Using sentiment analysis results compare different translation tools' quality are NOT reliable.
 
 * Baidu sentiment analysis VS Google sentiment analysis
 ** Baidu Chinese sentiment analysis VS Google Chinese sentiment analysis
