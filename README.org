@@ -1,4 +1,6 @@
+#+LATEX_CLASS: article
 * Each colom represent mean
+#+ATTR_LATEX: :environment longtable :align |l|p{7cm}|p{5cm}|
 | Column  | Mean                                                          | remark                                       |
 |---------+---------------------------------------------------------------+----------------------------------------------|
 | F (6)   | ranking                                                       |                                              |
@@ -28,7 +30,6 @@
 | AD (30) | Baidu English sentiment analysis the category                 | base on baidu translated data                |
 | AE (31) | Baidu postitive probability change to Google score standard   | base on origin data Baidu sentiment analysis |
 | AF (32) | Baidu postitive probability tranform to Google score standard | base on column M                             |
-
 ** note
 + Baidu sentiment analysis Category Note
  - 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category
@@ -177,14 +178,14 @@
 + Google English sentiment analysis score values are valid based on Baidu translated data.
 
 *** Correlations Between Origin data, Google Translated data, Yandex Translated and Baidu Translated data (each element)
-[[correlationsBetweenOriginGoogleTranslatedYandexTranslatedBaiduTranslatedUsingGoogleSentiment.png]]
+[[./img/correlationsBetweenOriginGoogleTranslatedYandexTranslatedBaiduTranslatedUsingGoogleSentiment.png]]
 + assumption Google English sentiment analysis tool and Google Chinese sentiment analysis tool are same
   - Google translation sentence quality > Yandex translation sentence quality > baidu translation sentence quality
   - analysis same langeuage corrlations always bigger than cross langeuage corrlations
 
 *** Correlations between origin data Mean, Google translated data Mean, Yandex translated Mean and baidu translated data Mean
 [[./img/correlationsBetweenOriginGoogleTranslatedYandexTranslatedBaiduTranslatedMeanUsingGoogleSentiment.png]]
-+ translation sentence tools' quality have NOT significant impact sentiment analysis results
++ translation sentence tools' quality have NOT significant impact sentiment analysis results because same data use different translation tool to analysis and all three results have highest correlations between each other.
 + I guess translation key word quality more importance compare with sentence translation quality
 + Using sentiment analysis results compare different translation tools' quality are NOT reliable.
 
