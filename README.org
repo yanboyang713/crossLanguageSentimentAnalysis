@@ -30,6 +30,11 @@
 | AD (30) | Baidu English sentiment analysis the category                 | base on baidu translated data                |
 | AE (31) | Baidu postitive probability change to Google score standard   | base on origin data Baidu sentiment analysis |
 | AF (32) | Baidu postitive probability tranform to Google score standard | base on column M                             |
+| AG (33) | Baidu English sentiment analysis postitive probability        | base on Yandex translated data               |
+| AH (34) | Baidu English sentiment analysis confidence                   | base on Yandex translated data               |
+| AI (35) | Baidu English sentiment analysis Negative probability         | base on Yandex translated data               |
+| AJ (36) | Baidu English sentiment analysis the category                 | base on Yandex translated data               |
+
 ** note
 + Baidu sentiment analysis Category Note
  - 2 mean to belong to the positive category, 1 mean to belong to the neutral category, and 0 mean to belong to the Negative category
