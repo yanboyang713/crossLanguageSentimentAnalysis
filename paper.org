@@ -1,0 +1,55 @@
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+TITLE: Metamorphic Testing of Cross-Language Sentiment Analysis
+#+DESCRIPTION:
+#+KEYWORDS: Metamorphic, Testing, Sentiment Analysis, Cross-Language
+#+SUBTITLE:
+#+LATEX_COMPILER: pdflatex
+#+DATE: \today
+
+* Introduction
+The purpose of this research is assessing the quality of translation tool and quality of sentiment analysis tool. Finally, we will achieve a method, finding which translation tool conbining with which sentiment analysis tool together, for getting better sentiment analysis result.
+Currently, most of sentiment analysis tool only support English. We want to find a method for let non-English people using English Sentiment Analysis tool with Machine translation tool, analysis their non-English text.
+
+* Assessing Machine translation tool
+#+BEGIN_EXAMPLE
+
+  +--------------------------------+      +----------------------------------+
+  |                                |      |                                  |
+  |        ---------------         |      |            -------------         |
+  |   ----/               \----    |      |         --/             \--      |
+  |  /    Chinese Origin       \   |      |        /     Google              |
+  | (                           )--+------+-------(      Translated     )    |
+  |  \        Data             X   |      |        \     Data          /     |
+  |   ----\               /-\-- \  |      |         --\             /--      |
+  |        ---------------   \   \ |      |            -------------         |
+  |                           \   \|      |          -------------           |
+  |                            \   |      |       --/             \--        |
+  |                            |   |\     |      /      Baidu        \       |
+  |                             \  | \----+-----(       Translated    )      |
+  |                              \ |      |      \      Data         /       |
+  |                               \|      |       --\             /--        |
+  |                                |      |          -------------           |
+  |                                |\     |                                  |
+  |                                ||     |     -------------                |
+  |                                | \    |  --/             \--             |
+  |                                |  \   | /     Yandex        \            |
+  |                                |   ---+-      Translated     )           |
+  |                                |      | \     Data          /            |
+  |                                |      |  --\             /--             |
+  |                                |      |     -------------                |
+  |                                |      |                                  |
+  |                                |      |                                  |
+  |                                |      |                                  |
+  |                                |      |                                  |
+  +--------------------------------+      +----------------------------------+
+
+   Google Sentiment Analysis --------------   Google Sentment Analysis
+                             correlation
+#+END_EXAMPLE
+
+* Assessing Sentiment analysis tool
+
+* Method for better compound mode for sentiment analysis tool and machine translation tool
