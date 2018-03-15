@@ -13,7 +13,7 @@
 The purpose of this research is assessing the quality of translation tool and quality of sentiment analysis tool. Finally, we will achieve a method, finding which translation tool conbining with which sentiment analysis tool together, for getting better sentiment analysis result.
 Currently, most of sentiment analysis tool only support English. We want to find a method for let non-English people using English Sentiment Analysis tool with Machine translation tool, analysis their non-English text.
 
-* Assessing Machine translation tool
+* Assessing Machine translation tool quality
 #+BEGIN_EXAMPLE
 
   +--------------------------------+      +----------------------------------+
@@ -49,7 +49,69 @@ Currently, most of sentiment analysis tool only support English. We want to find
    Google Sentiment Analysis --------------   Google Sentment Analysis
                              correlation
 #+END_EXAMPLE
+** Method
 
-* Assessing Sentiment analysis tool
+** Result
+|                               | Google Score for Google translated data | Google Score for Yandex translated data | Google Score Baidu translated data |
+|-------------------------------+-----------------------------------------+-----------------------------------------+------------------------------------|
+| Gooogle Score for origin data | 0.524**                                 | 0.516**                                 | 0.498**                            |
+
++ Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
+
+* Assessing Sentiment analysis tool quality
+
+#+BEGIN_EXAMPLE
+
+
+        +--------------------------+                              +--------------------------+
+        |    Chinese   Ranking 10  |                              |   Yandex      Ranking 10 |
+        |    origin    Ranking 20  |    Yandex translation tool   |   translated  Ranking 20 |
+        |    data      Ranking 30  +----------------------------->|   Data        Ranking 30 |
+        |              Ranking 40  |                              |               Ranking 40 |
+        +              Ranking 50  +                              +               Ranking 50 +
+        +--------------------------+                              +--------------------------+
+                          -\                                              /
+                            -\                                           /
+                              -\                                        /
+                                -\               -------------------   /
+                                  -\       -----/                   \-/---
+                                    -\  --/     using same                \--
+                                      --        sentiment analysis tool      \
+                                      (         analysis both side            )
+                                       \                                     /
+                                        --\                               /--
+                                           -----\                   /-----
+                                                 ----------+--------
+                                                           |
+                                                  -----------------------
+                                            -----/                       \-----
+                                          -/       calculate Mean Value        \-
+                                      ----         by different ranking          )
+                               ------/    -\       for both sild               /-
+                        ------/             -----\                       /--\--
+       +---------------/-----------+              -----------------------    \
+       |                           |                              +----------+---------------+
+       |                           |                              |                          |
+       |                           |                              |                          |
+       |                           |                              |                          |
+       |                           |                              |                          |
+       |                           |                              |                          |
+       +---------------------------+                              |                          |
+                                                                  +--------------------------+
+
+
+
+
+              linear regression                                  liner regression
+
+
+
+
+             slope
+                                                                 slope
+#+END_EXAMPLE
+[[./img/MarginalMeansOfBaiduPositiveProbababilityToGoogleScoreStandardForOriginData.jpg]]
+Linear regression
+slope
 
 * Method for better compound mode for sentiment analysis tool and machine translation tool

@@ -34,6 +34,8 @@
 | AH (34) | Baidu English sentiment analysis confidence                   | base on Yandex translated data               |
 | AI (35) | Baidu English sentiment analysis Negative probability         | base on Yandex translated data               |
 | AJ (36) | Baidu English sentiment analysis the category                 | base on Yandex translated data               |
+| AK (37) | Baidu postitive probability change to Google score standard   | base on column AG                            |
+| AL (38) | Baidu postitive probability change to Google score standard   | base on column AA                            |
 
 ** note
 + Baidu sentiment analysis Category Note
