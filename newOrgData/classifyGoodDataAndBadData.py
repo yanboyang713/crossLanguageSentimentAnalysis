@@ -28,8 +28,8 @@ class classift(object):
         self.goodSheet = self.goodFile.create_sheet()
         self.badSheet = self.badFile.create_sheet()
 
-        self.goodSize = 1
-        self.badSize = 1
+        self.goodSize = int(input ("Please input good file index for start: "))
+        self.badSize = int (input ("Please input bad file index for start: "))
 
         self.run()
 
@@ -38,10 +38,10 @@ class classift(object):
 
         try:
             self.readFile(self.ranking10Sheet, 1, 8573)
-            self.readFile(self.ranking20Sheet, 1, 13227)
-            self.readFile(self.ranking30Sheet, 1, 18975)
-            self.readFile(self.ranking40Sheet, 1, 8791)
-            self.readFile(self.ranking50Sheet, 1, 4308)
+            #self.readFile(self.ranking20Sheet, 1, 13227)
+            #self.readFile(self.ranking30Sheet, 1, 18975)
+            #self.readFile(self.ranking40Sheet, 1, 8791)
+            #self.readFile(self.ranking50Sheet, 1, 4308)
 
         except Exception as exception:
             print (exception)
@@ -49,6 +49,8 @@ class classift(object):
         # Save the file and notify the user
         self.goodFile.save(self.goodFileName)
         self.badFile.save(self.badFileName)
+        print ("good file index: ", self.goodSize)
+        print ("bad file index: ", self.badSize)
         print("finish")
 
     def readFile(self, sheetName, rowStart, rowEnd):
