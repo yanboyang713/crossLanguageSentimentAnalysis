@@ -1,5 +1,5 @@
-## numpy is used for creating fake data
 import numpy as np
+from openpyxl import load_workbook
 import matplotlib as mpl
 
 ## agg backend is used to create plot as a .png file
@@ -43,17 +43,33 @@ def drawBoxPlots(title, data_to_plot, ax):
 
 
 ## Create data
-np.random.seed(10)
-collectn_1 = np.random.normal(100, 10, 200)
-collectn_2 = np.random.normal(80, 30, 200)
-collectn_3 = np.random.normal(90, 20, 200)
-collectn_4 = np.random.normal(70, 25, 200)
-collectn_5 = np.random.normal(70, 25, 200)
+
+ranking10 = np.array([])
+ranking20 = np.array([])
+ranking30 = np.array([])
+ranking40 = np.array([])
+ranking50 = np.array([])
+wb = load_workbook(filename='good.xlsx', read_only=True)
+ws = wb['Sheet1']
+
+for row in range(1, 46181):
+    ranking = ws.cell(row=row, column=6).value
+    value = ws.cell(row=row, column=17).value
+    if ranking == 10:
+        ranking10 = np.append( ranking10 , value)
+    elif ranking == 20:
+        ranking20 = np.append (ranking20, value)
+    elif ranking == 30:
+        ranking30 = np.append (ranking30, value)
+    elif ranking == 40:
+        ranking40 = np.append (ranking40, value)
+    elif ranking == 50:
+        ranking50 = np.append (ranking50, value)
 ## combine these different collections into a list
-data_to_plot = [collectn_1, collectn_2, collectn_3, collectn_4, collectn_5]
+data_to_plot = [ranking10, ranking20, ranking30, ranking40, ranking50]
 
 
-#fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(9, 4))
+#fig, axes = plt.subplots(nrows=2, ncols=4, figsize=(9, 4))
 # Create a figure instance
 fig = plt.figure(1, figsize=(9, 6))
 # Create an axes instance
@@ -62,6 +78,6 @@ ax = fig.add_subplot(111)
 ## to get fill color
 
 
-drawBoxPlots("google", data_to_plot, ax)
+drawBoxPlots("google chinese sentiment analysis", data_to_plot, ax)
 # Save the figure
-fig.savefig("output.png", bbox_inches='tight')
+fig.savefig("googleChineseSentimentAnalysis.png", bbox_inches='tight')
