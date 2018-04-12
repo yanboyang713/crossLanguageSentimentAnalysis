@@ -72,6 +72,7 @@ class CSVIterator
 
 int main()
 {
+    /*
     std::ifstream       file("good.csv");
 
     for(CSVIterator loop(file); loop != CSVIterator(); ++loop)
@@ -80,7 +81,14 @@ int main()
         std::cout << "7th Element(" << (*loop)[6] << ")" << std::endl;
         std::cout << "38th Element(" << (*loop)[37] << ")" << std::endl;
     }
+    */
+    std::ifstream       file("good.csv");
 
+    CSVRow              row;
+    while(file >> row)
+    {
+        std::cout << "38th Element(" << row[37] << ")\n";
+    }
     return 0;
 
 }
