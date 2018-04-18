@@ -54,7 +54,7 @@ ws = wb['Sheet1']
 
 for row in range(1, 46181):
     ranking = ws.cell(row=row, column=6).value
-    value = ws.cell(row=row, column=9).value
+    value = ws.cell(row=row, column=19).value
     if ranking == 10:
         ranking10 = np.append( ranking10 , value)
     elif ranking == 20:
