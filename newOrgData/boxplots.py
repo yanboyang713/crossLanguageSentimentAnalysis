@@ -44,28 +44,34 @@ def drawBoxPlots(title, data_to_plot, ax):
 
 ## Create data
 
-ranking10 = np.array([])
-ranking20 = np.array([])
-ranking30 = np.array([])
-ranking40 = np.array([])
-ranking50 = np.array([])
+ranking10 = list()
+ranking20 = list()
+ranking30 = list()
+ranking40 = list()
+ranking50 = list()
 wb = load_workbook(filename='good.xlsx', read_only=True)
 ws = wb['Sheet1']
 
 for row in range(1, 46181):
     ranking = ws.cell(row=row, column=6).value
-    value = ws.cell(row=row, column=17).value
+    value = float(ws.cell(row=row, column=17).value)
     if ranking == 10:
-        ranking10 = np.append( ranking10 , value)
+        print ("10")
+        ranking10.append(value)
     elif ranking == 20:
-        ranking20 = np.append (ranking20, value)
+        print ("20")
+        ranking20.append (value)
     elif ranking == 30:
-        ranking30 = np.append (ranking30, value)
+        print ("30")
+        ranking30.append (value)
     elif ranking == 40:
-        ranking40 = np.append (ranking40, value)
+        print ("40")
+        ranking40.append (value)
     elif ranking == 50:
-        ranking50 = np.append (ranking50, value)
+        print ("50")
+        ranking50.append (value)
 ## combine these different collections into a list
+print ("get data")
 data_to_plot = [ranking10, ranking20, ranking30, ranking40, ranking50]
 
 
