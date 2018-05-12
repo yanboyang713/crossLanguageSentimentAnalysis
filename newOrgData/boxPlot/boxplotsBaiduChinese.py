@@ -55,7 +55,7 @@ with open('goodDataLatest.csv', "r") as csvfile:
     for row in readCSV:
         if index != 0:
             ranking = int(row[0])
-            value = row[29]
+            value = float(row[29])
             if ranking == 10:
                 ranking10 = np.append( ranking10 , value)
             elif ranking == 20:
