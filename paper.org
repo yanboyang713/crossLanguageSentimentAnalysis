@@ -73,6 +73,8 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
  - Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
 
 * Assessing Sentiment analysis tool quality
+[[./img/beforeNornBoxplot.jpg]]
+[[./img/afterNornBoxplot.jpg]]
 
 #+BEGIN_EXAMPLE
 
