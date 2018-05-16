@@ -1,27 +1,23 @@
 #include <iostream>
 #include <vector>
+#include <math.h>
 #include "rapidcsv.h"
 using namespace std;
-
 int findIndex(float, float*&, const int&);
 int main(){
 
     rapidcsv::Document doc("goodDataLatest.csv", rapidcsv::LabelParams(0, -1));
-    //std::vector<float> googleSentimentOriginData= {-0.9, -0.2, 0.3, 0.4, 0.3};
 
-    std::vector<float> googleSentimentOriginData = doc.GetColumn<float>("Google Chinese sentiment analysis score(base on Chinese origin data)");
-    //std::vector<float> baiduSentimentOriginData = {-0.9, -0.1, 0.3, 0.5, 0.3};
-    std::vector<float> baiduSentimentOriginData = doc.GetColumn<float>("Baidu positive probability to google standard(base on Chinese origin data)");
+    std::vector<float> googleSentimentOriginData = doc.GetColumn<float>("Google English sentiment analysis score(base on Yandex translated data)");
+    std::vector<float> baiduSentimentOriginData = doc.GetColumn<float>("Baidu postitive probability to google standard(base on Yandex translated data)");
 
     float interval = 0.1;
     int size = static_cast<int>(2 / interval + 1);
-    cout << "size = " << size << endl;
 
     float* xAndYindex = new float[size];
     xAndYindex[0] = -1.0;
     for (int i = 1; i < size; ++i) {
-        xAndYindex[i] = xAndYindex[i - 1] + interval;
-        cout << xAndYindex[i] << endl;
+        xAndYindex[i] = roundf((xAndYindex[i - 1] + interval) * 10) / 10;
         }
 
 
@@ -37,29 +33,33 @@ int main(){
 
     for (int i = 0; i < rowCount; ++i) {
 
-        float baiduData = baiduSentimentOriginData[i];
-        float googleData = googleSentimentOriginData[i];
+        float baiduData = roundf(baiduSentimentOriginData[i] * 10) / 10;
+        float googleData = roundf(googleSentimentOriginData[i] * 10) / 10;
 
         int baiduIndex = findIndex(baiduData, xAndYindex, size);
         int googleIndex = findIndex(googleData, xAndYindex, size);
-        cout << "baiduIndex = " << baiduIndex << endl;
-        cout << "baiduData = " << baiduData << endl;
 
-        cout << "googleIndex = " << googleIndex << endl;
-        cout << "googleData = " << googleData << endl;
+        dataMatrix[baiduIndex][googleIndex]++;
 
-        dataMatrix[baiduIndex][googleIndex]+= 1;
     }
 
     // print
-    cout <<"size = " << size << endl;
-
+    cout << "[";
     for(int y = size - 1; y >= 0; y--){
+
+        cout << "[";
         for(int x = 0; x < size; ++x){
-            std::cout << dataMatrix[x][y] << " ";
+            std::cout << dataMatrix[x][y];
+            if (x != size - 1) {
+                cout << ", ";
+            }
         }
-        cout << endl;
+        cout << "]";
+        if (y > 0) {
+            cout << "," << endl;
+        }
     }
+    cout << "]" << endl;
 
 
     // free
@@ -67,21 +67,20 @@ int main(){
         delete [] dataMatrix[i];
     delete [] dataMatrix;
 
-
-
-
     return 0;
 
 }
 
 int findIndex(float data, float*& xAndYindex, const int& size){
     int index = -1;
-    //cout << "data = " << data << endl;
     for (int m = 0; m < size; ++m) {
+
         if (data >= xAndYindex[m] && data < xAndYindex[m + 1]){
             index = m;
         }
     }
-    //cout << "index = " << index << endl;
+    if (data == 1) {
+        index = 20;
+    }
     return index;
 }
