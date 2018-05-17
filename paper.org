@@ -75,6 +75,7 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 * Assessing Sentiment analysis tool quality
 [[./img/beforeNornBoxplot.jpg]]
 [[./img/afterNornBoxplot.jpg]]
+[[./img/heatmap.jpg]]
 
 #+BEGIN_EXAMPLE
 
