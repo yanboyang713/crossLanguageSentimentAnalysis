@@ -62,8 +62,13 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
                              correlation
 #+END_EXAMPLE
 ** Method
+1. Compare correlation coefficient between Chinese sentiment analysis results and English sentiment analysis results by each
+   1. Using Google, Baidu, Yandex translation tools, translated original Chinese data to English data
+   2. Using same sentiment analysis tool analysis original chinese dataset and translated dataset
+   3. Calculate correlation coefficient between Chinese sentiment analysis results and English sentiment analysis results
+   4. Compare correlation coefficient values. if value is bigger than others, we can say this translation tool, which use in original dataset to English dataset, can achieve better results than others.
 
-** Result
+*** Result
 + Base on Google sentiment analysis tool
 |                               | Google Score for Google translated data    | Google Score for Yandex translated data    | Google Score Baidu translated data         |
 |-------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------|
@@ -84,6 +89,19 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 
  - Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
 
+[[./img/heatmap.jpg]]
+2. Compare correlation coefficient between sentiment analysis results and user rating
+   1. Divide the sentiment analysis scores between [-1,1] into 5 regions, which are 10, 20, 30, 40, 50. Each interval is 0.4.
+| regions | scope        |
+|---------+--------------|
+|      10 | [-1, -0.6]   |
+|      20 | (-0.6, -0.2] |
+|      30 | (-0.2, -0.2) |
+|      40 | [0.2, 0.6)   |
+|      50 | [0.6, 1]     |
+   2. calculate correlation coefficient between regions and user rating
+| |
+ and then calculate the correlation and draw the heatmaps between the user rating (i.e., 10, 20, …, 50) and sentiment analysis scores (for heatmap, use higher resolutions by dividing the region [-1,1] into 20 subregions to give a 20x5 heatmap).
 * Assessing Sentiment analysis tool quality
 [[./img/beforeNornBoxplot.jpg]]
 [[./img/afterNornBoxplot.jpg]]
