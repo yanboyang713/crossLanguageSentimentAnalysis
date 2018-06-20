@@ -10,9 +10,12 @@ a = np.array([0, 0, 0, 1, 1, 1, 1])
 b = np.array([0, 0, 0, 1, 1, 1, 1])
 #Pearson correlation coefficient
 r_row, p_value = pearsonr(x, y)
+r, p = pearsonr(a, b)
+print ("print pearsonr")
 print (pearsonr([1,2,3,4,5],[1,2,3,4,5]))
 print (r_row, p_value)
-
+print (r, p)
+print ("end print pearsonr")
 
 #Spearman rank-order correlation coefficient
 #spearmanCorrelation, spearmanPvalue = spearmanr([1,2,3,4,5],[1,2,3,4,5])
