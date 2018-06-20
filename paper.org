@@ -65,11 +65,12 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 
 ** Result
 + Base on Google sentiment analysis tool
-|                               | Google Score for Google translated data    | Google Score for Yandex translated data   | Google Score Baidu translated data         |
-|-------------------------------+--------------------------------------------+-------------------------------------------+--------------------------------------------|
-| Gooogle Score for origin data | 0.512 (Pearson Correlations)  p-value: 0.0 | 0.506 (Pearson Correlations) p-value: 0.0 | 0.490 (Pearson Correlations)  p-value: 0.0 |
-| Google Score for origin data  | 0.390** (Kendall Correlations)             | 0.383** (Kendall Correlations)            | 0.370** (Kendall Correlations)             |
-| Google Score for origin data  | 0.515** (Spearman Correlations)            | 0.504** (Spearman Correlations)           | 0.490** (Spearman Correlations)            |
+|                               | Google Score for Google translated data    | Google Score for Yandex translated data    | Google Score Baidu translated data         |
+|-------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------|
+| Gooogle Score for origin data | 0.512 (Pearson Correlations)  p-value: 0.0 | 0.506 (Pearson Correlations) p-value: 0.0  | 0.490 (Pearson Correlations)  p-value: 0.0 |
+| Google Score for origin data  | 0.381 (Kendall Correlations)  p-value: 0.0 | 0.375 (Kendall Correlations) p-value: 0.0  | 0.363 (Kendall Correlations) p-value: 0.0  |
+| Google Score for origin data  | 0.504 (Spearman Correlations) p-value: 0.0 | 0.497 (Spearman Correlations) p-value: 0.0 | 0.482 (Spearman Correlations) p-value: 0.0 |
+| Gooogle Score for origin data | 0.512 (Point Biserial) p-value: 0.0        | 0.506 (Point Biserial) p-value: 0.0        | 0.490 (Point Biserial) p-value: 0.0        |
 
  - Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
 
@@ -77,8 +78,9 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 |                                            | Baidu Positive Probability for Google translated data | Baidu Positive Probability for Yandex translated data | Baidu Positive Probability for Baidu translated data |
 |--------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------------------------------------------|
 | Baidu Positive Probability for origin data | 0.288 (Pearson Correlations)  p-value: 0.0            | 0.280 (Pearson Correlations)  p-value: 0.0            | 0.237 (Pearson Correlations)   p-value: 0.0          |
-| Baidu Positive Probability for origin data | 0.181** (Kendall Correlations)                        | 0.162** (Kendall Correlations)                        | 0.142** (Kendall Correlations)                       |
-| Baidu Positive Probability for origin data | 0.261** (Spearman Correlations)                       | 0.232** (Spearman Correlations)                       | 0.205** (Spearman Correlations)                      |
+| Baidu Positive Probability for origin data | 0.188 (Kendall Correlations)  p-value: 0.0            | 0.174 (Kendall Correlations) p-value: 0.0             | 0.146 (Kendall Correlations) p-value:0.0             |
+| Baidu Positive Probability for origin data | 0.271 (Spearman Correlations)  p-value: 0.0           | 0.249 (Spearman Correlations) p-value: 0.0            | 0.210 (Spearman Correlations) p-value: 0.0           |
+| Baidu Positive Probability for origin data | 0.288 (Point Biserial) p-value: 0.0                   | 0.280 (Point Biserial) p-value: 0.0                   | 0.237 (Point Biserial) p-value: 0.0                  |
 
  - Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
 

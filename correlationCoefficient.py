@@ -33,6 +33,7 @@ with open('goodDataLatest.csv', "r") as csvfile:
         index += 1
 
 #Pearson correlation coefficient
+print ("pearson")
 r, p = pearsonr(GooogleScoreOriginData, GoogleScoreGoogleTranslatedData)
 print ("GooogleScoreOriginData with GoogleScoreGoogleTranslatedData Pearson correlation coefficient: ", r, "p-vlue: ", p)
 
@@ -52,6 +53,7 @@ r, p = pearsonr(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityBaid
 print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityBaiduTranslatedData Pearson correlation coefficient: ", r, "p-vlue: ", p)
 
 #Spearman rank-order correlation coefficient
+print ("start spearman")
 r, p = spearmanr(GooogleScoreOriginData, GoogleScoreGoogleTranslatedData)
 print ("GooogleScoreOriginData with GoogleScoreGoogleTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
 
@@ -71,6 +73,7 @@ r, p = spearmanr(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityBai
 print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityBaiduTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
 
 #point biserial correlation coefficient
+print ("start point biserial")
 r, p = scipy.stats.pointbiserialr(GooogleScoreOriginData, GoogleScoreGoogleTranslatedData)
 print ("GooogleScoreOriginData with GoogleScoreGoogleTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
 
@@ -89,25 +92,22 @@ print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityYandexTr
 r, p = scipy.stats.pointbiserialr(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityBaiduTranslatedData)
 print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityBaiduTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
 
-#until there
 #Kendall’s tau, a correlation
-r, p = scipy.stats.kendalltau(x, y)
-print (float(kendallTau), kendallPvalue)
+print ("start kendall")
+r, p = scipy.stats.kendalltau(GooogleScoreOriginData, GoogleScoreGoogleTranslatedData)
+print ("GooogleScoreOriginData with GoogleScoreGoogleTranslatedData Spearman correlation coefficient: ", float(r), "p-vlue: ", p)
 
-r, p = scipy.stats.(GooogleScoreOriginData, GoogleScoreGoogleTranslatedData)
-print ("GooogleScoreOriginData with GoogleScoreGoogleTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
+r, p = scipy.stats.kendalltau(GooogleScoreOriginData, GoogleScoreYandexTranslatedData)
+print ("GooogleScoreOriginData with GoogleScoreYandexTranslatedData Spearman correlation coefficient: ", float(r), "p-vlue: ", p)
 
-r, p = scipy.stats.(GooogleScoreOriginData, GoogleScoreYandexTranslatedData)
-print ("GooogleScoreOriginData with GoogleScoreYandexTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
+r, p = scipy.stats.kendalltau(GooogleScoreOriginData, GoogleScoreBaiduTranslatedData)
+print ("GooogleScoreOriginData with GoogleScoreBaiduTranslatedData Spearman correlation coefficient: ", float(r), "p-vlue: ", p)
 
-r, p = scipy.stats.(GooogleScoreOriginData, GoogleScoreBaiduTranslatedData)
-print ("GooogleScoreOriginData with GoogleScoreBaiduTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
+r, p = scipy.stats.kendalltau(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityGoogleTranslatedData)
+print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityGoogleTranslatedData Spearman correlation coefficient: ", float(r), "p-vlue: ", p)
 
-r, p = scipy.stats.(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityGoogleTranslatedData)
-print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityGoogleTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
+r, p = scipy.stats.kendalltau(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityYandexTranslatedData)
+print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityYandexTranslatedData Spearman correlation coefficient: ", float(r), "p-vlue: ", p)
 
-r, p = scipy.stats.(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityYandexTranslatedData)
-print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityYandexTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
-
-r, p = scipy.stats.(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityBaiduTranslatedData)
-print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityBaiduTranslatedData Spearman correlation coefficient: ", r, "p-vlue: ", p)
+r, p = scipy.stats.kendalltau(BaiduPositiveProbabilityOriginData, BaiduPositiveProbabilityBaiduTranslatedData)
+print ("BaiduPositiveProbabilityOriginData with BaiduPositiveProbabilityBaiduTranslatedData Spearman correlation coefficient: ", float(r), "p-vlue: ", p)
