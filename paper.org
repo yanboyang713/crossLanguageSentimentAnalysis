@@ -100,9 +100,33 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 |      40 | [0.2, 0.6)   |
 |      50 | [0.6, 1]     |
    2. calculate correlation coefficient between regions and user rating
-| |
++ Base on Google sentiment analysis tool
+|         | Google score for Google Translated data          | Google score for Yandex Translated data          | Google score for Baidu Translated data           |
+|---------+--------------------------------------------------+--------------------------------------------------+--------------------------------------------------|
+| ranking | 0.3639 (pearson Correlation) p-value: 0.0        | 0.3621 (pearson correlation) p-value: 0.0        | 0.3546 (pearson correlation) p-value: 0.0        |
+| ranking | 0.3645 (spearman correlation) p-value: 0.0       | 0.3623 (spearman correlation) p-value: 0.0       | 0.3555 (spearman correlation) p-value: 0.0       |
+| ranking | 0.3689 (point biserial correlation) p-value: 0.0 | 0.3621 (point biserial correlation) p-value: 0.0 | 0.3546 (point biserial correlation) p-value: 0.0 |
+| ranking | 0.3009 (kendall correlation) p-value: 0.0        | 0.2999 (kendall correlation) p-value: 0.0        | 0.2934 (kendall correlation) p-value: 0.0        |
+
++ Base on Baidu sentiment analysis tool
+|         | Baidu sentiment score (Google standard) for Google Translated data | Baidu sentiment score (Google standard) for Yandex Translated data | Baidu sentiment score (Google standard) for Baidu Translated data |
+|---------+--------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------|
+| ranking | 0.1638 (pearson correlation) p-value: 0.0                          | 0.1645 (pearson correlation) p-value: 0.0                          | 0.1611 (pearson correlation) p-value: 0.0                         |
+| ranking | 0.1687 (spearman correlation) p-value: 0.0                         | 0.1682 (spearman correlation) p-value: 0.0                         | 0.1624 (spearman correlation) p-value: 0.0                        |
+| ranking | 0.1638 (point biserial correlation) p-value: 0.0                   | 0.1645 (point biserial correlation) p-value: 0.0                   | 0.1611 (point biserial correlation) p-value: 0.0                  |
+| ranking | 0.1455 (kendall correlation) p-value: 0.0                          | 0.1447 (kendall correlation) p-value: 0.0                          | 0.1394 (kendall correlation) p-value: 0.0                         |
+|         |                                                                    |                                                                    |                                                                   |
  and then calculate the correlation and draw the heatmaps between the user rating (i.e., 10, 20, …, 50) and sentiment analysis scores (for heatmap, use higher resolutions by dividing the region [-1,1] into 20 subregions to give a 20x5 heatmap).
 * Assessing Sentiment analysis tool quality
+** Chinese Sentiment analysis quality
+|         | Baidu Chinese sentiment analysis tool's score (Google Standard) | Google Chinese sentiment analysis tool's score   |
+|---------+-----------------------------------------------------------------+--------------------------------------------------|
+| ranking | 0.3552 (pearson Correlation) p-value: 0.0                       | 0.3897 (pearson correlation) p-value: 0.0        |
+| ranking | 0.3419 (spearman correlation) p-value: 0.0                      | 0.3982 (spearman correlation) p-value: 0.0       |
+| ranking | 0.3552 (point biserial) p-value: 0.0                            | 0.3897 (point biserial correlation) p-value: 0.0 |
+| ranking | 0.2842 (kendall correlation) p-value: 0.0                       | 0.3281 (kendall correlation) p-value: 0.0        |
+|         |                                                                 |                                                  |
+
 [[./img/beforeNornBoxplot.jpg]]
 [[./img/afterNornBoxplot.jpg]]
 [[./img/heatmap.jpg]]

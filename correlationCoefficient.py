@@ -26,7 +26,7 @@ with open('goodDataLatest.csv', "r") as csvfile:
     index = 0
     for row in readCSV:
         if index != 0:
-            ranking = np.append(ranking, row[0])
+            ranking = np.append(ranking, float(row[0]))
             GooogleScoreOriginData = np.append(GooogleScoreOriginData, float(row[11]))
             GoogleScoreGoogleTranslatedData = np.append(GoogleScoreGoogleTranslatedData, float(row[13]))
             GoogleScoreYandexTranslatedData = np.append(GoogleScoreYandexTranslatedData, float(row[16]))
