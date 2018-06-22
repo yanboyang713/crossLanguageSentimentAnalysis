@@ -89,7 +89,7 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 
  - Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
 
-[[./img/heatmap.jpg]]
+[[./img/heatmap.png]]
 2. Compare correlation coefficient between sentiment analysis results and user rating
    1. Divide the sentiment analysis scores between [-1,1] into 5 regions, which are 10, 20, 30, 40, 50. Each interval is 0.4.
 | regions | scope        |
@@ -115,7 +115,10 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 | ranking | 0.1687 (spearman correlation) p-value: 0.0                         | 0.1682 (spearman correlation) p-value: 0.0                         | 0.1624 (spearman correlation) p-value: 0.0                        |
 | ranking | 0.1638 (point biserial correlation) p-value: 0.0                   | 0.1645 (point biserial correlation) p-value: 0.0                   | 0.1611 (point biserial correlation) p-value: 0.0                  |
 | ranking | 0.1455 (kendall correlation) p-value: 0.0                          | 0.1447 (kendall correlation) p-value: 0.0                          | 0.1394 (kendall correlation) p-value: 0.0                         |
-|         |                                                                    |                                                                    |                                                                   |
+3. draw heatmap
+   1. Divide the sentiment analysis scores between [-1, 1] into 20 regions, 0, 1, 2, 3 ... 18, 19. Each interval is 0.1
+
+
  and then calculate the correlation and draw the heatmaps between the user rating (i.e., 10, 20, …, 50) and sentiment analysis scores (for heatmap, use higher resolutions by dividing the region [-1,1] into 20 subregions to give a 20x5 heatmap).
 * Assessing Sentiment analysis tool quality
 ** Chinese Sentiment analysis quality
