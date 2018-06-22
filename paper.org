@@ -96,7 +96,7 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 |---------+--------------|
 |      10 | [-1, -0.6]   |
 |      20 | (-0.6, -0.2] |
-|      30 | (-0.2, -0.2) |
+|      30 | (-0.2, 0.2)  |
 |      40 | [0.2, 0.6)   |
 |      50 | [0.6, 1]     |
    2. calculate correlation coefficient between regions and user rating
