@@ -2,6 +2,26 @@ import math
 import numpy as np
 import csv
 
+heatmap = np.array([[0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0]])
 ranking = np.array([])
 GooogleScoreOriginData = np.array([])
 GoogleScoreGoogleTranslatedData = np.array([])
@@ -43,21 +63,41 @@ with open('goodDataLatest.csv', "r") as csvfile:
 
         index += 1
 
-def divideScoresIntoTenterRegions(num):
-    return math.floor()
-    if num >= -1 and num <= -0.6:
-        return 10
-    elif num > -0.6 and num <= -0.2:
-        return 20
-    elif num > -0.2 and num < 0.2:
-        return 30
-    elif num >= 0.2 and num < 0.6:
-        return 40
-    elif num >= 0.6 and num <= 1:
-        return 50
-for index in range(0, ranking.size):
-    BaiduAnalysisOriginDataGoogleStandard[index] = divideScoresIntoFiveRegions(BaiduAnalysisOriginDataGoogleStandard[index])
+def divideScoresIntoTwentyRegions(num):
+    return math.floor((num + 1) * 10)
+def divedeRanking(ranking):
+    if ranking == 10:
+        return 0
+    elif ranking == 20:
+        return 1
+    elif ranking == 30:
+        return 2
+    elif ranking == 40:
+        return 3
+    elif ranking == 50:
+        return 4
+    else:
+        return -1
 
-list = np.arange(0.0, 3.0, 0.1)
-for x in range(0,30):
-    print (list[x], " " ,)
+for index in range(0, ranking.size):
+    temp = divedeRanking(ranking[index])
+    if temp != -1:
+        ranking[index] = temp
+
+    print ("before: ", GooogleScoreOriginData[index])
+    GooogleScoreOriginData[index] = int(divideScoresIntoTwentyRegions(round(GooogleScoreOriginData[index], 2)))
+    print ("after: ", GooogleScoreOriginData[index])
+    GoogleScoreGoogleTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreGoogleTranslatedData[index])
+    GoogleScoreYandexTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreYandexTranslatedData[index])
+    GoogleScoreBaiduTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreBaiduTranslatedData[index])
+
+    BaiduAnalysisOriginDataGoogleStandard[index] = divideScoresIntoTwentyRegions(BaiduAnalysisOriginDataGoogleStandard[index])
+    BaiduAnalysisGoogleTranslatedDataGoogleStandard[index] = divideScoresIntoTwentyRegions(BaiduAnalysisGoogleTranslatedDataGoogleStandard[index])
+    BaiduAnalysisYandexTranslatedDataGoogleStandard[index] = divideScoresIntoTwentyRegions(BaiduAnalysisYandexTranslatedDataGoogleStandard[index])
+    BaiduAnalysisBaiduTranslatedDataGoogleStandard[index] = divideScoresIntoTwentyRegions(BaiduAnalysisBaiduTranslatedDataGoogleStandard[index])
+
+tempIndex = ranking.size
+for index in range(0, ranking.size):
+    heatmap[int(GooogleScoreOriginData[index])][int(ranking[index])] = heatmap[int(GooogleScoreOriginData[index])][int(ranking[index])] + 1
+
+print (heatmap)
