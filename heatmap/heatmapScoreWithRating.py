@@ -64,7 +64,15 @@ with open('goodDataLatest.csv', "r") as csvfile:
         index += 1
 
 def divideScoresIntoTwentyRegions(num):
-    return math.floor((num + 1) * 10)
+    print ("num = ", num)
+    if num == -0.8:
+        print ("&&&&&&&&&&&&&&&")
+    if num == -1:
+        return 0
+    elif num == 1:
+        return 19
+    else:
+        return math.floor((num + 1) * 10) - 1
 def divedeRanking(ranking):
     if ranking == 10:
         return 0
@@ -85,8 +93,11 @@ for index in range(0, ranking.size):
         ranking[index] = temp
 
     print ("before: ", GooogleScoreOriginData[index])
-    GooogleScoreOriginData[index] = int(divideScoresIntoTwentyRegions(round(GooogleScoreOriginData[index], 2)))
+    GooogleScoreOriginData[index] = divideScoresIntoTwentyRegions(np.around(GooogleScoreOriginData[index], decimals = 1))
+
     print ("after: ", GooogleScoreOriginData[index])
+    if GooogleScoreOriginData[index] == 2:
+        print ("*********************")
     GoogleScoreGoogleTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreGoogleTranslatedData[index])
     GoogleScoreYandexTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreYandexTranslatedData[index])
     GoogleScoreBaiduTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreBaiduTranslatedData[index])
