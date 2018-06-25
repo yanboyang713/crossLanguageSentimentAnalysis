@@ -64,15 +64,61 @@ with open('goodDataLatest.csv', "r") as csvfile:
         index += 1
 
 def divideScoresIntoTwentyRegions(num):
-    print ("num = ", num)
-    if num == -0.8:
-        print ("&&&&&&&&&&&&&&&")
+    print ("before num = ", num)
+
+    num = np.around(num, decimals = 1)
+    print ("after num = ", num)
     if num == -1:
         return 0
     elif num == 1:
         return 19
-    else:
-        return math.floor((num + 1) * 10) - 1
+    elif num == -0.8:
+        print ("*******")
+    '''
+    if num == -0.9 or num == -1:
+        return 0
+    elif num == -0.8:
+        return 1
+    elif num == 0.7:
+        return 2
+    elif num == -0.6:
+        return 3
+    elif num == -0.5:
+        return 4
+    elif num == -0.4:
+        return 5
+    elif num == -0.3:
+        return 6
+    elif num == -0.2:
+        return 7
+    elif num == -0.1:
+        return 8
+    elif num == 0.0:
+        return 9
+    elif num == 0.1:
+        return 10
+    elif num == 0.2:
+        return 11
+    elif num == 0.3:
+        return 12
+    elif num == 0.4:
+        return 13
+    elif num == 0.5:
+        return 14
+    elif num == 0.6:
+        return 15
+    elif num == 0.7:
+        return 16
+    elif num == 0.8:
+        return 17
+    elif num == 0.9:
+        return 18
+    elif num == 1:
+        return 19
+    np.around(num, decimals = 1)
+    '''
+    print ("return = ", int(math.floor((num + 1) * 10)) - 1)
+    return np.around((num + 1) * 10 - 1, decimals = 1)
 def divedeRanking(ranking):
     if ranking == 10:
         return 0
@@ -92,12 +138,7 @@ for index in range(0, ranking.size):
     if temp != -1:
         ranking[index] = temp
 
-    print ("before: ", GooogleScoreOriginData[index])
-    GooogleScoreOriginData[index] = divideScoresIntoTwentyRegions(np.around(GooogleScoreOriginData[index], decimals = 1))
-
-    print ("after: ", GooogleScoreOriginData[index])
-    if GooogleScoreOriginData[index] == 2:
-        print ("*********************")
+    GooogleScoreOriginData[index] = divideScoresIntoTwentyRegions(GooogleScoreOriginData[index])
     GoogleScoreGoogleTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreGoogleTranslatedData[index])
     GoogleScoreYandexTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreYandexTranslatedData[index])
     GoogleScoreBaiduTranslatedData[index] = divideScoresIntoTwentyRegions(GoogleScoreBaiduTranslatedData[index])
