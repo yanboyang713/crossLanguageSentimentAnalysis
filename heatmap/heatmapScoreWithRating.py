@@ -171,3 +171,135 @@ trace = go.Heatmap(z = newHeatmap,
 
 data=[trace]
 py.iplot(data, filename='GoogleSentimentGoogleTranslatedData')
+#google Yandex translate data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(GoogleScoreYandexTranslatedData [index])][int(ranking[index])] = heatmap[int(GoogleScoreYandexTranslatedData [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='GoogleSentimentYandexTranslatedData')
+#google baidu translate data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(GoogleScoreBaiduTranslatedData [index])][int(ranking[index])] = heatmap[int(GoogleScoreBaiduTranslatedData [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='GoogleSentimentBaiduTranslatedData')
+#baidu sentiment origin data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(BaiduAnalysisOriginDataGoogleStandard [index])][int(ranking[index])] = heatmap[int(BaiduAnalysisOriginDataGoogleStandard [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='BaiduSentimentOriginData')
+#baidu sentiment Google translated data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(BaiduAnalysisGoogleTranslatedDataGoogleStandard [index])][int(ranking[index])] = heatmap[int(BaiduAnalysisGoogleTranslatedDataGoogleStandard [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='BaiduSentimentGoogleTranslatedData')
+#baidu sentiment Yandex translated data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(BaiduAnalysisYandexTranslatedDataGoogleStandard [index])][int(ranking[index])] = heatmap[int(BaiduAnalysisYandexTranslatedDataGoogleStandard [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='BaiduSentimentYandexTranslatedData')
+#baidu sentiment Baidu translated data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(BaiduAnalysisBaiduTranslatedDataGoogleStandard [index])][int(ranking[index])] = heatmap[int(BaiduAnalysisBaiduTranslatedDataGoogleStandard [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='BaiduSentimentBaiduTranslatedData')
