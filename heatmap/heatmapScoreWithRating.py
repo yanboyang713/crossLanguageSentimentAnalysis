@@ -1,7 +1,10 @@
 import math
 import numpy as np
 import csv
-
+import plotly.plotly as py
+import plotly.graph_objs as go
+import plotly
+plotly.tools.set_config_file(world_readable = True)
 heatmap = np.array([[0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0],
@@ -43,7 +46,10 @@ newHeatmap = np.array([[0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0]])
-
+def initHeatmap(heatmap):
+    for x in range (0, 20):
+        for y in range (0, 5):
+            heatmap[x][y] = 0
 ranking = np.array([])
 GooogleScoreOriginData = np.array([])
 GoogleScoreGoogleTranslatedData = np.array([])
@@ -121,6 +127,9 @@ for index in range(0, ranking.size):
     BaiduAnalysisYandexTranslatedDataGoogleStandard[index] = divideScoresIntoTwentyRegions(BaiduAnalysisYandexTranslatedDataGoogleStandard[index])
     BaiduAnalysisBaiduTranslatedDataGoogleStandard[index] = divideScoresIntoTwentyRegions(BaiduAnalysisBaiduTranslatedDataGoogleStandard[index])
 
+#google origin data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
 for index in range(0, ranking.size):
     heatmap[int(GooogleScoreOriginData[index])][int(ranking[index])] = heatmap[int(GooogleScoreOriginData[index])][int(ranking[index])] + 1
 
@@ -131,3 +140,34 @@ for y in range (0, 5):
         newHeatmap[x][y] = heatmap[newX][y]
         newX = newX - 1
 print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='GoogleOriginData')
+#google google translate data with ranking
+initHeatmap(heatmap)
+initHeatmap(newHeatmap)
+for index in range(0, ranking.size):
+    heatmap[int(GoogleScoreGoogleTranslatedData [index])][int(ranking[index])] = heatmap[int(GoogleScoreGoogleTranslatedData [index])][int(ranking[index])] + 1
+
+print (heatmap)
+for y in range (0, 5):
+    newX = 19
+    for x in range (0, 20):
+        newHeatmap[x][y] = heatmap[newX][y]
+        newX = newX - 1
+print (newHeatmap)
+
+trace = go.Heatmap(z = newHeatmap,
+                   x = ['10', '20', '30', '40', '50'],
+
+                   y = ['1', '0.9', '0.8', '0.7', '0.6', '0.5', '0.4', '0.3', '0.2', '0.1', '0', '-0.1', '-0.2', '-0.3', '-0.4', '-0.5', '-0.6', '-0.7', '-0.8', '-0.9', '-1'],
+)
+
+data=[trace]
+py.iplot(data, filename='GoogleSentimentGoogleTranslatedData')
