@@ -231,10 +231,81 @@ upperExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.d
   filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. > info$upperExtreme[1])
 write.csv(upperExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataUpperExtremeOutlinerOnRanking10.csv", row.names = FALSE, na="")
 
+#ranking 20
+lowerExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "20")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. < info$lowerExtreme[2])
+write.csv(lowerExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataLowerExtremeOutlinerOnRanking20.csv", row.names = FALSE, na="")
+
+upperExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "20")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. > info$upperExtreme[2])
+write.csv(upperExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataUpperExtremeOutlinerOnRanking20.csv", row.names = FALSE, na="")
+#ranking 30
+lowerExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "30")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. < info$lowerExtreme[3])
+write.csv(lowerExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataLowerExtremeOutlinerOnRanking30.csv", row.names = FALSE, na="")
+
+upperExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "30")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. > info$upperExtreme[3])
+write.csv(upperExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataUpperExtremeOutlinerOnRanking30.csv", row.names = FALSE, na="")
+
+#ranking 40
+lowerExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "40")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. < info$lowerExtreme[4])
+write.csv(lowerExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataLowerExtremeOutlinerOnRanking40.csv", row.names = FALSE, na="")
+
+upperExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "40")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. > info$upperExtreme[4])
+write.csv(upperExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataUpperExtremeOutlinerOnRanking40.csv", row.names = FALSE, na="")
 
 
+#ranking 50
+lowerExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "50")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. < info$lowerExtreme[5])
+write.csv(lowerExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataLowerExtremeOutlinerOnRanking50.csv", row.names = FALSE, na="")
+
+upperExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "50")%>%
+  filter(Baidu.English.sentiment.analysis.postitive.probability.base.on.Baidu.translated.data. > info$upperExtreme[5])
+write.csv(upperExtreme, file = "BaiduSentimentAnalysisBaseOnBaiduTranslatedDataUpperExtremeOutlinerOnRanking50.csv", row.names = FALSE, na="")
 
 
+#Google sentiment analysis base.on.Baidu.translated.data.
+info <-
+  data %>% group_by(ranking) %>% 
+  summarise(IQR=IQR(Google.English.sentiment.analysis.score.base.on.Baidu.translated.data.), Mean=mean(Google.English.sentiment.analysis.score.base.on.Baidu.translated.data.), Median=median(Google.English.sentiment.analysis.score.base.on.Baidu.translated.data.), Q1=quantile (Google.English.sentiment.analysis.score.base.on.Baidu.translated.data., probs=0.25), Q3=quantile(Google.English.sentiment.analysis.score.base.on.Baidu.translated.data., probs=0.75))
+
+lowerExtreme <- info$Q1 - 1.5 * info$IQR
+upperExtreme <- info$Q3 + 1.5 * info$IQR
+info <- cbind(info, lowerExtreme, upperExtreme)
+rm(lowerExtreme, upperExtreme)
+
+#slope first Argument: vector values of independent variable, usually time. Second argument: vector values of dependent variable, usually concentration
+meanSlope <- lm(info$Mean ~ info$ranking)$coeff[2]
+medianSlope <- lm(info$Median ~ info$ranking)$coeff[2]
+
+meanSlope
+medianSlope
+info
+
+write.csv(info, file = "GoogleSentimentAnalysisBaseOnBaiduTranslatedDataInfo.csv", row.names = FALSE, na="")
+
+#ranking 20
+lowerExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Google.English.sentiment.analysis.score.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "20")%>%
+  filter(Google.English.sentiment.analysis.score.base.on.Baidu.translated.data. < info$lowerExtreme[2])
+write.csv(lowerExtreme, file = "GoogleSentimentAnalysisBaseOnBaiduTranslatedDataLowerExtremeOutlinerOnRanking20.csv", row.names = FALSE, na="")
+
+upperExtreme <- data %>% select(ranking, Chinese.origin.data, Baidu.translated.data, Google.English.sentiment.analysis.score.base.on.Baidu.translated.data.) %>%
+  filter(ranking == "20")%>%
+  filter(Google.English.sentiment.analysis.score.base.on.Baidu.translated.data. > info$upperExtreme[2])
+write.csv(upperExtreme, file = "GoogleSentimentAnalysisBaseOnBaiduTranslatedDataUpperExtremeOutlinerOnRanking20.csv", row.names = FALSE, na="")
 
 
 
