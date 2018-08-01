@@ -19,7 +19,71 @@ Total have 46180 movies reviews.
 | Ranking 40 |                7663 | 16.59 %    |
 | Ranking 50 |                3732 | 8.08 %     |
 
+* IQR, Mean, Median, Q1, Q3, lower extreme, upper extreme, mean slope, median slope
+** Baidu Chinese Sentiment analysis Positive Probability Base On (Chinese Origin Data)
+| Ranking |       IQR |      Mean |    Median |        Q1 |        Q3 | lowerExtreme | upperExtreme |
+|---------+-----------+-----------+-----------+-----------+-----------+--------------+--------------|
+|      10 | 0.3426533 | 0.2404781 | 0.1789910 | 0.0489987 | 0.3916520 |   -0.4649812 |    0.9056319 |
+|      20 | 0.3817485 | 0.2949725 | 0.2489580 | 0.0878135 | 0.4695620 |   -0.4848092 |    1.0421847 |
+|      30 | 0.4504405 | 0.3980354 | 0.3808120 | 0.1516095 | 0.6020500 |   -0.5240512 |    1.2777107 |
+|      40 | 0.5255830 | 0.5123376 | 0.5385910 | 0.2461685 | 0.7717515 |   -0.5422060 |    1.5601260 |
+|      50 | 0.5368080 | 0.5712128 | 0.6188395 | 0.3101650 | 0.8469730 |   -0.4950470 |    1.6521850 |
++ Mean Slope
+0.008788344
++ Median Slope
+0.0116933
+** Baidu Sentiment analysis Positive Probability Base On (Google Translated Data)
+| ranking |       IQR |      Mean |   Median |        Q1 |        Q3 | lowerExtreme | upperExtreme |
+|---------+-----------+-----------+----------+-----------+-----------+--------------+--------------|
+|      10 | 0.0992950 | 0.5109406 | 0.512129 | 0.4495650 | 0.5488600 |    0.3006225 |    0.6978025 |
+|      20 | 0.1083630 | 0.5229484 | 0.518486 | 0.4562780 | 0.5646410 |    0.2937335 |    0.7271855 |
+|      30 | 0.1311445 | 0.5396073 | 0.528391 | 0.4674360 | 0.5985805 |    0.2707192 |    0.7952972 |
+|      40 | 0.1795885 | 0.5673052 | 0.543921 | 0.4839135 | 0.6635020 |    0.2145307 |    0.9328848 |
+|      50 | 0.1873947 | 0.5882316 | 0.557420 | 0.5017473 | 0.6891420 |    0.2206551 |    0.9702341 |
 
++ Mean Slope
+0.001989388
++ Median Slope
+0.00116017
+
+** Baidu Sentiment analysis Positive Probability Base On (Yandex Translated Data)
++ Mean Slope
+0.002034071
++ Median Slope
+0.00139647
+| ranking |       IQR |      Mean |   Median |        Q1 |        Q3 | lowerExtreme | upperExtreme |
+|---------+-----------+-----------+----------+-----------+-----------+--------------+--------------|
+|      10 | 0.1095430 | 0.5180638 | 0.515600 | 0.4527060 | 0.5622490 |    0.2883915 |    0.7265635 |
+|      20 | 0.1132460 | 0.5348823 | 0.524710 | 0.4697750 | 0.5830210 |    0.2999060 |    0.7528900 |
+|      30 | 0.1437290 | 0.5512503 | 0.532877 | 0.4769425 | 0.6206715 |    0.2613490 |    0.8362650 |
+|      40 | 0.1861070 | 0.5825192 | 0.555963 | 0.4933645 | 0.6794715 |    0.2142040 |    0.9586320 |
+|      50 | 0.1965927 | 0.5959489 | 0.569797 | 0.5031990 | 0.6997917 |    0.2083099 |    0.9946809 |
+
+** Baidu Sentiment analysis Positive Probability Base On (Baidu Translated Data)
++ Mean Slope
+0.002024859
++ Median Slope
+0.00135257
+| ranking |       IQR |      Mean |    Median |        Q1 |       Q3 | lowerExtreme | upperExtreme |
+|---------+-----------+-----------+-----------+-----------+----------+--------------+--------------|
+|      10 | 0.0998390 | 0.5242141 | 0.5189600 | 0.4636380 | 0.563477 |    0.3138795 |    0.7132355 |
+|      20 | 0.1116160 | 0.5328661 | 0.5240450 | 0.4693390 | 0.580955 |    0.3019150 |    0.7483790 |
+|      30 | 0.1476325 | 0.5502528 | 0.5343010 | 0.4763575 | 0.623990 |    0.2549087 |    0.8454388 |
+|      40 | 0.1813430 | 0.5819689 | 0.5544210 | 0.4933320 | 0.674675 |    0.2213175 |    0.9466895 |
+|      50 | 0.1975785 | 0.6009056 | 0.5714005 | 0.5055505 | 0.703129 |    0.2091828 |    0.9994968 |
+
+** Google English Sentiment Analysis Score Base On (Baidu Translated Data)
++ Mean Slope
+0.01418969
++ Median Slope
+0.012
+| ranking | IQR |        Mean | Median |   Q1 |  Q3 | lowerExtreme | upperExtreme |
+|---------+-----+-------------+--------+------+-----+--------------+--------------|
+|      10 | 0.7 | -0.28185775 |   -0.3 | -0.7 | 0.0 |        -1.75 |         1.05 |
+|      20 | 0.5 | -0.18345972 |   -0.1 | -0.5 | 0.0 |        -1.25 |         0.75 |
+|      30 | 0.6 | -0.01048511 |    0.0 | -0.3 | 0.3 |        -1.20 |         1.20 |
+|      40 | 0.6 |  0.17350907 |    0.1 | -0.1 | 0.5 |        -1.00 |         1.40 |
+|      50 | 0.6 |  0.24914255 |    0.2 |  0.0 | 0.6 |        -0.90 |         1.50 |
 * Assessing Machine translation tool quality
 
 ** Method
@@ -49,7 +113,6 @@ Total have 46180 movies reviews.
 | Baidu Positive Probability for origin data | 0.288 (Point Biserial) p-value: 0.0                   | 0.280 (Point Biserial) p-value: 0.0                   | 0.237 (Point Biserial) p-value: 0.0                  |
 
  - Google translation tool quality > Yandex translation tool quality > Baidu translation tool quality
-
 [[./img/heatmap.png]]
 2. Compare correlation coefficient between sentiment analysis results and user rating
    1. Divide the sentiment analysis scores between [-1,1] into 5 regions, which are 10, 20, 30, 40, 50. Each interval is 0.4.
