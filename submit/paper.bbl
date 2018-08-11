@@ -1,0 +1,69 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{b1}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=9d8436c74b43421234843599c6f10e3b}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Haiyun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=db089768b8819956d932b3c8db18d498}{%
+           family={Cambria},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8ad3729a7efea6d2ab38e43640ab6f27}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7ed00b22e0ea74facd35295e5347ddd1}
+      \strng{fullhash}{7ed00b22e0ea74facd35295e5347ddd1}
+      \strng{bibnamehash}{7ed00b22e0ea74facd35295e5347ddd1}
+      \strng{authorbibnamehash}{7ed00b22e0ea74facd35295e5347ddd1}
+      \strng{authornamehash}{7ed00b22e0ea74facd35295e5347ddd1}
+      \strng{authorfullhash}{7ed00b22e0ea74facd35295e5347ddd1}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cognitive Computation}
+      \field{number}{4}
+      \field{title}{A review of sentiment analysis research in Chinese language}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{423\bibrangedash 435}
+      \range{pages}{13}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
