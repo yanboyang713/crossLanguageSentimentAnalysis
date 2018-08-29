@@ -26,9 +26,37 @@ A.~Yadollahi, A.~G. Shahraki, and O.~R. Zaiane, ``Current state of text
   sentiment analysis from opinion to emotion mining,'' \emph{ACM Computing
   Surveys (CSUR)}, vol.~50, no.~2, p.~25, 2017.
 
+\bibitem{ChineseSentimentAnalysis}
+H.~Peng, E.~Cambria, and A.~Hussain, ``A review of sentiment analysis research
+  in chinese language,'' \emph{Cognitive Computation}, vol.~9, no.~4, pp.
+  423--435, 2017.
+
+\bibitem{machineTranslation}
+\BIBentryALTinterwordspacing
+``machine translation (1950s) linguistics.'' \emph{Dictionary of Theories}, p.
+  323, 2002. [Online]. Available:
+  \url{http://ezproxy.uow.edu.au/login?url=https://search-ebscohost-com.ezproxy.uow.edu.au/login.aspx?direct=true\&db=f6h\&AN=40423164\&site=eds-live}
+\BIBentrySTDinterwordspacing
+
 \bibitem{roundTripTranslation}
 H.~Somers, ``Round-trip translation: What is it good for?'' in
   \emph{Proceedings of the Australasian Language Technology Workshop 2005},
   2005, pp. 127--133.
+
+\bibitem{thirdPartMachineTranslation}
+D.~Pesu, Z.~Q. Zhou, J.~Zhen, and D.~Towey, ``A monte carlo method for
+  metamorphic testing of machine translation services,'' in \emph{Proceedings
+  of the 3rd International Workshop on Metamorphic Testing}.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 2018, pp. 38--45.
+
+\bibitem{testingMethodReview}
+A.~Sethi, ``A review paper on levels, types \& techniques in software
+  testing,'' \emph{International Journal of Advanced Research in Computer
+  Science}, vol.~8, no.~7, 2017.
+
+\bibitem{zhou2016metamorphic}
+Z.~Zhou, S.~Xiang, and T.~Y. Chen, ``Metamorphic testing for software quality
+  assessment: A study of search engines.'' \emph{IEEE Trans. Software Eng.},
+  vol.~42, no.~3, pp. 260--280, 2016.
 
 \end{thebibliography}

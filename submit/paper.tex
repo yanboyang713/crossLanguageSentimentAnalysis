@@ -52,6 +52,17 @@ sentiment analysis, machine translation
 \end{IEEEkeywords}
 
 \section{Introduction}
+
+Social Media is becoming more and more popular. There are lots of text comments
+on different discussion topics every day.
+It would be impossible to analysise the huge amount of data generated manually.
+These topics are discussed by speakers of different languages, from different
+cultural backgrounds, further complicating any analysis.
+Most people enounter language and culture barriers during cross-language
+communication.
+In this paper, the use of machine translation and sentiment analysis tools to
+solve this problem of analysing cross-cultural and cross-language data is
+explored and discussed.
 Sentiment analysis is a part of text data mining. The aim of sentiment analysis
 is to determine the attitude of speakers or writers with respect to some topic
 or the overall contextual polarity or emotional reaction to a text document. It is usually equated with
@@ -62,7 +73,6 @@ opinions. It can be used in an e-business context. For example, business manager
 customers' attitudes, as to whether they like or dislike their product or service.
 Also, government can use sentiment analysis to analyze citizen perspectives.
 In a word, sentiment analysis is coming into widespread use.
-
 As Dr. Haiyun mentions, English language sentiment analysis research has
 undergone major developments in recent years \cite{ChineseSentimentAnalysis}.
 However, less research has been undertaken in other languages, such as Chinese.
@@ -71,47 +81,109 @@ developed. Also, lots of Machine Translation tools are available, such as Google
 translation, Bing translation and Yandex translation.
 Manchine Translation uses computational linguistic programs and natural language
 processing theory \cite{machineTranslation}.
-
 However, nobody working in a combination of these two fields of research has undertaken non-English
 sentiment analysis. Therefore, the research described and discussed in this
 document aimed to create a testing model to find the best-combination of English
 sentiment analysis tools and machine translation tools to obtain reliable
 sentiment analysis results from non-English texts, for non-English speakers who
 do not have such sentiment analysis tools to analyze their own language.
+In the end, everyone to be able to understand different language speakers' attitudes (positive or negative), emotions and opinions.\\
 \section{Literature Review}
 This research consists of three components.
 Firstly, measuring machine translation service quality.
 Secondly, testing sentiment analysis service quality.
 Thirdly, finding the best compound mode for machine translation service and
 sentiment analysis service.
-As a result, this section will fouced on machine translation and sentiment
-analysis.
+As a result, this section will fouced doing literature review on machine
+translation, Testing methodology and sentiment analysis.
+\subsection{Testing in Machine translation}
+There are two research articles about testing modeling of machine
+translation(MT).
 
-\subsection{Machine Translation}
-There are two research articles about testing modeling of machine translation.
-
-\paragraph{Around Trip Translation Method}
-\cite{roundTripTranslation}
-As Somers argue that they establish an around trip translation method for detect
-the quality of machine translation.
+\paragraph{Around Trip Translation method}
+As Somers argue that they establish an
+around trip translation (RTT) method for detect the quality of machine translation \cite{roundTripTranslation}.
 For example, testing English to Chinese translation tool.
 Firstly, using English to Chinese translation tool translate test data to
 Chinese.
 Secondly, translation Chinese translated data back to English.
 Finally, compare the similarity for two English data set.
+They also metion two similarity metrics BLEU and F-score, to judge the
+translations. The limitation of RTT modle are it cannot tell which one is good
+MT from all bad MT tools as well as cannot find which sentences are easier for
+translation and which sentences are harder for translation.
 
-\paragraph{Translation Method}
+\paragraph{A monte carlo method for machine translation services}
 Another article is about using third-party language to test the quality of machine
-translation (Pesu, 2017). For example, if testing English to Chinese translation
-tool. Firstly, random choice an Intermediate third-party language. Secondly,
-translation English test data to the third-party language, after translation
-third-party language to Chinese. These two steps are only finished one path.
-Another path is a translation in English directly to Chinese. In the end, the
-comparison the two paths of results similarity. In this article, the main
+translation \cite{thirdPartMachineTranslation}.
+For example, if testing English to Chinese translation tool.
+Firstly, random choice an Intermediate third-party language.
+Secondly, translation English test data to the third-party language, after
+translation third-party language to Chinese.
+These two steps are only finished one path.
+Another path is a translation in English directly to Chinese.
+In the end, the comparison the two paths of results similarity. In this article, the main
 finding is Google Translate is the best machine translation. In addition, there
 is a tendency to be produced better results in European languages, which use
-ANOVA Statistics method getting this conclusion. In my experiment, I also got
-Google Translator is the best machine translation compare with Yandex and Baidu.
+ANOVA Statistics method and Pairwise t tests getting this conclusion.
+In my experiment, I also got Google Translator is the best machine translation compare with Yandex and Baidu.
+
+\subsection{Testing methodology}
+Accounting to Sethi said that there are two categorized testing
+techniques, which are Static Testing and Dynamic Testing. The Dynamic Testing
+are divided into three categories, which are Functional Testing, Structural
+testing and Non-Functional Testing \cite{testingMethodReview}.
+In my research project, I will focus on Functional Testing on this project.
+
+\paragraph{Metamorphic Testing}
+The proposed of this research project is based on Metamorphic Testing.
+Metamorphic Testing is for testing function correctness.
+There is a research article written by Zhou in 2016. This article is
+well-explained for what is Metamorphic Testing.
+As Zhou said, Metamorphic testing (MT) is a property-based software testing
+method developed for automated test case generation and automated result
+verification, based on the effects of some expected properties of the target
+program \cite{zhou2016metamorphic}.
+These properties, recognized as metamorphic relations (MRs), serve as essential
+relations among the inputs and outcomes of multiple executions of the target
+program.
+For instance, test calculator function correctness will be shown if input 1 + 1,
+and the result will be 2. In this example people can easily make the judgment,
+correct or not.
+However, people will not easy to make this judgment quickly if input sin (3.7),
+and the calculator gives a output.
+In a generally acknowledged, Sin (3.7) = sin (3.7 + 360) is correct.
+In metamorphic testing, the name of 3.7 is the test case. The name of 3.7 + 360
+is the follow-up test case.
+Metamorphic Relation is the relationship between two input test cases as well as
+the two outputs.
+Metamorphic testing is based on Metamorphic Relation.
+The two outputs need an existing mathematical relation.
+In this example, the relation is “=”. The advantage of Metamorphic testing (MT)
+method, which can automate result verification and test case generation.
+The disadvantage is that cannot detect memory leak or some others insensitivity
+failure situation.
+However, Metamorphic Testing is appropriate for testing translation tools and
+sentiment analysis tools.
+\subparagraph{Effectiveness of Metamorphic Relations}
+I have read an article which was written by Zhou in 2013. The main purpose of reading this article is to find the best one among the three testing modelings. This article is based on white-box testing, which have source code, as well as the most important conclusion is if the Metamorphic Relations can get bigger distance (dissimilarity) that will have more chance to detect failures.  In other words, MRs with very different initial and follow-up execution are more likely to detect failures than those with similar initial and follow-up executions. The concept of “difference” are defined in namely coverage Manhattan distance (CMD), frequency Manhattan distance (FMD), and frequency Hamming distance (FHD) in regard to adaptive random testing (ART), where CMD metric on the basis of branch coverage execution profiles performs the best fault-detection effectiveness.
+ I think the advantage of this article is suitable for finding the most effectiveness of Metamorphic Relations in White-box. However, this article is not suitable for Black - Box Testing. The reason is Black Box Testing have not source code available, so it cannot calculation the program’s distance. In this research project, my testing modeling have not source code available. So, I have found another research article (Henard，2016)talking about the difference between black-box testing and white-box testing.
+
+\subparagraph{White-box VS Black-box}
+Henard (2016) have done some research for difference between white box testing
+and black - box testing in 2016. They have two finding is useful in my research
+black-box testing and white-box testing performance just have a little
+difference (at most 4 fault detection rate difference). They also found
+black-box testing and white-box testing the overlap is
+very high. The first 10 of the prioritized test data
+already agree on at least 60 of the faults found. As the
+result, this research article has given me a lot of idea
+for how similar between white box testing and black box
+testing. I still have opportunity for compare those three
+modelings, which one is better.
+
+
+
 
 The three different machine translation testing modeling, we can call the three
 different Metamorphic Relations. So, I have found a research article(Cao,2013)
@@ -136,7 +208,10 @@ Ranking 50 & 3732 & 8.08 \%\\
 \end{tabular}
 
 \section{IQR, Mean, Median, Q1, Q3, lower extreme, upper extreme, mean slope, median slope}
-\subsection{Baidu Chinese Sentiment analysis Positive Probability Base On (Chinese Origin Data)}
+\subsection{Baidu Chinese Sentiment analysis Positive Probability Base On
+  (Chinese Origin Data)}
+\begin{wraptable}{r}{0.5\textwidth}
+\caption{A wrapped table going nicely inside the text.}\label{wrap-tab:1}
 \begin{tabularx}{\textwidth}{ |X|X|X|X|X|X|X|X }
 Ranking & IQR & Mean & Median & Q1 & Q3 & lowerExtreme & upperExtreme\\
 \hline
@@ -146,7 +221,7 @@ Ranking & IQR & Mean & Median & Q1 & Q3 & lowerExtreme & upperExtreme\\
 40 & 0.5255830 & 0.5123376 & 0.5385910 & 0.2461685 & 0.7717515 & -0.5422060 & 1.5601260\\
 50 & 0.5368080 & 0.5712128 & 0.6188395 & 0.3101650 & 0.8469730 & -0.4950470 & 1.6521850\\
 \end{tabularx}
-
+\end{wraptable}
 
 \begin{tabular}{rr}
   \hline
@@ -155,6 +230,7 @@ Ranking & IQR & Mean & Median & Q1 & Q3 & lowerExtreme & upperExtreme\\
   0.008788344 & 0.0116933 \\
   \hline
 \end{tabular}
+\section{Questionnaire}
 
 
 \bibliographystyle{IEEEtran}

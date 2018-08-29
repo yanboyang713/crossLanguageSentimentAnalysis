@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  29 AUG 2018 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  29 AUG 2018 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,38 +526,170 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
 
+Underfull \hbox (badness 3039) in paragraph at lines 56--91
+[]\OT1/ptm/m/n/10 Social Me-dia is be-com-ing more and more pop-u-lar.
+ []
 
-LaTeX Warning: Citation `ChineseSentimentAnalysis' on page 1 undefined on input
- line 67.
+
+Underfull \hbox (badness 2486) in paragraph at lines 56--91
+\OT1/ptm/m/n/10 cul-tural back-grounds, fur-ther com-pli-cat-ing any anal-y-sis
+.
+ []
 
 
-LaTeX Warning: Citation `machineTranslation' on page 1 undefined on input line 
-73.
+Underfull \hbox (badness 10000) in paragraph at lines 56--91
+
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 127--137
+
+LaTeX Warning: Citation `testingMethodReview' on page 2 undefined on input line
+ 135.
+
+
+LaTeX Warning: Citation `zhou2016metamorphic' on page 2 undefined on input line
+ 146.
+
+./paper.tex:168: Undefined control sequence.
+l.168 \subparagraph
+                   {Effectiveness of Metamorphic Relations}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./paper.tex:170: Package inputenc Error: Unicode character ， (U+FF0C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 ...found another research article (Henard，
+                                                  2016)talking about the dif...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--208
 []\OT1/ptm/m/n/10 Total have 46180 movies re-views.
  []
 
 
-Overfull \hbox (4.29936pt too wide) in paragraph at lines 148--148
+./paper.tex:212: LaTeX Error: Environment wraptable undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 \begin{wraptable}
+                       {r}{0.5\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./paper.tex:212: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.212 \begin{wraptable}{r}{0.5\textwidth}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./paper.tex:212: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.212 \begin{wraptable}{r}{0.5\textwidth}
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./paper.tex:213: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 \caption
+              {A wrapped table going nicely inside the text.}\label{wrap-tab:1}
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (4.29936pt too wide) in paragraph at lines 222--222
 []|\OT1/ptm/m/n/10 lowerExtreme| 
  []
 
 
-Overfull \hbox (4.5495pt too wide) in paragraph at lines 148--148
+Overfull \hbox (4.5495pt too wide) in paragraph at lines 222--222
 []|\OT1/ptm/m/n/10 upperExtreme| 
  []
 
 
-Overfull \hbox (274.0pt too wide) in paragraph at lines 148--149
-[][] 
+./paper.tex:223: LaTeX Error: \begin{document} ended by \end{wraptable}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 \end{wraptable}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 212--224
+[]\OT1/ptm/m/n/10 r0.5 A wrapped ta-ble go-ing nicely in-side the text.[]
  []
 
-(./paper.bbl)
+
+Overfull \hbox (264.0pt too wide) in paragraph at lines 212--224
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
+
+ []
+
+[2] (./paper.bbl
+Underfull \hbox (badness 3884) in paragraph at lines 36--40
+[]\OT1/ptm/m/n/8 ``machine trans-la-tion (1950s) lin-guis-tics.'' \OT1/ptm/m/it
+/8 Dic-tio-nary
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 36--40
+\OT1/ptm/m/it/8 of The-o-ries\OT1/ptm/m/n/8 , p. 323, 2002. [On-line]. Avail-ab
+le:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+\OT1/ptm/m/n/8 http://ezproxy.uow.edu.au/login?url=https://search-ebscohost-
+ []
+
+
+Overfull \hbox (34.42984pt too wide) in paragraph at lines 36--40
+\OT1/ptm/m/n/8 com.ezproxy.uow.edu.au/login.aspx?direct=true&db=f6h&AN=40423164
+&site=eds-
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -569,29 +701,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[3
 
 ] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4499 strings out of 492649
- 63837 string characters out of 6135779
- 145008 words of memory out of 5000000
- 8308 multiletter control sequences out of 15000+600000
+ 4505 strings out of 492649
+ 63938 string characters out of 6135779
+ 150017 words of memory out of 5000000
+ 8314 multiletter control sequences out of 15000+600000
  41677 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,35p,435b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,35p,893b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb
 i8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (2 pages, 61755 bytes).
+Output written on paper.pdf (3 pages, 67210 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

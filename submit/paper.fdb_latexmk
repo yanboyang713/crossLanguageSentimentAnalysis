@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1535526036 "paper.aux" "paper.bbl" "paper" 1535526045
+["bibtex paper"] 1535549920 "paper.aux" "paper.bbl" "paper" 1535549920
   "/usr/share/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1525020694 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "library.bib" 1535525043 1137 4f39ce1f58324e3d5bc8828dadabe385 ""
-  "paper.aux" 1535526045 1257 3205d086e5e64bd2ae5a7b9cfaf3dca3 ""
+  "library.bib" 1535542325 2600 edcd929f817c420888578ec79a88b105 ""
+  "paper.aux" 1535549843 1873 d678df1292e3372286322fad5cb03c7f ""
   (generated)
-  "paper.bbl"
   "paper.blg"
-["pdflatex"] 1535526045 "paper.tex" "paper.pdf" "paper" 1535526045
+  "paper.bbl"
+["pdflatex"] 1535549843 "paper.tex" "paper.pdf" "paper" 1535549843
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1525040112 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1525040097 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1525040099 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -85,10 +85,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1534606649 2714769 6ccc9724b91625c240b3b10e4d38d609 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1530491429 7906415 69db99a01c566aa9e93d4208460bae42 ""
   "IEEEtran.cls" 1440654524 288304 b67b6fc6c2abb39f9b461923f5199343 ""
-  "paper.aux" 1535526045 1257 3205d086e5e64bd2ae5a7b9cfaf3dca3 ""
-  "paper.bbl" 1535526036 1295 48d79be1acbe0d6c7905ee7b172318d4 "bibtex paper"
-  "paper.tex" 1535525743 7718 8e009437ae06206076e52bbc3b9108f9 ""
+  "paper.aux" 1535539703 1453 359b94799fa93a2b2f5e504c8f2436c6 ""
+  "paper.bbl" 1535549771 2167 1ec7e2e3980e2e043f7cc6d3bb3ee14e "bibtex paper"
+  "paper.tex" 1535549759 13473 3812237336fde3177d82303b835280b8 ""
   (generated)
+  "paper.log"
   "paper.aux"
   "paper.pdf"
-  "paper.log"

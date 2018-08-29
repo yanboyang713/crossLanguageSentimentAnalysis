@@ -4,6 +4,10 @@
    (LaTeX-add-bibitems
     "ChineseSentimentAnalysis"
     "sentimentAnalysis"
-    "roundTripTranslation"))
+    "roundTripTranslation"
+    "machineTranslation"
+    "thirdPartMachineTranslation"
+    "testingMethodReview"
+    "zhou2016metamorphic"))
  :bibtex)
 
