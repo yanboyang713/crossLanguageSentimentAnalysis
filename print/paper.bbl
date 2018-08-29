@@ -1,0 +1,10 @@
+\begin{thebibliography}{Sen14}
+
+\bibitem[Sen14]{Senn:2009}
+Mark Senn.
+\newblock {\em Using {\LaTeX} for Your Thesis}, 2009 (accessed February 3,
+  2014).
+\newblock \url{http://engineering.purdue.edu/~mark/puthesis}.
+ \begin{quotation}\noindent This article was published in the New York Times.
+  \end{quotation}
+\end{thebibliography}

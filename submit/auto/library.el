@@ -2,6 +2,8 @@
  "library"
  (lambda ()
    (LaTeX-add-bibitems
-    "b1"))
+    "ChineseSentimentAnalysis"
+    "sentimentAnalysis"
+    "roundTripTranslation"))
  :bibtex)
 

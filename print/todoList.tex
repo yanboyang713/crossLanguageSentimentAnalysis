@@ -1,0 +1,100 @@
+% Created 2018-08-11 Sat 15:49
+% Intended LaTeX compiler: pdflatex
+\documentclass[9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage[margin=2cm]{geometry}
+\author{Boyang}
+\date{\today}
+\title{Cross-language Sentiment Analysis for Social Media}
+\hypersetup{
+ pdfauthor={Boyang},
+ pdftitle={Testing in Cross-language Sentiment Analysis},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Backgrund}
+Social Media becomes more and more popular. There are lots of text comments for discussion different topics everday.
+However, all of those topics have discusse by different language spearkers, which have different culture backgraound.
+Most of people have language and culture barrier when we doing cross-language communicate with each other.
+Manpower is impossible to analysis huge amount of data. So,
+We want to using machine trainslation and sentiment analysis tools to solve this problems.
+Let people can understand different language speakers' attitudes (positive or negative), emotions and opinions.\\
+\underline{\textbf{(Please, finding some of paper to support the backgraound)}}
+\section{Purpose}
+The purpose of this research is to achieve a method for finding which machine translator service combined with which English sentiment analysis service can obtain reliable sentiment analysis result for non-English speaker, who does not have sentiment analysis tool to analysis their own language.
+
+\section{Todo List}
+\subsection{Timetable}
+\begin{center}
+
+\begin{tabularx}{\textwidth}{X|X}
+  \textbf{Deadline} & \textbf{Part} \\
+\hline
+20/08/2018 & Annotated bibliography and literature review\\
+23/08/2018 & Research Proposal\\
+27/08/2018 & Survey - Questionnaires\\
+03/09/2018 & Qualitative analysis\\
+\end{tabularx}
+
+\end{center}
+\subsubsection{detecting advertising in BBS comments (Chinese and English)}
+\begin{itemize}
+\item fouce on detecting Chinese advertising (Xudong and Xiaoxia can choose this part)
+\end{itemize}
+detecting advertising in BBS comments or Movies Review, etc
+Thinking and research How to measure the quality of detecting advertising modle
+
+\begin{itemize}
+\item detecting English advertising
+\end{itemize}
+
+\subsubsection{sentiment analysis}
+\begin{itemize}
+\item what is sentiment analysis: Sentiment analysis model for recognize the test data belong to positive, negative or neutral classification
+\item fouce on creating English sentiment analysis model first (using Natural Language Toolkit (NLTK))
+\item Others Libary for using on natural language processing: Apache OpenNLP, Stanford NLP suite, Gate NLP library or Gensim.
+\item when you finish creating English sentiment analysis model, Thinking about to measure the quality of your model. Testing each part of your model.
+\end{itemize}
+
+\begin{enumerate}
+\item step of sentiment analysis (English)
+\begin{enumerate}
+\item Texting segmentation for the separate sentence to a list of keywords
+\item Filtering for removing unnecessary keywords that will not add value to sentiment analysis, Such as is, but, it and so on.
+\item Finding the basic words for Convert all infections to their root words.
+\item Making Features for Using the root words as features to indicate the positiveness or negativeness
+\item The last step is Classifier for the train a classifier to predict positivity.
+\end{enumerate}
+\rowcolors{1}{green}{pink}
+\begin{tabularx}{\textwidth}{p{1cm}|X|X|p{2cm}|p{2cm}}
+  \textbf{Part} & \textbf{Description} & \textbf{Comment} & \textbf{Undertaker} & \textbf{Signature} \\
+  \hline
+  Part 1 & Backgrund and detecting advertising & show current social media usage
+  amount, demonstrate most of researcher fouce on English sentiment analysis, no
+  much people doing non-English sentiment analysis. Detecting Chinese
+  advertising & Xiaoxia Pu & \\ \hline
+Part 2 & sentiment analysis step 1, 2 and 3 &  & Helene Tran & \\ \hline
+Part 3 & sentiment analysis step 4 and 5 &  & Xudong Zhang & \\ \hline
+Part 4 & Mechine Translation and Sentiment Analysis Testing Modle &  & Boyang Yan & \\ \hline
+\end{tabularx}
+\end{enumerate}
+\end{document}

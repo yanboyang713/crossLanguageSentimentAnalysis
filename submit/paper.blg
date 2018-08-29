@@ -1,15 +1,64 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is 'paper.blg'
-[34] biber:313> INFO - === Sun Aug 12, 2018, 01:58:51
-[57] Biber.pm:371> INFO - Reading 'paper.bcf'
-[128] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
-[146] Biber.pm:3976> INFO - Processing section 0
-[159] Biber.pm:4136> INFO - Looking for bibtex format file 'library.bib' for section 0
-[161] bibtex.pm:1500> INFO - LaTeX decoding ...
-[165] bibtex.pm:1316> INFO - Found BibTeX data source 'library.bib'
-[189] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[190] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[190] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[190] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[194] bbl.pm:617> INFO - Writing 'paper.bbl' with encoding 'UTF-8'
-[196] bbl.pm:720> INFO - Output to paper.bbl
+This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Database file #1: library.bib
+I was expecting a `,' or a `}'---line 34 of file library.bib
+ :   
+ :   annote = "This is an excellent article."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "ChineseSentimentAnalysis"
+Warning--I didn't find a database entry for "machineTranslation"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 2 entries,
+            4087 wiz_defined-function locations,
+            840 strings with 7749 characters,
+and the built_in function-call counts, 1548 in all, are:
+= -- 122
+> -- 25
+< -- 12
++ -- 14
+- -- 4
+* -- 84
+:= -- 250
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 24
+cite$ -- 2
+duplicate$ -- 109
+empty$ -- 123
+format.name$ -- 5
+if$ -- 344
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 18
+newline$ -- 29
+num.names$ -- 2
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 119
+stack$ -- 0
+substring$ -- 62
+swap$ -- 86
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 2
+warning$ -- 0
+while$ -- 7
+width$ -- 3
+write$ -- 42
+(There was 1 error message)
