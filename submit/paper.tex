@@ -53,18 +53,18 @@ sentiment analysis, machine translation
 
 \section{Introduction}
 
-Social Media is becoming more and more popular. There are lots of text comments
+Social Media is becoming more and more widely used. There are lots of text comments
 on different discussion topics every day.
-It would be impossible to analysise the huge amount of data generated manually.
+It would be impossible to analyses the huge amount of data generated manually.
 These topics are discussed by speakers of different languages, from different
 cultural backgrounds, further complicating any analysis.
-Most people enounter language and culture barriers during cross-language
+Most people enounter language and cultureal barriers during cross-language
 communication.
 In this paper, the use of machine translation and sentiment analysis tools to
 solve this problem of analysing cross-cultural and cross-language data is
 explored and discussed.
 Sentiment analysis is a part of text data mining. The aim of sentiment analysis
-is to determine the attitude of speakers or writers with respect to some topic
+is to determine the attitude of speakers or writers with respect to particular topics
 or the overall contextual polarity or emotional reaction to a text document. It is usually equated with
 opinion mining, which involves the use of natural language processing and
 machine learning to ascertain the possibility of positive or negative opinions \cite{sentimentAnalysis}.
@@ -77,56 +77,55 @@ As Dr. Haiyun mentions, English language sentiment analysis research has
 undergone major developments in recent years \cite{ChineseSentimentAnalysis}.
 However, less research has been undertaken in other languages, such as Chinese.
 Today, a lot of English language sentiment analysis theories have been
-developed. Also, lots of Machine Translation tools are available, such as Google
+developed. Also, a variety of Machine Translation tools is available, such as Google
 translation, Bing translation and Yandex translation.
 Manchine Translation uses computational linguistic programs and natural language
 processing theory \cite{machineTranslation}.
 However, nobody working in a combination of these two fields of research has undertaken non-English
-sentiment analysis. Therefore, the research described and discussed in this
-document aimed to create a testing model to find the best-combination of English
+sentiment analysis. Therefore, the research described and discussed in this paper aims to create a testing model to find the best-combination of English
 sentiment analysis tools and machine translation tools to obtain reliable
 sentiment analysis results from non-English texts, for non-English speakers who
 do not have such sentiment analysis tools to analyze their own language.
-In the end, everyone to be able to understand different language speakers' attitudes (positive or negative), emotions and opinions.\\
+Eventually, everyone will be able to understand different language speakers' attitudes (positive or negative), emotions and opinions.\\
 \section{Literature Review}
-This research consists of three components.
-Firstly, measuring machine translation service quality.
-Secondly, testing sentiment analysis service quality.
-Thirdly, finding the best compound mode for machine translation service and
+This research consists of three components; measuring machine translation
+service quality; testing sentiment analysis service quality;
+finding the best compound mode for machine translation service and
 sentiment analysis service.
-As a result, this section will fouced doing literature review on machine
+As a result, this section will focus on a review of literature review about machine
 translation, Testing methodology and sentiment analysis.
 \subsection{Testing in Machine translation}
 There are two research articles about testing modeling of machine
 translation(MT).
 
-\paragraph{Around Trip Translation method}
-As Somers argue that they establish an
-around trip translation (RTT) method for detect the quality of machine translation \cite{roundTripTranslation}.
-For example, testing English to Chinese translation tool.
-Firstly, using English to Chinese translation tool translate test data to
-Chinese.
-Secondly, translation Chinese translated data back to English.
+\paragraph{Round Trip Translation method}
+As Somers argues, an Around Trip Translation (RTT) method has been establish to
+detect the quality of machine translation \cite{roundTripTranslation}; for example, testing English to Chinese translation tools.
+Firstly, an English to Chinese translation tool is use to translate test data to
+Chinese. It is then used translate Chinese data back to English.
 Finally, compare the similarity for two English data set.
-They also metion two similarity metrics BLEU and F-score, to judge the
-translations. The limitation of RTT modle are it cannot tell which one is good
-MT from all bad MT tools as well as cannot find which sentences are easier for
+They also mention two metrics of similarity, BLEU and F-score, to judge the
+translations. The limitations of RTT model are it cannot distingicush the best
+MT tool from a group of poor MT tools as well as it cannot find which sentences are easier for
 translation and which sentences are harder for translation.
 
-\paragraph{A monte carlo method for machine translation services}
+\paragraph{A Monte Carlo Method for machine translation services}
 Another article is about using third-party language to test the quality of machine
-translation \cite{thirdPartMachineTranslation}.
-For example, if testing English to Chinese translation tool.
-Firstly, random choice an Intermediate third-party language.
+translation \cite{thirdPartMachineTranslation}, for example, if testing an English to Chinese translation tool.
+Firstly, random choose an Intermediate third-party language.
 Secondly, translation English test data to the third-party language, after
-translation third-party language to Chinese.
-These two steps are only finished one path.
-Another path is a translation in English directly to Chinese.
-In the end, the comparison the two paths of results similarity. In this article, the main
-finding is Google Translate is the best machine translation. In addition, there
-is a tendency to be produced better results in European languages, which use
-ANOVA Statistics method and Pairwise t tests getting this conclusion.
-In my experiment, I also got Google Translator is the best machine translation compare with Yandex and Baidu.
+translates the third-party language to Chinese.
+These two steps constitute one path.
+Another path is translation from English directly to Chinese.
+In the end, the two path results need to compare similarity. In this article, the main
+finding is that Google Translate is the best machine translation. In addition,
+the better results to be produced in European languages, use ANOVA Statistics method and Pairwise T tests getting this conclusion.
+In my experiment, I also got Google Translator is the best machine translation
+compare with Yandex and Baidu. Pairwise T tests also can be useful for find best-combination of English
+sentiment analysis tools and machine translation tools to obtain reliable
+sentiment analysis results. The highlight of this model is using third-party
+language, which can decide preference language of machine translation.
+
 
 \subsection{Testing methodology}
 Accounting to Sethi said that there are two categorized testing
@@ -231,8 +230,47 @@ Ranking & IQR & Mean & Median & Q1 & Q3 & lowerExtreme & upperExtreme\\
   \hline
 \end{tabular}
 \section{Questionnaire}
+\begin{enumerate}
+\item What is your gender? \\
+  O Male O Female O perfer Not to say
+\item What is your age group? \\
+  O <18ys O 18-24ys O 24-30ys O 30-40ys O 40-50ys O >50ys
+\item What are your areas of interest? (many answers possible) \\
+  O Science and Technology O engineering O entertainment O military O politics O
+  law O literature O Other (please specify) .....................
+\item How often do you use social media ?\\
+  O Hourly O Daily O Weekly O monthly O yearly
+\item How long do you use social media each time? \\
+  O time >= 1 hour O time 30 minutes O 1 hour O 10 minutes to 30 minutes O less than 10 minutes
+\item Which social media platforms do you use regularly ? (many answers possible)\\
+  O Facebook O Twitter O YouTube O Instagram O WeChat O LinkedIn O Weibo O I
+  don't use social media O Other (please specify)
+\item Which language(s) can you understand easily ?\\
+  O English O French O Chinese O Spanish O Vietnamese O Arabic O Indian O
+  Russian O German O Other (please specify)
+\item How interested are you in other culture? \\
+  O Extremely interested O Very interested O Somewhat interested O Not so
+  interested O Not at all interested
+\item How willing are you to understand the contents in an foreign language?\\
+  O Very likely O Likely O Neither likely nor unlikely O Unlikely O Very
+  unlikely
 
 
+
+\item How often do you read others' opinion ?\\
+  O Always O Usually O Sometimes O Rarely O Never
+
+
+
+\item Which machine translation tool do you use most?\\
+  O Google Translation O Microsoft Bing Translation O Yandex Translation O Baidu
+  Translation O Youdao Translation O Other (please specify) .......
+\item Sentiment analysis tool can determine the attitude (positive or negative)
+  of writers, which can be useful for analyzing a huge amount of comments. Are
+  you willing to use this tool to analyze your interests in social
+  media, such as product comments or restaurant review, etc?\\
+  O Very likely O Likely O Neither likely nor unlikely O Unlikely O Very unlikely
+\end{enumerate}
 \bibliographystyle{IEEEtran}
 \bibliography{library}
 \end{document}
