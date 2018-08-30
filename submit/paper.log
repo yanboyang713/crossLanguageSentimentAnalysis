@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  30 AUG 2018 09:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  30 AUG 2018 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,18 +526,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
 
-Underfull \hbox (badness 3039) in paragraph at lines 56--91
-[]\OT1/ptm/m/n/10 Social Me-dia is be-com-ing more and more pop-u-lar.
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 56--91
+Underfull \hbox (badness 2486) in paragraph at lines 56--90
 \OT1/ptm/m/n/10 cul-tural back-grounds, fur-ther com-pli-cat-ing any anal-y-sis
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--91
+Underfull \hbox (badness 10000) in paragraph at lines 56--90
 
  []
 
@@ -545,8 +540,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--91
 
 
 ]
-./paper.tex:168: Undefined control sequence.
-l.168 \subparagraph
+./paper.tex:170: Undefined control sequence.
+l.170 \subparagraph
                    {Effectiveness of Metamorphic Relations}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -555,21 +550,21 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./paper.tex:170: Package inputenc Error: Unicode character ， (U+FF0C)
+./paper.tex:173: Package inputenc Error: Unicode character ， (U+FF0C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 ...found another research article (Henard，
+l.173 ...found another research article (Henard，
                                                   2016)talking about the dif...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./paper.tex:172: Undefined control sequence.
-l.172 \subparagraph
+./paper.tex:175: Undefined control sequence.
+l.175 \subparagraph
                    {White-box VS Black-box}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -577,41 +572,37 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--209
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 202--212
 []\OT1/ptm/m/n/10 Total have 46180 movies re-views.
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-
-./paper.tex:213: LaTeX Error: Environment wraptable undefined.
+./paper.tex:216: LaTeX Error: Environment wraptable undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 \begin{wraptable}
+l.216 \begin{wraptable}
                        {r}{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./paper.tex:213: Missing number, treated as zero.
+./paper.tex:216: Missing number, treated as zero.
 <to be read again> 
                    }
-l.213 \begin{wraptable}{r}{0.5\textwidth}
+l.216 \begin{wraptable}{r}{0.5\textwidth}
                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./paper.tex:213: Illegal unit of measure (pt inserted).
+./paper.tex:216: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.213 \begin{wraptable}{r}{0.5\textwidth}
+l.216 \begin{wraptable}{r}{0.5\textwidth}
                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -621,53 +612,53 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-./paper.tex:214: LaTeX Error: \caption outside float.
+./paper.tex:217: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 \caption
+l.217 \caption
               {A wrapped table going nicely inside the text.}\label{wrap-tab:1}
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.29936pt too wide) in paragraph at lines 223--223
+Overfull \hbox (4.29936pt too wide) in paragraph at lines 226--226
 []|\OT1/ptm/m/n/10 lowerExtreme| 
  []
 
 
-Overfull \hbox (4.5495pt too wide) in paragraph at lines 223--223
+Overfull \hbox (4.5495pt too wide) in paragraph at lines 226--226
 []|\OT1/ptm/m/n/10 upperExtreme| 
  []
 
 
-./paper.tex:224: LaTeX Error: \begin{document} ended by \end{wraptable}.
+./paper.tex:227: LaTeX Error: \begin{document} ended by \end{wraptable}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 \end{wraptable}
+l.227 \end{wraptable}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 213--225
+Underfull \hbox (badness 2790) in paragraph at lines 216--228
 []\OT1/ptm/m/n/10 r0.5 A wrapped ta-ble go-ing nicely in-side the text.[]
  []
 
 
-Overfull \hbox (264.0pt too wide) in paragraph at lines 213--225
+Overfull \hbox (264.0pt too wide) in paragraph at lines 216--228
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--225
+Underfull \hbox (badness 10000) in paragraph at lines 216--228
 
  []
 
@@ -714,12 +705,12 @@ Here is how much of TeX's memory you used:
  8314 multiletter control sequences out of 15000+600000
  40570 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,35p,893b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,35p,835b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
 re/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/typ
 e1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (3 pages, 69682 bytes).
+Output written on paper.pdf (3 pages, 70117 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream

@@ -8,6 +8,7 @@
     "machineTranslation"
     "thirdPartMachineTranslation"
     "testingMethodReview"
-    "zhou2016metamorphic"))
+    "zhou2016metamorphic"
+    "cao2013correlation"))
  :bibtex)
 

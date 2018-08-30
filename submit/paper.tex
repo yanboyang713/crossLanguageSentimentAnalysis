@@ -118,7 +118,8 @@ translates the third-party language to Chinese.
 These two steps constitute one path.
 Another path is translation from English directly to Chinese.
 In the end, the two path results need to compare similarity. In this article, the main
-finding is that Google Translate is the best machine translation. In addition,
+finding is that Google Translate is the best machine translation compare with
+Yandex, Youdao as well as Bing. In addition,
 the better results to be produced in European languages, use ANOVA Statistics method and Pairwise T tests getting this conclusion.
 In my experiment, I also got Google Translator is the best machine translation
 compare with Yandex and Baidu. Pairwise T tests also can be useful for find best-combination of English
@@ -128,18 +129,18 @@ language, which can decide preference language of machine translation.
 
 
 \subsection{Testing methodology}
-Accounting to Sethi said that there are two categorized testing
+Accounting to Sethi, there are two categorized testing
 techniques, which are Static Testing and Dynamic Testing. The Dynamic Testing
 are divided into three categories, which are Functional Testing, Structural
 testing and Non-Functional Testing \cite{testingMethodReview}.
 In my research project, I will focus on Functional Testing on this project.
 
 \paragraph{Metamorphic Testing}
-The proposed of this research project is based on Metamorphic Testing.
+This research project is based on Metamorphic Testing.
 Metamorphic Testing is for testing function correctness.
 There is a research article written by Zhou in 2016. This article is
 well-explained for what is Metamorphic Testing.
-As Zhou said, Metamorphic testing (MT) is a property-based software testing
+As Zhou said, Metamorphic Testing (MT) is a property-based software testing
 method developed for automated test case generation and automated result
 verification, based on the effects of some expected properties of the target
 program \cite{zhou2016metamorphic}.
@@ -158,17 +159,26 @@ Metamorphic Relation is the relationship between two input test cases as well as
 the two outputs.
 Metamorphic testing is based on Metamorphic Relation.
 The two outputs need an existing mathematical relation.
-In this example, the relation is “=”. The advantage of Metamorphic testing (MT)
-method, which can automate result verification and test case generation.
+In this example, the relation is “=”. However, MR does not must be an equation,
+it also can be a relation.
+The advantage of Metamorphic testing (MT) method; addressing the test oracle
+problem; testing case generation problem.
 The disadvantage is that cannot detect memory leak or some others insensitivity
 failure situation.
 However, Metamorphic Testing is appropriate for testing translation tools and
 sentiment analysis tools.
-\subparagraph{Effectiveness of Metamorphic Relations}
-I have read an article which was written by Zhou in 2013. The main purpose of reading this article is to find the best one among the three testing modelings. This article is based on white-box testing, which have source code, as well as the most important conclusion is if the Metamorphic Relations can get bigger distance (dissimilarity) that will have more chance to detect failures.  In other words, MRs with very different initial and follow-up execution are more likely to detect failures than those with similar initial and follow-up executions. The concept of “difference” are defined in namely coverage Manhattan distance (CMD), frequency Manhattan distance (FMD), and frequency Hamming distance (FHD) in regard to adaptive random testing (ART), where CMD metric on the basis of branch coverage execution profiles performs the best fault-detection effectiveness.
+\paragraph{Effectiveness of Metamorphic Relations}
+\cite{cao2013correlation}
+There is another article which was written by Zhou about Effectiveness of
+Metamorphic Relations in 2013.
+The main purpose of reading this article is trying to find which Metamorphic
+Relations can be most efficient detection failures.
+Round Trip Translation and a Monte Carlo Method can be seen as two Metamorphic Relations.
+
+This article is based on white-box testing, which have source code, as well as the most important conclusion is if the Metamorphic Relations can get bigger distance (dissimilarity) that will have more chance to detect failures.  In other words, MRs with very different initial and follow-up execution are more likely to detect failures than those with similar initial and follow-up executions. The concept of “difference” are defined in namely coverage Manhattan distance (CMD), frequency Manhattan distance (FMD), and frequency Hamming distance (FHD) in regard to adaptive random testing (ART), where CMD metric on the basis of branch coverage execution profiles performs the best fault-detection effectiveness.
  I think the advantage of this article is suitable for finding the most effectiveness of Metamorphic Relations in White-box. However, this article is not suitable for Black - Box Testing. The reason is Black Box Testing have not source code available, so it cannot calculation the program’s distance. In this research project, my testing modeling have not source code available. So, I have found another research article (Henard，2016)talking about the difference between black-box testing and white-box testing.
 
-\subparagraph{White-box VS Black-box}
+\paragraph{White-box VS Black-box}
 Henard (2016) have done some research for difference between white box testing
 and black - box testing in 2016. They have two finding is useful in my research
 black-box testing and white-box testing performance just have a little
