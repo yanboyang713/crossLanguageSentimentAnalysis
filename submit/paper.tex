@@ -7,11 +7,12 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{hyperref}
 \usepackage{tabularx}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
-\title{\huge Cross-language Sentiment Analysis for Social Media}
+\title{\huge Metamorphic Testing in Cross-language Sentiment Analysis for Social Media}
 
 \author{\IEEEauthorblockN{Boyang Yan}
 \IEEEauthorblockA{\textit{School of Computing and Information Technology} \\
@@ -42,13 +43,25 @@
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+  There are huge amount of text comments for discussion different topics in Social
+  Media everday. All of those topics have discusse by different language
+  spearkers. Most of people have language and culture barrier when we doing
+  cross-language communicate with each other. However, cross-language opinion
+  mining is useful for global integration. However, most of researches only fouced on
+  English Sentiment Analysis. In this research, using machine
+  trainslation and sentiment analysis tools to solve this problems. Let people
+  can understand different language speakers' attitudes (positive or negative),
+  emotions and opinions. It is based on Metamorphic Testing method to achieve a
+  testing model for finding which machine translator service combined with which
+  English sentiment analysis service can obtain reliable sentiment analysis
+  result for non-English speaker, who does not have sentiment analysis tool to
+  analysis their own language. As a result, people can use Machine Translation
+  and English Sentiment Analysis doing big data analysis in Social Media.
 \end{abstract}
 
 \begin{IEEEkeywords}
-sentiment analysis, machine translation
+sentiment analysis, machine translation, Metamorphic Testing, Social Media,
+Cross-Language, Cross-Culture
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -86,7 +99,12 @@ sentiment analysis. Therefore, the research described and discussed in this pape
 sentiment analysis tools and machine translation tools to obtain reliable
 sentiment analysis results from non-English texts, for non-English speakers who
 do not have such sentiment analysis tools to analyze their own language.
-Eventually, everyone will be able to understand different language speakers' attitudes (positive or negative), emotions and opinions.\\
+Eventually, everyone will be able to understand different language speakers'
+attitudes (positive or negative), emotions and opinions.\\
+\section{Part A: Annotated bibliography}
+\nocite{*}
+\bibliographystyle{annotate}
+\bibliography{library}
 \section{Literature Review}
 This research consists of three components; measuring machine translation
 service quality; testing sentiment analysis service quality;
@@ -102,7 +120,7 @@ translation(MT).
 As Somers argues, an Around Trip Translation (RTT) method has been establish to
 detect the quality of machine translation \cite{roundTripTranslation}; for example, testing English to Chinese translation tools.
 Firstly, an English to Chinese translation tool is use to translate test data to
-Chinese. It is then used translate Chinese data back to English.
+Chinese. It is then used to translate Chinese data back to English.
 Finally, compare the similarity for two English data set.
 They also mention two metrics of similarity, BLEU and F-score, to judge the
 translations. The limitations of RTT model are it cannot distingicush the best
@@ -114,19 +132,19 @@ Another article is about using third-party language to test the quality of machi
 translation \cite{thirdPartMachineTranslation}, for example, if testing an English to Chinese translation tool.
 Firstly, random choose an Intermediate third-party language.
 Secondly, translation English test data to the third-party language, after
-translates the third-party language to Chinese.
+translating, the third-party language to Chinese.
 These two steps constitute one path.
 Another path is translation from English directly to Chinese.
 In the end, the two path results need to compare similarity. In this article, the main
 finding is that Google Translate is the best machine translation compare with
 Yandex, Youdao as well as Bing. In addition,
-the better results to be produced in European languages, use ANOVA Statistics method and Pairwise T tests getting this conclusion.
+the better results to be produced in European languages compare with Asian languages, use ANOVA Statistics
+method and Pairwise T tests giving this conclusion.
 In my experiment, I also got Google Translator is the best machine translation
-compare with Yandex and Baidu. Pairwise T tests also can be useful for find best-combination of English
+compare with Yandex and Baidu. Pairwise T tests also can be useful for finding best-combination of English
 sentiment analysis tools and machine translation tools to obtain reliable
 sentiment analysis results. The highlight of this model is using third-party
 language, which can decide preference language of machine translation.
-
 
 \subsection{Testing methodology}
 Accounting to Sethi, there are two categorized testing
@@ -141,7 +159,7 @@ Metamorphic Testing is for testing function correctness.
 There is a research article written by Zhou in 2016. This article is
 well-explained for what is Metamorphic Testing.
 As Zhou said, Metamorphic Testing (MT) is a property-based software testing
-method developed for automated test case generation and automated result
+method developed for automated test case generation and automated results
 verification, based on the effects of some expected properties of the target
 program \cite{zhou2016metamorphic}.
 These properties, recognized as metamorphic relations (MRs), serve as essential
@@ -149,9 +167,9 @@ relations among the inputs and outcomes of multiple executions of the target
 program.
 For instance, test calculator function correctness will be shown if input 1 + 1,
 and the result will be 2. In this example people can easily make the judgment,
-correct or not.
-However, people will not easy to make this judgment quickly if input sin (3.7),
-and the calculator gives a output.
+is correct or not.
+However, people will not easly make this judgment quickly if input sin (3.7),
+and the calculator gives an output.
 In a generally acknowledged, Sin (3.7) = sin (3.7 + 360) is correct.
 In metamorphic testing, the name of 3.7 is the test case. The name of 3.7 + 360
 is the follow-up test case.
@@ -163,7 +181,7 @@ In this example, the relation is “=”. However, MR does not must be an equati
 it also can be a relation.
 The advantage of Metamorphic testing (MT) method; addressing the test oracle
 problem; testing case generation problem.
-The disadvantage is that cannot detect memory leak or some others insensitivity
+The disadvantage is that it cannot detect memory leak or some others insensitivity
 failure situation.
 However, Metamorphic Testing is appropriate for testing translation tools and
 sentiment analysis tools.
@@ -172,13 +190,29 @@ sentiment analysis tools.
 There is another article which was written by Zhou about Effectiveness of
 Metamorphic Relations in 2013.
 The main purpose of reading this article is trying to find which Metamorphic
-Relations can be most efficient detection failures.
+Relations can be the most efficient detecting failures.
 Round Trip Translation and a Monte Carlo Method can be seen as two Metamorphic Relations.
-
-This article is based on white-box testing, which have source code, as well as the most important conclusion is if the Metamorphic Relations can get bigger distance (dissimilarity) that will have more chance to detect failures.  In other words, MRs with very different initial and follow-up execution are more likely to detect failures than those with similar initial and follow-up executions. The concept of “difference” are defined in namely coverage Manhattan distance (CMD), frequency Manhattan distance (FMD), and frequency Hamming distance (FHD) in regard to adaptive random testing (ART), where CMD metric on the basis of branch coverage execution profiles performs the best fault-detection effectiveness.
- I think the advantage of this article is suitable for finding the most effectiveness of Metamorphic Relations in White-box. However, this article is not suitable for Black - Box Testing. The reason is Black Box Testing have not source code available, so it cannot calculation the program’s distance. In this research project, my testing modeling have not source code available. So, I have found another research article (Henard，2016)talking about the difference between black-box testing and white-box testing.
-
+This article is based on white-box testing, which have source code, as well as
+the most important conclusion is if the Metamorphic Relations can get bigger
+distance (dissimilarity) that will have more chance to detect failures.
+In other words, MRs with very different initial and follow-up execution are more
+likely to detect failures than those with similar initial and follow-up
+executions.
+The concept of ``difference'' are defined in namely coverage Manhattan distance
+(CMD), frequency Manhattan distance (FMD), and frequency Hamming distance (FHD)
+in regard to adaptive random testing (ART), where CMD metric on the basis of
+branch coverage execution profiles performs the best fault-detection
+effectiveness.
+The advantage of this article is suitable for finding the most effectiveness of
+Metamorphic Relations in White-box.
+However, this article is not suitable for Black-Box Testing. The reason is
+Black-Box Testing have not source code available, so it cannot calculate the
+program’s distance.
+In this research project, translation tools have NOT source code available, this
+article is not suitable for this research accordingly.
 \paragraph{White-box VS Black-box}
+\cite{henard2016comparing}
+There are another research article written by Henard in 2016. Talking about the difference between black-box testing and white-box testing.
 Henard (2016) have done some research for difference between white box testing
 and black - box testing in 2016. They have two finding is useful in my research
 black-box testing and white-box testing performance just have a little
@@ -186,60 +220,192 @@ difference (at most 4 fault detection rate difference). They also found
 black-box testing and white-box testing the overlap is
 very high. The first 10 of the prioritized test data
 already agree on at least 60 of the faults found. As the
-result, this research article has given me a lot of idea
-for how similar between white box testing and black box
+result, this research article has given me a lot of ideas of how the similarity between white-box testing and black-box
 testing. I still have opportunity for compare those three
 modelings, which one is better.
+\section{Research Proposal}\footnote{This research proposal is based on Boyang
+  Yan's Master of Research application (research proposal section) in 2017}
+TITLE: Metamorphic Testing in Cross-language Sentiment Analysis for Social Media
+\paragraph{Background and Research Problems}
+Social Media has been becoming more and more widely used. There are lots of text comments
+on different discussion topics every day.
+It would be impossible to analyses the huge amount of data generated manually.
+These topics are discussed by speakers of different languages, from different
+cultural backgrounds, further complicating any analysis.
+Most people enounter language and cultureal barriers during cross-language
+communication.
+In this research, the use of machine translation and sentiment analysis tools to
+solve this problem of analysing cross-cultural and cross-language data is
+explored and discussed.
+Sentiment analysis is a part of text data mining. The aim of sentiment analysis
+is to determine the attitude of speakers or writers with respect to particular topics
+or the overall contextual polarity or emotional reaction to a text document. It is usually equated with
+opinion mining, which involves the use of natural language processing and
+machine learning to ascertain the possibility of positive or negative opinions
+\cite{sentimentAnalysis}.
+Sentiment analysis is useful for analyzing a huge amount of data relating to personal
+opinions. It can be used in an e-business context. For example, business managers can analysise
+customers' attitudes, as to whether they like or dislike their product or service.
+Also, government can use sentiment analysis to analyze citizen perspectives.
+In a word, sentiment analysis is coming into widespread use.
+As Dr. Haiyun mentions, English language sentiment analysis research has
+undergone major developments in recent years \cite{ChineseSentimentAnalysis}.
+However, less research has been undertaken in other languages, such as Chinese.
+Today, a lot of English language sentiment analysis theories have been
+developed. Also, a variety of Machine Translation tools is available, such as Google
+translation, Bing translation and Yandex translation.
+Manchine Translation uses computational linguistic programs and natural language
+processing theory \cite{machineTranslation}.
+However, nobody working in a combination of these two fields of research has undertaken non-English
+sentiment analysis. Therefore, the research described and discussed in this paper aims to create a testing model to find the best-combination of English
+sentiment analysis tools and machine translation tools to obtain reliable
+sentiment analysis results from non-English texts, for non-English speakers who
+do not have such sentiment analysis tools to analyze their own language.
+Eventually, everyone will be able to understand different language speakers'
+attitudes (positive or negative), emotions and opinions.\\
+The purpose of the study have two aspects.
+The first aims of this research is to compare and analysis Google, Youdao, Baidu, Bing and
+Yandex translation tools, which one is the best machine translation tool.
+Second aim is creating a testing model to find the best-combination of English
+sentiment analysis tools and machine translation tools to obtain reliable
+sentiment analysis results.
+Third aim is to create our own sentiment analysis model for
+recognizing English data belonging to positive, negative, neutral or mix
+classification. It is building by VADER, NLTK, LIWC, ANEW or the General Inquirer.
+\paragraph{Critical Review of Literature}
+
+\paragraph{Aims and Objectives}
+The aim for this research is to achieve a method to find out which combination
+between machine translation tools and English sentiment analysis model can
+obtain the result, which is the most reliable and efficient, for those
+non-English speakers, to fill the blank and gap of lacking of cross-language
+sentiment analysis tool.
+The main aim can be divided into 4 sub-aims.
+\begin{enumerate}
+  \item Advertisement Detection \\
+Detect advertisements and junk contents among mass of data from social media
+texts. Removing unimportant data can both reduce the amount of the size of whole
+dataset to save processing time, and get rid of contents that is of no use to
+our sentiment analysis, which can be also regarded as noise data.
+  \item Data Preprocessing and Feature Extraction
+Preprocessing data is to segment texts into words and select those words which
+is helpful and sensitive in sentiment analysis. E.g. keywords, important
+punctuation marks, emotion symbols. Also, normalization operations will be taken
+to convert the keywords into it root form, which can reduce the size of lexicons
+of models to a large extend. Then, extracting features of those data being
+preprocessed as inputs for sentiment analysis model built by us.
+  \item Sentiment Analysis Modelling
+Develop a model for sentiment analysis which includes a lexicon placing emphasis on social media texts and a machine learning model for analyzing sentiment.
+The lexicon should consider about the main feature of social media texts below:
+short-text styled, sparsity of contents and concluding emoticons. This can make
+our model performs better than the other ones which focus on general texts.
+For the machine learning model, we aim to design a model which considers about
+efficiency, accuracy and reliability.
+  \item Cross-language Translation and Model Testing
+For our source of data coming from social media which is in different languages,
+finding a better performed tool for translation is of vital importance. We aim
+to find the best performed tool for each respective combination of languages, so
+that we can have closer meaning according to the origin language.
+
+With the final text data, testing should be designed to test the real
+performance of the model we build. And based on the results of testing, we can
+have optimization on relevant domains of our research.
+
+\end{enumerate}
+
+\section{Survey - Questionnaire}
+
+Link : \hyperlink{https://www.surveymonkey.com/r/GHBDPBL}{https://www.surveymonkey.com/r/GHBDPBL}
+
+
+\paragraph{}
+The following questionnaire on Survey Monkey composed of 10 questions is used for our research work :
+
+\begin{enumerate}
+    \setlength\itemsep{1em}
+    \item What is your gender ?
+    \begin{enumerate}
+        \item Male
+        \item Female
+        \item Other
+    \end{enumerate}
+    \textit{Initial Code : Gender}
+
+    \item What are your areas of interest ? (many answers possible)
+    \begin{enumerate}
+        \item Sport
+        \item Music
+        \item Watching Videos / Films
+        \item Reading
+        \item Cooking
+        \item Doing Shopping
+        \item Chatting
+        \item Playing Video Games
+        \item Other (please specify)
+    \end{enumerate}
+    \textit{Initial Code : Interest areas}
+
+    \item How often do you use social media ?
+    \begin{enumerate}
+        \item Always
+        \item Usually
+        \item Sometimes
+        \item Rarely
+        \item Never
+    \end{enumerate}
+    \textit{Initial Code : Frequency of social media use}
+
+    \item Which social media do you use regularly ? (many answers possible)
+    \begin{enumerate}
+        \item Facebook
+        \item Twitter
+        \item YouTube
+        \item Instagram
+        \item WeChat
+        \item LinkedIn
+        \item Weibo
+        \item I don't use social media
+        \item Other (please specify)
+    \end{enumerate}
+    \textit{Initial Code : Types of social media}
+    \item Which language(s) can you read ?
+    \begin{enumerate}
+        \item English
+        \item French
+        \item Chinese
+        \item Spanish
+        \item Vietnamese
+        \item Arabic
+        \item Indian
+        \item Russian
+        \item German
+        \item Other (please specify)
+    \end{enumerate}
+    \textit{Initial Code : Language skills}
+
+    \item Are you interested in other cultures ?
+    \begin{enumerate}
+        \item Extremely interested
+        \item Very interested
+        \item Somewhat interested
+        \item Not so interested
+        \item Not at all interested
+    \end{enumerate}
+    \textit{Initial Code : Attitude towards culture}
+
+    \item Are you willing to try to understand a comment in an unknown language ?
+    \begin{enumerate}
+        \item Very likely
+        \item Likely
+        \item Neither likely nor likely
+        \item Unlikely
+        \item Very unlikely
+    \end{enumerate}
+    \textit{Initial Code : Behavior towards unknown languages}
 
 
 
-
-The three different machine translation testing modeling, we can call the three
-different Metamorphic Relations. So, I have found a research article(Cao,2013)
-about the effectiveness of metamorphic relations.
-
-Also, when I finished reading all of the details, I have found Two-way ANOVA is also suitable for part 3 of my research (finding the best compound mode for machine translation service and sentiment analysis service).
-I think that the disadvantages of those three-testing modeling will be involved some of the noise.
- It is clear the Round-Trip will be involved translation back path noise. Using the third language will be involved in third language translation path noise. My modeling will be involved sentiment analysis tools’ noise. However, my modeling does not involve any noise from translation tool. I think my modeling is better than the other two testing modeling. I am total from another aspect to test translation tool.
-
-
-\section{Method}
-\section{Test Data}
-Total have 46180 movies reviews.
-\begin{tabular}{lrl}
-Ranking & Number of Test Data & Percentage\\
-\hline
-Ranking 10 & 7353 & 15.92 \%\\
-Ramking 20 & 11209 & 24.27 \%\\
-Ranking 30 & 16223 & 35.13 \%\\
-Ranking 40 & 7663 & 16.59 \%\\
-Ranking 50 & 3732 & 8.08 \%\\
-\end{tabular}
-
-\section{IQR, Mean, Median, Q1, Q3, lower extreme, upper extreme, mean slope, median slope}
-\subsection{Baidu Chinese Sentiment analysis Positive Probability Base On
-  (Chinese Origin Data)}
-\begin{wraptable}{r}{0.5\textwidth}
-\caption{A wrapped table going nicely inside the text.}\label{wrap-tab:1}
-\begin{tabularx}{\textwidth}{ |X|X|X|X|X|X|X|X }
-Ranking & IQR & Mean & Median & Q1 & Q3 & lowerExtreme & upperExtreme\\
-\hline
-10 & 0.3426533 & 0.2404781 & 0.1789910 & 0.0489987 & 0.3916520 & -0.4649812 & 0.9056319\\
-20 & 0.3817485 & 0.2949725 & 0.2489580 & 0.0878135 & 0.4695620 & -0.4848092 & 1.0421847\\
-30 & 0.4504405 & 0.3980354 & 0.3808120 & 0.1516095 & 0.6020500 & -0.5240512 & 1.2777107\\
-40 & 0.5255830 & 0.5123376 & 0.5385910 & 0.2461685 & 0.7717515 & -0.5422060 & 1.5601260\\
-50 & 0.5368080 & 0.5712128 & 0.6188395 & 0.3101650 & 0.8469730 & -0.4950470 & 1.6521850\\
-\end{tabularx}
-\end{wraptable}
-
-\begin{tabular}{rr}
-  \hline
-  Mean Slope & Median Slope \\
-  \hline
-  0.008788344 & 0.0116933 \\
-  \hline
-\end{tabular}
-\section{Questionnaire}
+    
 \begin{enumerate}
 \item What is your gender? \\
   O Male O Female O perfer Not to say
