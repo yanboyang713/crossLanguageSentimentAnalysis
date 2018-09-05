@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  5 SEP 2018 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  5 SEP 2018 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -121,6 +121,81 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2018/04/08 v1.1 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count95
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box28
+)
+\tc@llx=\dimen128
+\tc@lly=\dimen129
+\tc@urx=\dimen130
+\tc@ury=\dimen131
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2018/04/08 v2.1 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen132
+\adjbox@Height=\dimen133
+\adjbox@Depth=\dimen134
+\adjbox@Totalheight=\dimen135
+\adjbox@pwidth=\dimen136
+\adjbox@pheight=\dimen137
+\adjbox@pdepth=\dimen138
+\adjbox@ptotalheight=\dimen139
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count96
+)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count97
+\@vwid@loff=\dimen140
+\@vwid@roff=\dimen141
+))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
@@ -131,51 +206,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen126
+\@emptytoks=\toks17
+\ex@=\dimen142
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen127
+\pmbraise@=\dimen143
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count98
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count99
+\leftroot@=\count100
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count101
+\DOTSCASE@=\count102
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen128
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
-\tag@help=\toks16
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
-\andhelp@=\toks17
-\eqnshift@=\dimen129
-\alignsep@=\dimen130
-\tagshift@=\dimen131
-\tagwidth@=\dimen132
-\totwidth@=\dimen133
-\lineht@=\dimen134
-\@envbody=\toks18
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks18
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks19
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks20
 \multlinegap=\skip45
 \multlinetaggap=\skip46
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -195,36 +270,12 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
-)
-\c@ALC@unique=\count107
-\c@ALC@line=\count108
-\c@ALC@rem=\count109
-\c@ALC@depth=\count110
+\c@ALC@unique=\count110
+\c@ALC@line=\count111
+\c@ALC@rem=\count112
+\c@ALC@depth=\count113
 \ALC@tlm=\skip47
 \algorithmicindent=\skip48
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
 )
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
@@ -456,16 +507,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen137
-\Hy@linkcounter=\count111
-\Hy@pagecounter=\count112
+\@linkdim=\dimen151
+\Hy@linkcounter=\count114
+\Hy@pagecounter=\count115
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count113
+\Hy@SavedSpaceFactor=\count116
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -477,17 +528,17 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count114
+\c@Hy@tempcnt=\count117
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen138
-\Fld@menulength=\count115
-\Field@Width=\dimen139
-\Fld@charsize=\dimen140
+\XeTeXLinkMargin=\dimen152
+\Fld@menulength=\count118
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -497,16 +548,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count116
-\c@Item=\count117
-\c@Hfootnote=\count118
+\Hy@abspage=\count119
+\c@Item=\count120
+\c@Hfootnote=\count121
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count119
-\c@bookmark@seq@number=\count120
+\Fld@listcount=\count122
+\c@bookmark@seq@number=\count123
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -520,87 +571,60 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen141
-\ar@mcellbox=\box30
-\extrarowheight=\dimen142
-\NC@list=\toks21
+\col@sep=\dimen155
+\ar@mcellbox=\box32
+\extrarowheight=\dimen156
+\NC@list=\toks22
 \extratabsurround=\skip50
 \backup@length=\skip51
-\ar@cellbox=\box31
+\ar@cellbox=\box33
 )
-\TX@col@width=\dimen143
-\TX@old@table=\dimen144
-\TX@old@col=\dimen145
-\TX@target=\dimen146
-\TX@delta=\dimen147
-\TX@cols=\count121
-\TX@ftn=\toks22
-) (./paper.aux
-
-LaTeX Warning: Label `cao2013correlation' multiply defined.
-
-
-LaTeX Warning: Label `henard2016comparing' multiply defined.
-
-
-LaTeX Warning: Label `machineTranslation' multiply defined.
-
-
-LaTeX Warning: Label `ChineseSentimentAnalysis' multiply defined.
-
-
-LaTeX Warning: Label `thirdPartMachineTranslation' multiply defined.
-
-
-LaTeX Warning: Label `testingMethodReview' multiply defined.
-
-
-LaTeX Warning: Label `roundTripTranslation' multiply defined.
-
-
-LaTeX Warning: Label `sentimentAnalysis' multiply defined.
-
-
-LaTeX Warning: Label `zhou2016metamorphic' multiply defined.
-
-)
+\TX@col@width=\dimen157
+\TX@old@table=\dimen158
+\TX@old@col=\dimen159
+\TX@target=\dimen160
+\TX@delta=\dimen161
+\TX@cols=\count124
+\TX@ftn=\toks23
+) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
- (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen148
-\scratchbox=\box32
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen149
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count125
+\scratchdimen=\dimen162
+\scratchbox=\box34
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen163
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -618,8 +642,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 14.
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 15.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -627,113 +651,86 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
  (./paper.out)
 (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 69--104
+Underfull \hbox (badness 2486) in paragraph at lines 71--106
 \OT1/ptm/m/n/10 cul-tural back-grounds, fur-ther com-pli-cat-ing any anal-y-sis
 .
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 69--104
-\OT1/ptm/m/n/10 anal-y-sis re-search has un-der-gone ma-jor de-vel-op-ments in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--104
+Underfull \hbox (badness 10000) in paragraph at lines 71--106
 
  []
 
-(./paper.bbl
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+] [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 229.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 229.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 229.
+
+[3]
+<./img/testingModel.png, id=101, 451.6875pt x 393.47pt>
+File: ./img/testingModel.png Graphic file (type png)
+<use ./img/testingModel.png>
+Package pdftex.def Info: ./img/testingModel.png  used on input line 342.
+(pdftex.def)             Requested size: 182.13667pt x 158.66402pt.
+
+Underfull \hbox (badness 5862) in paragraph at lines 334--351
+\OT1/ptm/m/n/10 sen-ti-ment anal-y-sis tools. This is test-ing model,
+ []
 
 
-]) [2] [3] [4] (./paper.bbl
+Underfull \vbox (badness 4739) has occurred while \output is active []
 
-./paper.bbl:1: LaTeX Error: Command \etalchar already defined.
-               Or name \end... illegal, see p.192 of the manual.
+ [4 <./img/testingModel.png>]
+Underfull \hbox (badness 2020) in paragraph at lines 388--411
+\OT1/ptm/m/n/10 tools to ob-tain re-li-able sen-ti-ment anal-y-sis re-sults fro
+m
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \newcommand{\etalchar}[1]{$^{#1}$}
-                                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.cao2013c
-orrelation}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4 \bibitem[CZC13]{cao2013correlation}
-                                       pdfTeX warning (ext4): destination with 
-the same identifier (name{cite.henard2016comparing}) has been already used, dup
-licate ignored
-<to be read again> 
-                   \relax 
-l.11 ...[HPH{\etalchar{+}}16]{henard2016comparing}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{cite.machineTranslation}) has been already
- used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17 \bibitem[mac02]{machineTranslation}
-                                        pdfTeX warning (ext4): destination with
- the same identifier (name{cite.ChineseSentimentAnalysis}) has been already use
-d, duplicate ignored
-<to be read again> 
-                   \relax 
-l.22 \bibitem[PCH17]{ChineseSentimentAnalysis}
-                                              pdfTeX warning (ext4): destinatio
-n with the same identifier (name{cite.thirdPartMachineTranslation}) has been al
-ready used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 \bibitem[PZZT18]{thirdPartMachineTranslation}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{cite.testingMethodReview}) has been alread
-y used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38 \bibitem[Set17]{testingMethodReview}
-                                         pdfTeX warning (ext4): destination wit
-h the same identifier (name{cite.roundTripTranslation}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.45 \bibitem[Som05]{roundTripTranslation}
-                                          pdfTeX warning (ext4): destination wi
-th the same identifier (name{cite.sentimentAnalysis}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.51 \bibitem[YSZ17]{sentimentAnalysis}
-                                       pdfTeX warning (ext4): destination with 
-the same identifier (name{cite.zhou2016metamorphic}) has been already used, dup
-licate ignored
-<to be read again> 
-                   \relax 
-l.58 \bibitem[ZXC16]{zhou2016metamorphic}
-                                         )
+Underfull \hbox (badness 10000) in paragraph at lines 388--411
+
+ []
+
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [5]
+(./paper.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+\OT1/ptm/m/n/8 / / search-[]ebscohost-[]com . ezproxy . uow . edu . au / login 
+. aspx ? direct = true &
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -745,59 +742,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-
-./paper.tex:452: LaTeX Error: \begin{enumerate} on input line 324 ended by \end
-{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.452 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 537.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 537.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 537.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 537.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 300B4EA6E85F11229AE0CB5BDB1EF228;512.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 324 (\begingroup)
-### bottom level 
+(rerunfilecheck)             Checksum: DBBD279017B5E02B554C1C2B5E946846;943.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 537.
+ ) 
 Here is how much of TeX's memory you used:
- 8064 strings out of 492649
- 117307 string characters out of 6135779
- 222230 words of memory out of 5000000
- 11749 multiletter control sequences out of 15000+600000
+ 9037 strings out of 492649
+ 132981 string characters out of 6135779
+ 237704 words of memory out of 5000000
+ 12660 multiletter control sequences out of 15000+600000
  41605 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,35p,228b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{https://www.surveymonkey.com/r/GHBD
-PBL} has been referenced but does not exist, replaced by a fixed one
+ 38i,8n,37p,322b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{https://www.surveymonkey.com/r/GHBDPBL} has been 
+referenced but does not exist, replaced by a fixed one
 
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
-r/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fon
-ts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on paper.pdf (5 pages, 97186 bytes).
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
+re/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (6 pages, 112463 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 104 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

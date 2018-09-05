@@ -2,6 +2,7 @@
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
+\usepackage{adjustbox}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
@@ -43,20 +44,21 @@
 \maketitle
 
 \begin{abstract}
-  There are huge amount of text comments for discussion different topics in Social
-  Media everday. All of those topics have discusse by different language
-  spearkers. Most of people have language and culture barrier when we doing
-  cross-language communicate with each other. However, cross-language opinion
-  mining is useful for global integration. However, most of researches only fouced on
-  English Sentiment Analysis. In this research, using machine
-  trainslation and sentiment analysis tools to solve this problems. Let people
-  can understand different language speakers' attitudes (positive or negative),
-  emotions and opinions. It is based on Metamorphic Testing method to achieve a
+  Huge amounts of text comments are posted on different topics in Social
+  Media everday. These topics are discussed in different languages by different language
+  speakers. Most people encounter language and culture barriers when engaging in
+  cross-language communication. Cross-language opinion
+  mining is useful for global integration. However, most research only focuses on
+  English language sentiment analysis, but little research has been conducted on
+  sentiment analysis in languages other than English. This research explores using machine
+  trainslation and sentiment analysis tools to fill this gap. The research
+  identifies a conbination of tools which will enable people to understand different language speakers' attitudes (positive or negative),
+  emotions and opinions. This research is  based on the Metamorphic Testing method to establish a
   testing model for finding which machine translator service combined with which
   English sentiment analysis service can obtain reliable sentiment analysis
-  result for non-English speaker, who does not have sentiment analysis tool to
-  analysis their own language. As a result, people can use Machine Translation
-  and English Sentiment Analysis doing big data analysis in Social Media.
+  results for non-English speakers who do not have sentiment analysis tools to
+  analysis their own language. As a result, people will able to use Machine Translation
+  and English Sentiment Analysis to conduct big data analysis in multi-language Social Media.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -102,9 +104,7 @@ do not have such sentiment analysis tools to analyze their own language.
 Eventually, everyone will be able to understand different language speakers'
 attitudes (positive or negative), emotions and opinions.\\
 \section{Part A: Annotated bibliography}
-\nocite{*}
-\bibliographystyle{annotate}
-\bibliography{library}
+
 \section{Literature Review}
 This research consists of three components; measuring machine translation
 service quality; testing sentiment analysis service quality;
@@ -156,20 +156,19 @@ In my research project, I will focus on Functional Testing on this project.
 \paragraph{Metamorphic Testing}
 This research project is based on Metamorphic Testing.
 Metamorphic Testing is for testing function correctness.
-There is a research article written by Zhou in 2016. This article is
-well-explained for what is Metamorphic Testing.
-As Zhou said, Metamorphic Testing (MT) is a property-based software testing
+A research article written by Zhou in 2016 clearly explains what Metamorphic
+Testing is.
+As Zhou explains, Metamorphic Testing (MT) is a property-based software testing
 method developed for automated test case generation and automated results
 verification, based on the effects of some expected properties of the target
 program \cite{zhou2016metamorphic}.
 These properties, recognized as metamorphic relations (MRs), serve as essential
-relations among the inputs and outcomes of multiple executions of the target
+relations between the inputs and outcomes of multiple executions of the target
 program.
-For instance, test calculator function correctness will be shown if input 1 + 1,
-and the result will be 2. In this example people can easily make the judgment,
-is correct or not.
-However, people will not easly make this judgment quickly if input sin (3.7),
-and the calculator gives an output.
+For instance, calculator function correctness will be established if the input is 1 + 1,
+and the result is 2. In this example people can easily make the judgment,
+whether the calculator is functioning correctly or not.
+However, people will not be able to easily make this judgment if the input is sin (3.7).
 In a generally acknowledged, Sin (3.7) = sin (3.7 + 360) is correct.
 In metamorphic testing, the name of 3.7 is the test case. The name of 3.7 + 360
 is the follow-up test case.
@@ -223,10 +222,14 @@ already agree on at least 60 of the faults found. As the
 result, this research article has given me a lot of ideas of how the similarity between white-box testing and black-box
 testing. I still have opportunity for compare those three
 modelings, which one is better.
-\section{Research Proposal}\footnote{This research proposal is based on Boyang
-  Yan's Master of Research application (research proposal section) in 2017}
-TITLE: Metamorphic Testing in Cross-language Sentiment Analysis for Social Media
-\paragraph{Background and Research Problems}
+\pagebreak
+\pagebreak
+\section{Research Proposal \protect\footnote{This research proposal is based on
+    Boyang Yan's Master of Research application (research proposal section) in
+    2017}}
+\subsection{TITLE}
+Metamorphic Testing in Cross-language Sentiment Analysis for Social Media
+\subsection{Background and Research Problems}
 Social Media has been becoming more and more widely used. There are lots of text comments
 on different discussion topics every day.
 It would be impossible to analyses the huge amount of data generated manually.
@@ -272,10 +275,10 @@ sentiment analysis results.
 Third aim is to create our own sentiment analysis model for
 recognizing English data belonging to positive, negative, neutral or mix
 classification. It is building by VADER, NLTK, LIWC, ANEW or the General Inquirer.
-\paragraph{Critical Review of Literature}
+\subsection{Critical Review of Literature}
 
-\paragraph{Aims and Objectives}
-The aim for this research is to achieve a method to find out which combination
+\subsection{Aims and Objectives}
+The aim for this research is to achieve a method to find out the combination
 between machine translation tools and English sentiment analysis model can
 obtain the result, which is the most reliable and efficient, for those
 non-English speakers, to fill the blank and gap of lacking of cross-language
@@ -287,21 +290,21 @@ Detect advertisements and junk contents among mass of data from social media
 texts. Removing unimportant data can both reduce the amount of the size of whole
 dataset to save processing time, and get rid of contents that is of no use to
 our sentiment analysis, which can be also regarded as noise data.
-  \item Data Preprocessing and Feature Extraction
+  \item Data Preprocessing and Feature Extraction \\
 Preprocessing data is to segment texts into words and select those words which
 is helpful and sensitive in sentiment analysis. E.g. keywords, important
 punctuation marks, emotion symbols. Also, normalization operations will be taken
 to convert the keywords into it root form, which can reduce the size of lexicons
 of models to a large extend. Then, extracting features of those data being
 preprocessed as inputs for sentiment analysis model built by us.
-  \item Sentiment Analysis Modelling
+  \item Sentiment Analysis Modelling \\
 Develop a model for sentiment analysis which includes a lexicon placing emphasis on social media texts and a machine learning model for analyzing sentiment.
 The lexicon should consider about the main feature of social media texts below:
 short-text styled, sparsity of contents and concluding emoticons. This can make
 our model performs better than the other ones which focus on general texts.
 For the machine learning model, we aim to design a model which considers about
 efficiency, accuracy and reliability.
-  \item Cross-language Translation and Model Testing
+  \item Cross-language Translation and Model Testing \\
 For our source of data coming from social media which is in different languages,
 finding a better performed tool for translation is of vital importance. We aim
 to find the best performed tool for each respective combination of languages, so
@@ -313,7 +316,101 @@ have optimization on relevant domains of our research.
 
 \end{enumerate}
 
-\section{Survey - Questionnaire}
+\subsection{The procedure of the study}
+\begin{enumerate}
+\item {Survey} \\
+  The research conducts a survey to different languages backgrounds people,
+  about what they thinking about globalization, does they want to know different
+  cultural backgrounds people opinions and attitudes. Does they enounter language and cultureal barriers during cross-language
+communication. The purpose of survey is Machine Translation tools and Sentiment
+analysis Tools are useful for people daily life and established connection
+between different cultural people communication.
+\item{Getting test data}\\
+  if in the survey, we can get most of people enounter language and
+  cultureal barriers and insterest in others culture, we can start getting movie
+  reviews data from social media website for finding the best compound mode for machine translation service and
+  sentiment analysis services
+
+\item Testing Machine translation services quality and Sentiment Analysis
+  services quality \\
+  In this part fouce on testing Yandex, Baidu, Google Machine Translation tools,
+  as well as, Baidu, Google sentiment analysis tools. This is testing model,
+  which is according to Metamorphic Testing Method.
+  \begin{minipage}[t]{\linewidth}
+          \raggedright
+          \adjustbox{valign=t}{%
+            \includegraphics[width=.8\linewidth]{./img/testingModel.png}%
+          }
+          \medskip
+  \end{minipage}
+When we testing Machine Translation. We need assuming sentiment analysis tools
+are profect correct. We can compare correlation coefficient between both side of
+sentiment analysis results for getting which machine translation are better.
+There is an example for testing Chinese to English machine translation.
+\begin{enumerate}
+  \item Using Google, Baidu, Yandex translation tools, translated original Chinese data to English data
+  \item Using same sentiment analysis tool analysis original chinese dataset and
+    translated dataset
+  \item Calculate correlation coefficient between Chinese sentiment analysis
+    results and English sentiment analysis results
+  \item Compare correlation coefficient values. if value is bigger than others,
+    we can say this translation tool, which use in original dataset to English
+    dataset, can achieve better results than others.
+  \end{enumerate}
+For testing sentiment analysis tools, we can using same model. We need assuming
+Machine Translation tools are profect correct. If right side of sentiment
+analysis result is opposite attitude with left side of sentiment analysis
+result. We can say we are detected one failure.
+\item {Finding the best compound mode for machine translation service and
+    sentiment analysis services} \\
+  In this part, we totally have 6 kinds of compound model, which are Google
+  translation with Google sentiment analysis; Yandex translation with Google
+  sentiment analysis; Baidu translation with Google sentiment analysis; Google
+  translation with Baidu sentiment analysis; Yandex translation with Baidu
+  sentiment analysis and Baidu translation with Baidu sentiment analysis. we can
+  using mean-square error (MSE) and Receiver operating characteristic (ROC)
+  compare with user rate get the best compound model.
+\item {Create own sentiment analysis model} \\
+  Accounting to Liu said, creating sentiment analysis model have five steps. I will basis
+  on this five steps for create my own model \cite{liu2012survey}.
+  \begin{enumerate}
+    \item{GetTerms - Reduce review to the list of keywords}
+    \item{Filtering - Remove unnecessary keywords that will not add value for
+        sentiment analysis, such as is, but, it etc}
+    \item{Find the Base Word - Convert all inflections to their root word}
+    \item{Make Features - Use the root words as features to indicate the
+        positiveness or negativeness}
+    \item{Classifier - Train a classifier to predict positivity}
+
+  \end{enumerate}
+\end{enumerate}
+\paragraph{Implications or significance of the problem}
+Social Media has been becoming more and more widely used. Accounting to Perrin's
+survey, there are only $7\%$ American adults are use social media in 2005.
+However, social media usage increase rapily, there are $65\%$ American adults are use
+social media untill 2015 \cite{perrin2015social}. In our survey, we also find most of people
+are insterest in different language speakers' opinions and attitudes. In
+addition,
+Most people enounter language and cultureal barriers during cross-language
+communication.
+As Dr. Haiyun mentions, English language sentiment analysis research has
+undergone major developments in recent years \cite{ChineseSentimentAnalysis}.
+However, less research has been undertaken in other languages, such as Chinese.
+Today, a lot of English language sentiment analysis theories have been
+developed. Also, a variety of Machine Translation tools is available, such as Google
+translation, Bing translation and Yandex translation.
+Manchine Translation uses computational linguistic programs and natural language
+processing theory \cite{machineTranslation}.
+However, nobody working in a combination of these two fields of research has undertaken non-English
+sentiment analysis. Therefore, the research described and discussed in this paper aims to create a testing model to find the best-combination of English
+sentiment analysis tools and machine translation tools to obtain reliable
+sentiment analysis results from non-English texts, for non-English speakers who
+do not have such sentiment analysis tools to analyze their own language.
+Eventually, everyone will be able to understand different language speakers'
+attitudes (positive or negative), emotions and opinions.\\
+\paragraph{Expected Outcomes}
+
+\section{Survey - Questionnaire}\label{survey}
 
 Link : \hyperlink{https://www.surveymonkey.com/r/GHBDPBL}{https://www.surveymonkey.com/r/GHBDPBL}
 
@@ -402,51 +499,39 @@ The following questionnaire on Survey Monkey composed of 10 questions is used fo
         \item Very unlikely
     \end{enumerate}
     \textit{Initial Code : Behavior towards unknown languages}
+       \item How often do you read others' opinion in social media posts ?
+    \begin{enumerate}
+        \item Always
+        \item Usually
+        \item Sometimes
+        \item Rarely
+        \item Never
+    \end{enumerate}
+    \textit{Initial Code : Interest in others' opinion}
 
+    \item Which machine translation tool do you mostly use ?
+    \begin{enumerate}
+        \item Google Translation
+        \item Microsoft Bing Translation
+        \item Yandex Translation
+        \item Baidu Translation
+        \item Youdao Translation
+        \item Other (please specify)
+    \end{enumerate}
+    \textit{Initial Code : Types of translation tools}
 
+    \item Sentiment analysis tool can determine the attitude (positive or negative) of writers, which can be useful for analyzing a huge amount of comments. Are you willing to use this tool for analyzing your interest topic in social media, such as product comments or restaurant review, etc?
+    \begin{enumerate}
+        \item Very likely
+        \item Likely
+        \item Neither likely nor likely
+        \item Unlikely
+        \item Very unlikely
+    \end{enumerate}
+    \textit{Initial Code : Attitude towards sentiment analysis}
 
-    
-\begin{enumerate}
-\item What is your gender? \\
-  O Male O Female O perfer Not to say
-\item What is your age group? \\
-  O <18ys O 18-24ys O 24-30ys O 30-40ys O 40-50ys O >50ys
-\item What are your areas of interest? (many answers possible) \\
-  O Science and Technology O engineering O entertainment O military O politics O
-  law O literature O Other (please specify) .....................
-\item How often do you use social media ?\\
-  O Hourly O Daily O Weekly O monthly O yearly
-\item How long do you use social media each time? \\
-  O time >= 1 hour O time 30 minutes O 1 hour O 10 minutes to 30 minutes O less than 10 minutes
-\item Which social media platforms do you use regularly ? (many answers possible)\\
-  O Facebook O Twitter O YouTube O Instagram O WeChat O LinkedIn O Weibo O I
-  don't use social media O Other (please specify)
-\item Which language(s) can you understand easily ?\\
-  O English O French O Chinese O Spanish O Vietnamese O Arabic O Indian O
-  Russian O German O Other (please specify)
-\item How interested are you in other culture? \\
-  O Extremely interested O Very interested O Somewhat interested O Not so
-  interested O Not at all interested
-\item How willing are you to understand the contents in an foreign language?\\
-  O Very likely O Likely O Neither likely nor unlikely O Unlikely O Very
-  unlikely
-
-
-
-\item How often do you read others' opinion ?\\
-  O Always O Usually O Sometimes O Rarely O Never
-
-
-
-\item Which machine translation tool do you use most?\\
-  O Google Translation O Microsoft Bing Translation O Yandex Translation O Baidu
-  Translation O Youdao Translation O Other (please specify) .......
-\item Sentiment analysis tool can determine the attitude (positive or negative)
-  of writers, which can be useful for analyzing a huge amount of comments. Are
-  you willing to use this tool to analyze your interests in social
-  media, such as product comments or restaurant review, etc?\\
-  O Very likely O Likely O Neither likely nor unlikely O Unlikely O Very unlikely
 \end{enumerate}
+
 \bibliographystyle{IEEEtran}
 \bibliography{library}
 \end{document}

@@ -1,62 +1,63 @@
 This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: paper.aux
-The style file: annotate.bst
-Illegal, another \bibstyle command---line 60 of file paper.aux
- : \bibstyle
- :          {IEEEtran}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 61 of file paper.aux
- : \bibdata
- :         {library}
-I'm skipping whatever remains of this command
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: library.bib
 I was expecting a `,' or a `}'---line 32 of file library.bib
  :   
  :   annote = "This is an excellent article."
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in machineTranslation
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty author in machineTranslation
-You've used 9 entries,
-            2588 wiz_defined-function locations,
-            627 strings with 6584 characters,
-and the built_in function-call counts, 4240 in all, are:
-= -- 434
-> -- 183
-< -- 7
-+ -- 68
-- -- 65
-* -- 302
-:= -- 653
-add.period$ -- 29
-call.type$ -- 9
-change.case$ -- 59
-chr.to.int$ -- 9
+
+Done.
+You've used 11 entries,
+            4087 wiz_defined-function locations,
+            893 strings with 9441 characters,
+and the built_in function-call counts, 8645 in all, are:
+= -- 704
+> -- 172
+< -- 78
++ -- 97
+- -- 26
+* -- 417
+:= -- 1293
+add.period$ -- 26
+call.type$ -- 11
+change.case$ -- 11
+chr.to.int$ -- 180
 cite$ -- 12
-duplicate$ -- 180
-empty$ -- 317
-format.name$ -- 74
-if$ -- 903
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 53
-num.names$ -- 24
-pop$ -- 58
+duplicate$ -- 618
+empty$ -- 709
+format.name$ -- 33
+if$ -- 2019
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 97
+newline$ -- 58
+num.names$ -- 10
+pop$ -- 221
 preamble$ -- 1
-purify$ -- 68
-quote$ -- 0
-skip$ -- 154
+purify$ -- 0
+quote$ -- 2
+skip$ -- 674
 stack$ -- 0
-substring$ -- 249
-swap$ -- 54
-text.length$ -- 7
-text.prefix$ -- 2
-top$ -- 0
-type$ -- 72
-warning$ -- 2
-while$ -- 40
-width$ -- 12
+substring$ -- 441
+swap$ -- 502
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 11
+warning$ -- 1
+while$ -- 44
+width$ -- 13
 write$ -- 130
-(There were 3 error messages)
+(There was 1 error message)
