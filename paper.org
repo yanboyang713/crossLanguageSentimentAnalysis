@@ -9,6 +9,21 @@
 #+LATEX_COMPILER: pdflatex
 #+DATE: \today
 
+
+
+
+#+header: :exports results
+#+BEGIN_SRC ditaa :file img/hello-world.png
+  +--------------+         +---------------+
+  | cBLU         |         | cRED          |
+  | Hello World! |-------->|               |
+  |              |         |               |
+  +--------------+         +---------------+
+#+END_SRC
+
+#+RESULTS:
+[[file:img/hello-world.png]]
+
 * Introduction
 The purpose of this research is assessing the quality of translation tool and quality of sentiment analysis tool. Finally, we will achieve a method, finding which translation tool conbining with which sentiment analysis tool together, for getting better sentiment analysis result.
 Currently, most of sentiment analysis tool only support English. We want to find a method for let non-English people using English Sentiment Analysis tool with Machine translation tool, analysis their non-English text.
@@ -26,10 +41,13 @@ Total have 46180 movies reviews.
 * Normalization
 v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
 * Assessing Machine translation tool quality
-#+BEGIN_EXAMPLE
+
+#+header: :exports results
+
+#+BEGIN_SRC ditaa :file img/helloTest.png
 
   +--------------------------------+      +----------------------------------+
-  |                                |      |                                  |
+  |  cBLU                          |      |  cRED                            |
   |        ---------------         |      |            -------------         |
   |   ----/               \----    |      |         --/             \--      |
   |  /    Chinese Origin       \   |      |        /     Google              |
@@ -58,9 +76,12 @@ v’ = (v-min)/(max-min) * (newmax-newmin) + newmin
   |                                |      |                                  |
   +--------------------------------+      +----------------------------------+
 
-   Google Sentiment Analysis --------------   Google Sentment Analysis
+   Google Sentiment Analysis -------------->   Google Sentment Analysis
                              correlation
-#+END_EXAMPLE
+#+END_SRC
+
+#+RESULTS:
+[[file:img/helloTest.png]]
 ** Method
 1. Compare correlation coefficient between Chinese sentiment analysis results and English sentiment analysis results by each
    1. Using Google, Baidu, Yandex translation tools, translated original Chinese data to English data

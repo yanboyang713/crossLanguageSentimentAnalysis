@@ -50,14 +50,14 @@
   cross-language communication. Cross-language opinion
   mining is useful for global integration. However, most research only focuses on
   English language sentiment analysis, but little research has been conducted on
-  sentiment analysis in languages other than English. This research explores using machine
-  trainslation and sentiment analysis tools to fill this gap. The research
-  identifies a conbination of tools which will enable people to understand different language speakers' attitudes (positive or negative),
+  sentiment analysis in languages other than English. This research explores
+  this gap using machine translation and sentiment analysis tools. The research
+  identifies a combination of tools which will enable people to understand different language speakers' attitudes (positive or negative),
   emotions and opinions. This research is  based on the Metamorphic Testing method to establish a
   testing model for finding which machine translator service combined with which
   English sentiment analysis service can obtain reliable sentiment analysis
   results for non-English speakers who do not have sentiment analysis tools to
-  analysis their own language. As a result, people will able to use Machine Translation
+  analyse their own language. As a result, people will be able to use Machine Translation
   and English Sentiment Analysis to conduct big data analysis in multi-language Social Media.
 \end{abstract}
 
@@ -70,7 +70,7 @@ Cross-Language, Cross-Culture
 
 Social Media has been becoming more and more widely used. There are lots of text comments
 on different discussion topics every day.
-It would be impossible to analyses the huge amount of data generated manually.
+It would be impossible to analyse the huge amount of data generated manually.
 These topics are discussed by speakers of different languages, from different
 cultural backgrounds, further complicating any analysis.
 Most people enounter language and cultureal barriers during cross-language
@@ -84,15 +84,15 @@ or the overall contextual polarity or emotional reaction to a text document. It 
 opinion mining, which involves the use of natural language processing and
 machine learning to ascertain the possibility of positive or negative opinions \cite{sentimentAnalysis}.
 Sentiment analysis is useful for analyzing a huge amount of data relating to personal
-opinions. It can be used in an e-business context. For example, business managers can analysise
+opinions. It can be used in an e-business context. For example, business managers can analyse
 customers' attitudes, as to whether they like or dislike their product or service.
-Also, government can use sentiment analysis to analyze citizen perspectives.
+Also, government can use sentiment analysis to analyse citizen perspectives.
 In a word, sentiment analysis is coming into widespread use.
 As Dr. Haiyun mentions, English language sentiment analysis research has
 undergone major developments in recent years \cite{ChineseSentimentAnalysis}.
 However, less research has been undertaken in other languages, such as Chinese.
 Today, a lot of English language sentiment analysis theories have been
-developed. Also, a variety of Machine Translation tools is available, such as Google
+developed. Also, a variety of Machine Translation tools are available, such as Google
 translation, Bing translation and Yandex translation.
 Manchine Translation uses computational linguistic programs and natural language
 processing theory \cite{machineTranslation}.
@@ -100,7 +100,7 @@ However, nobody working in a combination of these two fields of research has und
 sentiment analysis. Therefore, the research described and discussed in this paper aims to create a testing model to find the best-combination of English
 sentiment analysis tools and machine translation tools to obtain reliable
 sentiment analysis results from non-English texts, for non-English speakers who
-do not have such sentiment analysis tools to analyze their own language.
+do not have such sentiment analysis tools to analyse their own language.
 Eventually, everyone will be able to understand different language speakers'
 attitudes (positive or negative), emotions and opinions.\\
 \section{Part A: Annotated bibliography}
@@ -110,7 +110,7 @@ This research consists of three components; measuring machine translation
 service quality; testing sentiment analysis service quality;
 finding the best compound mode for machine translation service and
 sentiment analysis service.
-As a result, this section will focus on a review of literature review about machine
+As a result, this section will focus on a review of literature about machine
 translation, Testing methodology and sentiment analysis.
 \subsection{Testing in Machine translation}
 There are two research articles about testing modeling of machine
@@ -119,39 +119,39 @@ translation(MT).
 \paragraph{Round Trip Translation method}
 As Somers argues, an Around Trip Translation (RTT) method has been establish to
 detect the quality of machine translation \cite{roundTripTranslation}; for example, testing English to Chinese translation tools.
-Firstly, an English to Chinese translation tool is use to translate test data to
+Firstly, an English to Chinese translation tool is used to translate test data to
 Chinese. It is then used to translate Chinese data back to English.
-Finally, compare the similarity for two English data set.
+Finally, there is a comparsion of the similarity of these two English data sets.
 They also mention two metrics of similarity, BLEU and F-score, to judge the
-translations. The limitations of RTT model are it cannot distingicush the best
+translations. The limitations of RTT model are it cannot distinguish the best
 MT tool from a group of poor MT tools as well as it cannot find which sentences are easier for
 translation and which sentences are harder for translation.
 
 \paragraph{A Monte Carlo Method for machine translation services}
-Another article is about using third-party language to test the quality of machine
+Another article wirtten by Pesu et.al (2018) about using third-party language to test the quality of machine
 translation \cite{thirdPartMachineTranslation}, for example, if testing an English to Chinese translation tool.
-Firstly, random choose an Intermediate third-party language.
-Secondly, translation English test data to the third-party language, after
-translating, the third-party language to Chinese.
+Firstly, an Intermediate third-party language is randomly choosen.
+Secondly, translate the English test data to the third-party language, then
+translate the third-party language to Chinese.
 These two steps constitute one path.
 Another path is translation from English directly to Chinese.
 In the end, the two path results need to compare similarity. In this article, the main
-finding is that Google Translate is the best machine translation compare with
-Yandex, Youdao as well as Bing. In addition,
-the better results to be produced in European languages compare with Asian languages, use ANOVA Statistics
+finding is that Google Translate is the best machine translation compared with
+Yandex, Youdao as well as Bing. In addition, Pesu et.al (2018) found that
+the better results produced in European languages compared with Asian languages, use ANOVA Statistics
 method and Pairwise T tests giving this conclusion.
-In my experiment, I also got Google Translator is the best machine translation
-compare with Yandex and Baidu. Pairwise T tests also can be useful for finding best-combination of English
+In this experiment, Google Translator is the best machine translation
+compared with Yandex and Baidu. Pairwise T tests also can be useful for finding best-combination of English
 sentiment analysis tools and machine translation tools to obtain reliable
 sentiment analysis results. The highlight of this model is using third-party
 language, which can decide preference language of machine translation.
 
 \subsection{Testing methodology}
-Accounting to Sethi, there are two categorized testing
+According to Sethi (2017), there are two categorized testing
 techniques, which are Static Testing and Dynamic Testing. The Dynamic Testing
 are divided into three categories, which are Functional Testing, Structural
 testing and Non-Functional Testing \cite{testingMethodReview}.
-In my research project, I will focus on Functional Testing on this project.
+In the current research project the focus is on Functional Testing.
 
 \paragraph{Metamorphic Testing}
 This research project is based on Metamorphic Testing.
@@ -176,7 +176,7 @@ Metamorphic Relation is the relationship between two input test cases as well as
 the two outputs.
 Metamorphic testing is based on Metamorphic Relation.
 The two outputs need an existing mathematical relation.
-In this example, the relation is “=”. However, MR does not must be an equation,
+In this example, the relation is “=”. However, MR could be an equation,
 it also can be a relation.
 The advantage of Metamorphic testing (MT) method; addressing the test oracle
 problem; testing case generation problem.

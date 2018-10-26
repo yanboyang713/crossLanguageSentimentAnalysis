@@ -309,11 +309,61 @@ write.csv(upperExtreme, file = "GoogleSentimentAnalysisBaseOnBaiduTranslatedData
 
 
 
+#Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data.
+info <-
+  data %>% group_by(ranking) %>% 
+  summarise(IQR=IQR(Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data.), Mean=mean(Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data.), Median=median(Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data.), Q1=quantile (Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data., probs=0.25), Q3=quantile(Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data., probs=0.75))
+
+lowerExtreme <- info$Q1 - 1.5 * info$IQR
+upperExtreme <- info$Q3 + 1.5 * info$IQR
+info <- cbind(info, lowerExtreme, upperExtreme)
+rm(lowerExtreme, upperExtreme)
+
+#slope first Argument: vector values of independent variable, usually time. Second argument: vector values of dependent variable, usually concentration
+meanSlope <- lm(info$Mean ~ info$ranking)$coeff[2]
+medianSlope <- lm(info$Median ~ info$ranking)$coeff[2]
+
+meanSlope
+medianSlope
+info
 
 
+#Google.English.sentiment.analysis.score.base.on.Google.translated.data.
+info <-
+  data %>% group_by(ranking) %>% 
+  summarise(IQR=IQR(Google.English.sentiment.analysis.score.base.on.Google.translated.data.), Mean=mean(Google.English.sentiment.analysis.score.base.on.Google.translated.data.), Median=median(Google.English.sentiment.analysis.score.base.on.Google.translated.data.), Q1=quantile (Google.English.sentiment.analysis.score.base.on.Google.translated.data., probs=0.25), Q3=quantile(Google.English.sentiment.analysis.score.base.on.Google.translated.data., probs=0.75))
+
+lowerExtreme <- info$Q1 - 1.5 * info$IQR
+upperExtreme <- info$Q3 + 1.5 * info$IQR
+info <- cbind(info, lowerExtreme, upperExtreme)
+rm(lowerExtreme, upperExtreme)
+
+#slope first Argument: vector values of independent variable, usually time. Second argument: vector values of dependent variable, usually concentration
+meanSlope <- lm(info$Mean ~ info$ranking)$coeff[2]
+medianSlope <- lm(info$Median ~ info$ranking)$coeff[2]
+
+meanSlope
+medianSlope
+info
 
 
+#Google.English.sentiment.analysis.score.base.on.Yandex.translated.data.
+info <-
+  data %>% group_by(ranking) %>% 
+  summarise(IQR=IQR(Google.English.sentiment.analysis.score.base.on.Yandex.translated.data.), Mean=mean(Google.English.sentiment.analysis.score.base.on.Yandex.translated.data.), Median=median(Google.English.sentiment.analysis.score.base.on.Yandex.translated.data.), Q1=quantile (Google.English.sentiment.analysis.score.base.on.Yandex.translated.data., probs=0.25), Q3=quantile(Google.English.sentiment.analysis.score.base.on.Yandex.translated.data., probs=0.75))
 
+lowerExtreme <- info$Q1 - 1.5 * info$IQR
+upperExtreme <- info$Q3 + 1.5 * info$IQR
+info <- cbind(info, lowerExtreme, upperExtreme)
+rm(lowerExtreme, upperExtreme)
+
+#slope first Argument: vector values of independent variable, usually time. Second argument: vector values of dependent variable, usually concentration
+meanSlope <- lm(info$Mean ~ info$ranking)$coeff[2]
+medianSlope <- lm(info$Median ~ info$ranking)$coeff[2]
+
+meanSlope
+medianSlope
+info
 
 
 
