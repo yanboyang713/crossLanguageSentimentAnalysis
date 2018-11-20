@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1536138900 "paper.aux" "paper.bbl" "paper" 1536138903
+["bibtex paper"] 1536138900 "paper.aux" "paper.bbl" "paper" 1536536254
   "/usr/share/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1525020694 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "library.bib" 1536136699 3950 2b043eef79701975f0987fc969c473f8 ""
-  "paper.aux" 1536138903 4385 a090a6b8605a7235f92c7a3e9239931e ""
+  "paper.aux" 1536536254 4385 a090a6b8605a7235f92c7a3e9239931e ""
   (generated)
-  "paper.blg"
   "paper.bbl"
-["pdflatex"] 1536138902 "paper.tex" "paper.pdf" "paper" 1536138903
+  "paper.blg"
+["pdflatex"] 1536536253 "paper.tex" "paper.pdf" "paper" 1536536254
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1525040112 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1525040097 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1525040099 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -101,12 +101,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1530491429 7906415 69db99a01c566aa9e93d4208460bae42 ""
   "IEEEtran.cls" 1440654524 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "img/testingModel.png" 1536126951 22568 d50ab003508742c2d301694966a1dd1e ""
-  "paper.aux" 1536138903 4385 a090a6b8605a7235f92c7a3e9239931e ""
+  "paper.aux" 1536536254 4385 a090a6b8605a7235f92c7a3e9239931e ""
   "paper.bbl" 1536138900 3554 e6b619178dc6e81316b9faa992a3702c "bibtex paper"
-  "paper.out" 1536138903 943 dbbd279017b5e02b554c1c2b5e946846 ""
-  "paper.tex" 1536138868 28355 98aa58c0c91885c90983ac6a5892ce58 ""
+  "paper.out" 1536536254 943 dbbd279017b5e02b554c1c2b5e946846 ""
+  "paper.tex" 1536536218 28354 4856757f0e6d7c2972f0f8e9099d0987 ""
   (generated)
   "paper.aux"
-  "paper.log"
   "paper.pdf"
   "paper.out"
+  "paper.log"
