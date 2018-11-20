@@ -5,6 +5,8 @@ library(NonCompart)
 library(ncar)
 install.packages('VennDiagram')
 library(VennDiagram)
+
+
 data <- read.csv(file="goodDataLatest.csv",head=TRUE,sep=",")
 data$ID <- seq.int(nrow(data))
 
