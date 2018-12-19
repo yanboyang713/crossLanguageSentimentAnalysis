@@ -1,0 +1,12 @@
+References (IEEE Style)
+1. A. Yadollahi, A. G. Shahraki, and O. R. Zaiane, “Current state of text sentiment analysis from opinion to emotion mining,” ACM Computing Surveys (CSUR), vol. 50, no. 2, p. 25, 2017.
+2. H. Peng, E. Cambria, and A. Hussain, “A review of sentiment analysis research in Chinese language,” Cognitive Computation, vol. 9, no. 4, pp. 423–435, 2017.
+3. “Machine translation (1950s) linguistics.” Dictionary of Theories, p. 323, 2002. [Online]. Available: http://ezproxy.uow.edu.au/login?url=https://search-ebscohost-com.ezproxy.uow.edu.au/login.aspx?direct=true&db=f6h&AN=40423164&site=eds-live
+4. H. Somers, “Round-trip translation: What is it good for?” in Proceedings of the Australasian Language Technology Workshop 2005, 2005, pp. 127–133.
+5. D. Pesu, Z. Q. Zhou, J. Zhen, and D. Towey, “A monte carlo method for metamorphic testing of machine translation services,” in Proceedings of the 3rd International Workshop on Metamorphic Testing. ACM, 2018, pp. 38–45.
+6. A. Sethi, “A review paper on levels, types & techniques in software testing,” International Journal of Advanced Research in Computer Science, vol. 8, no. 7, 2017.
+7. Z. Zhou, S. Xiang, and T. Y. Chen, “Metamorphic testing for software quality assessment: A study of search engines.” IEEE Trans. Software Eng., vol. 42, no. 3, pp. 260–280, 2016.
+8. Y. Cao, Z. Q. Zhou, and T. Y. Chen, “On the correlation between the effectiveness of metamorphic relations and dissimilarities of test case executions,” in Quality Software (QSIC), 2013 13th International Conference on. IEEE, 2013, pp. 153–162.
+9. C. Henard, M. Papadakis, M. Harman, Y. Jia, and Y. Le Traon, “Comparing white-box and black-box test prioritization,” in Software Engineering (ICSE), 2016 IEEE/ACM 38th International Conference on. IEEE, 2016, pp. 523–534.
+10. B. Liu and L. Zhang, “A survey of opinion mining and sentiment analysis,” in mining text data. Springer, 2012, pp. 415–463.
+11. A. Perrin, “Social media usage,” Pew research center, pp. 52–68, 2015.
