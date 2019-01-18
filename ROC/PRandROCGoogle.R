@@ -1,4 +1,4 @@
-
+library(ggplot2)
 library(precrec)
 library(knitr)
 
@@ -48,7 +48,7 @@ for (index in c(1:length(dataCopy) ) )
     }
     else{
       dataCopy[index] <- TRUE#FALSE
-      falseCount <- falseCount + 1530
+      falseCount <- falseCount + 1
     }
   }
   else if (data$ranking[index] == 50){

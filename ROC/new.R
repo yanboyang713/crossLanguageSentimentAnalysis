@@ -4,63 +4,43 @@ library(knitr)
 
 data <- read.csv(file="goodDataLatest.csv",head=TRUE,sep=",")
 
-ref <- seq(-1, 1, 2 / 5 )
-shif <- 0.2
 dataCopy <- data$Google.Chinese.sentiment.analysis.score.base.on.Chinese.origin.data.
 trueCount <- 0
 falseCount <- 0
 
 for (index in c(1:length(dataCopy) ) )
 {
-  if (data$ranking[index] == 10){
-    if (dataCopy[index] >= ref[1] - shif && dataCopy[index] <= ref[2] + shif){
-      dataCopy[index] <- FALSE#TRUE
+  if (data$ranking[index] == 10 || data$ranking[index] == 20){
+    if (dataCopy[index] >= -1 && dataCopy[index] <= -0.3){
+      dataCopy[index] <- TRUE
       trueCount <- trueCount + 1
     }
     else{
-      dataCopy[index] <- TRUE#FALSE
-      falseCount <- falseCount + 1
-    }
-  }else if (data$ranking[index] == 20){
-    if (dataCopy[index] >= ref[2] - shif && dataCopy[index] <= ref[3] + shif){
-      dataCopy[index] <- FALSE#TRUE
-      trueCount <- trueCount + 1
-    }
-    else{
-      dataCopy[index] <- TRUE#FALSE
+      dataCopy[index] <- FALSE
       falseCount <- falseCount + 1
     }
   }
   else if (data$ranking[index] == 30){
-    if (dataCopy[index] >= ref[3] - shif && dataCopy[index] <= ref[4] + shif){
-      dataCopy[index] <- FALSE#TRUE
+    if (dataCopy[index] >= -0.3 && dataCopy[index] <= 0.3){
+      dataCopy[index] <- TRUE
       trueCount <- trueCount + 1
     }
     else{
-      dataCopy[index] <- TRUE#FALSE
+      dataCopy[index] <- FALSE
       falseCount <- falseCount + 1
     }
   }
-  else if (data$ranking[index] == 40){
-    if (dataCopy[index] >= ref[4] - shif && dataCopy[index] <= ref[5] + shif){
-      dataCopy[index] <- FALSE#TRUE
+  else if (data$ranking[index] == 40 || data$ranking[index] == 50){
+    if (dataCopy[index] >= 0.3 && dataCopy[index] <= 1){
+      dataCopy[index] <- TRUE
       trueCount <- trueCount + 1
     }
     else{
-      dataCopy[index] <- TRUE#FALSE
-      falseCount <- falseCount + 1530
-    }
-  }
-  else if (data$ranking[index] == 50){
-    if (dataCopy[index] >= ref[5] - shif && dataCopy[index] <= ref[6] + shif){
-      dataCopy[index] <- FALSE#TRUE
-      trueCount <- trueCount + 1
-    }
-    else{
-      dataCopy[index] <- TRUE#FALSE
+      dataCopy[index] <- FALSE
       falseCount <- falseCount + 1
     }
   }
+ 
 }
 
 trueCount
