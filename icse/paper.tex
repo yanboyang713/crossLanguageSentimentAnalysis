@@ -160,7 +160,7 @@ there have got more negative comments compare with positive comments.
     Sentiment Analysis(SA) results $P_{(Origin Data)} $ is True or False. For example, user rating = 10 and Google Chinese SA score between -1
     and -0.6 (mean True) user ranking = 10 and Google Chinese SA score bigger
     than -0.6 (mean False). The decideing True table on below. Else Not in True
-    table all False.
+    table all False.\\
     \begin{center}
       \begin{tabular}{|c|c|c|c|}
         \hline
@@ -214,24 +214,22 @@ there have got more negative comments compare with positive comments.
       \end{tabular}
     \end{center}
   \end{table}\\
-
    \begin{table}[h]
-      \caption {Yandex Translation}
-    \begin{center}
-      \begin{tabular}{|c|c|}
-        \hline
-        Curve Types & AUCs \\
-        \hline\hline
-        ROC & 0.5251734 \\
-        \hline
-        PRC & 0.5322736 \\
-        \hline
-      \end{tabular}
-    \end{center}
-  \end{table}\\
-
+     \caption {Yandex Translation}
+     \begin{center}
+       \begin{tabular}{|c|c|}
+         \hline
+         Curve Types & AUCs \\
+         \hline\hline
+         ROC & 0.5251734 \\
+         \hline
+         PRC & 0.5322736 \\
+         \hline
+       \end{tabular}
+     \end{center}
+   \end{table}\\
   \begin{table}[h]
-      \caption {Baidu Translation}
+    \caption {Baidu Translation}
     \begin{center}
       \begin{tabular}{|c|c|}
         \hline
@@ -244,7 +242,6 @@ there have got more negative comments compare with positive comments.
       \end{tabular}
     \end{center}
   \end{table}\\
-
   The AUC is between 1.0 and 0.5. The better diagnostic effect will be close to 1.
   \begin{itemize}
   \item AUC has lower accuracy from 0.5 to 0.7
@@ -253,26 +250,77 @@ there have got more negative comments compare with positive comments.
   \end{itemize}
   When AUC=0.5, it means that the diagnostic method is completely ineffective
   and has no diagnostic value \cite{baiduROC}.
-\begin{itemize}
-\item For ROC AUCS: It shows \textbf{Google Translation tool} better than
-  \textbf{Baidu Translation tool} better than \textbf{Yandex Translation tool}
-\item For PRC AUCS: It shows \textbf{Googl Translation tool} better than
-  \textbf{Yandex Translation tool} better than \textbf{Baidu Translation tool}
-\end{itemize}
+  \begin{itemize}
+  \item For ROC AUCS: It shows \textbf{Google Translation tool} better than
+    \textbf{Baidu Translation tool} better than \textbf{Yandex Translation tool}
+    \item For PRC AUCS: It shows \textbf{Googl Translation tool} better than
+      \textbf{Yandex Translation tool} better than \textbf{Baidu Translation
+        tool}
+  \end{itemize}
 
 \begin{itemize}
 \item The number of true value: 23042
 \item The number of false value: 23138
 \end{itemize}
 
+\end{enumerate}
 Alought the dataset is looks balanced, ROC diagram can be trusted. The ranking
 of machine translation services' quantity are NOT reliable. The reason is three of translation services
 have lower accuracy. In another word, working not properly correct.
 
 \subsection{finding the difficults of machine translation}
-
+\subsection{Testing procedures}
+\begin{enumerate}
+    \item using three of machine translation services to translate Chinese
+    original movie comments to English translated movie comments.
+    $$P_{(Origin Data)} \rightarrow P^{\prime}_{(Google Translation)}$$
+    $$P_{(Origin Data)} \rightarrow P^{\prime}_{(Yandex Translation)}$$
+    $$P_{(Origin Data)} \rightarrow P^{\prime}_{(Baidu Translation)}$$
+  \item Using Google sentiment analysis tool to analysis $P_{(Origin Data)}$,
+    $P^{\prime}_{(Google Translation)}$, $ P^{\prime}_{(Yandex Translation)}$ and $
+    P^{\prime}_{(Baidu Translation)}$. The result are $SA_{(Origin Data)}$,
+    $SA^{\prime}_{(Google Translation)}$, $ SA^{\prime}_{(Yandex Translation)}$ and $
+    SA^{\prime}_{(Baidu Translation)}$
+  \item This three of relations should NOT be opposite attitude
+\begin{itemize}
+  \item R1: $$SA_{(Origin Data)} \longleftrightarrow SA^{\prime}_{(Google Translation)}$$
+  \item R2: $$SA_{(Origin Data)} \longleftrightarrow SA^{\prime}_{(Yandex Translation)}$$
+  \item R3: $$SA_{(Origin Data)} \longleftrightarrow SA^{\prime}_{(Baidu Translation)}$$
+\end{itemize}
 
 \end{enumerate}
+
+\subsection{Analysis}
+R1, R2 and R3 have got failures decideing by one side greater than 0.7 and
+another side smaller than -0.7. In this paper, using veen diagram for show
+failures distribution.
+  \begin{table}[h]
+    \caption {Translation Failures Distribution}
+    \begin{center}
+      \begin{tabular}{|c|c|}
+        \hline
+        Types & Number Of Failures \\
+        \hline\hline
+        google Translation & 137\\
+        \hline
+        Yandex & 129 \\
+        \hline
+        Baidu & 134 \\
+        \hline
+        $Google \cap Baidu$ & 38 \\
+        \hline
+        $Google \cap Yandex$ & 46 \\
+        \hline
+        $Yandex \cap Baidu$ & 37 \\
+        \hline
+        $Yandex \cap Baidu \cap Google$ & 17 \\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}\\
+
+\includegraphics[width=0.35\paperwidth]{./img/veen.png}
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{library}
