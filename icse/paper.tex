@@ -104,11 +104,10 @@ expert, who need well-known both languages, to participate. However, language
 expert also involves human emotional judgment. Automatic assessment human
 language is naturally difficult because of without a test oracle \cite{zhou2016metamorphic}.
 In this paper, achieving a testing modle to automatic assessment
-without language expert.
-Metamorphic testing(MT) is one of property-based software quality testing
-method, which alreadly be appoved effective for addressing the non-oracle
-problem, such as testing the quality of search engine and the quality of
-Unmanned Aerial Vehicle(UAV) flight control application and so on.
+without language expert. Metamorphic testing(MT) is one of property-based
+software quality testing method, which alreadly be appoved effective for
+addressing the non-oracle problem, such as testing the quality of search engine
+and the quality of Unmanned Aerial Vehicle(UAV) flight control application and so on.
 Therefore, decideing metamorphic testing to find machine translation services
 difficults in non-oracle sitation.
 And more specifically, this research raise two questions.
@@ -126,6 +125,52 @@ translation.
 Thirdly, analyzes the experimental results and discussion. This part will
 answer Q2.
 
+\section{Background}
+\subsection{Metamorphic Testing}
+Metamorphosis Testing(MT) a method for generating test cases, as well as test
+results verification. The most importance component is the metamorphic
+relation(MR). MR is the target application's necessary properties of function in relation to multiple
+inputs and their expected outputs. When people want to assess the
+the accuracy of $\sin$ function. For example, $\sin(2.7)$ is very difficult to
+make a correctness judgment from mathematics aspect. If using Metamorphic
+Testing method to testing $\sin$ function will reduce computational costs and
+more efficient.
+\begin{enumerate}
+\item set a Metamorphic relation: such as $\sin(\alpha) = \cos(\frac{\pi}{2} - \alpha)$
+\item
+
+\end{enumerate}
+However, when using
+Metamorphic Testing method set a metamorphic relation, which is  will less cost . If  make a correctness judgment
+
+which are expected relations among the inputs and
+outputs of multiple executions of the intended program’s functionality.
+
+are an approach for generating both test cases and test results. A central element is a set of metamorphosis
+relationships, which are necessary properties of the objective function or the algorithm in relation to multiple inputs and their expected
+outputs.
+
+
+Since its first publication, we have witnessed a rapidly increasing body of work examining metamorphic testing from
+various perspectives, including metamorphic relation identification, test case generation, integration with other software engineering
+techniques, and the validation and evaluation of software systems.
+
+
+In software testing, an inability to determine if software is behaving
+correctly, or producing the correct output, is called the oracle problem [1]. Metamorphic testing (MT) is an approach that can alleviate
+the oracle problem [6, 10], MT has been investigated and adopted by
+a growing number of researchers and practitioners [7, 16, 20, 21, 28],
+successfully uncovering software problems, even in extensively
+tested systems [8, 9, 19]. Central to MT is a set of metamorphic
+relations (MRs), which are expected relations among the inputs and
+outputs of multiple executions of the intended program’s functionality. Instead of examining the behaviour or output for an individual
+input, MT checks the SUT against selected MRs, with violations of
+an MR indicating the presence of a fault.
+An example MR for a database management system is that the
+system should return the same results for a query with the search
+condition “A and B” and a query with the search condition “B and
+A”.
+\subsection{Sentiment Analysis}
 
 \section{domonstration the current quantity of Chinese to English translation services}
 

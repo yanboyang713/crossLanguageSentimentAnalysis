@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.1)  18 JAN 2019 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.1)  22 JAN 2019 19:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,99 +508,102 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./img/ratingHis.png, id=11, 904.1278pt x 595.47469pt>
 File: ./img/ratingHis.png Graphic file (type png)
 <use ./img/ratingHis.png>
-Package pdftex.def Info: ./img/ratingHis.png  used on input line 142.
+Package pdftex.def Info: ./img/ratingHis.png  used on input line 187.
 (pdftex.def)             Requested size: 184.29036pt x 121.37346pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--159
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 []\OT1/ptm/m/n/10 Using Google sen-ti-ment anal-y-sis tool to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--159
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 \OT1/ptm/m/n/10 anal-y-sis $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10 , $\OML/cmm/m/
 it/10 P[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--164
+Underfull \hbox (badness 10000) in paragraph at lines 204--209
 
  []
 
-
-Underfull \hbox (badness 1509) in paragraph at lines 181--186
+[2 <./img/ratingHis.png (PNG copy)>]
+Underfull \hbox (badness 1509) in paragraph at lines 226--231
 \OT1/ptm/m/n/10 bin-ing with Google En-glish SA scores (based on
  []
 
-<./img/ROCandPRC.png, id=12, 904.1278pt x 595.47469pt>
+<./img/ROCandPRC.png, id=20, 904.1278pt x 595.47469pt>
 File: ./img/ROCandPRC.png Graphic file (type png)
 <use ./img/ROCandPRC.png>
-Package pdftex.def Info: ./img/ROCandPRC.png  used on input line 199.
+Package pdftex.def Info: ./img/ROCandPRC.png  used on input line 244.
 (pdftex.def)             Requested size: 215.00699pt x 141.59933pt.
 
-Underfull \hbox (badness 1466) in paragraph at lines 187--202
+Underfull \hbox (badness 1466) in paragraph at lines 232--247
 \OT1/ptm/m/n/10 is based on a se-ries of dif-fer-ent bi-nary clas-si-fier
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 187--202
+Underfull \hbox (badness 1609) in paragraph at lines 232--247
 \OT1/ptm/m/n/10 with the true pos-i-tive rate (sen-si-tiv-ity) as the Y-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 187--202
+Underfull \hbox (badness 2547) in paragraph at lines 232--247
 \OT1/ptm/m/n/10 axis and the false pos-i-tive rate (1-specificity) as
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 187--202
+Underfull \hbox (badness 5446) in paragraph at lines 232--247
 \OT1/ptm/m/n/10 di-vided into two cat-e-gories, and then sta-tis-ti-cal
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 187--202
+Underfull \hbox (badness 1902) in paragraph at lines 232--247
 \OT1/ptm/m/n/10 data sets can be mis-lead-ing. An al-ter-na-tive to a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--202
+Underfull \hbox (badness 10000) in paragraph at lines 232--247
 []
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./img/ratingHis.png (PNG copy)> <./img/ROCandPRC.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 279--284
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--329
 []\OT1/ptm/m/n/10 Using Google sen-ti-ment anal-y-sis tool to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--284
+Underfull \hbox (badness 10000) in paragraph at lines 324--329
 \OT1/ptm/m/n/10 anal-y-sis $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10 , $\OML/cmm/m/
 it/10 P[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 279--284
+Underfull \hbox (badness 7326) in paragraph at lines 324--329
 \OML/cmm/m/it/10 P[]$ \OT1/ptm/m/n/10 and $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10
  . The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--284
+Underfull \hbox (badness 10000) in paragraph at lines 324--329
 \OT1/ptm/m/n/10 re-sult are $\OML/cmm/m/it/10 SA[]$\OT1/ptm/m/n/10 , $\OML/cmm/
 m/it/10 SA[]$\OT1/ptm/m/n/10 ,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--321
+[3 <./img/ROCandPRC.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 339--366
 
  []
 
-<./img/veen.png, id=21, 904.1278pt x 595.47469pt>
+<./img/veen.png, id=24, 904.1278pt x 595.47469pt>
 File: ./img/veen.png Graphic file (type png)
 <use ./img/veen.png>
-Package pdftex.def Info: ./img/veen.png  used on input line 322.
+Package pdftex.def Info: ./img/veen.png  used on input line 367.
 (pdftex.def)             Requested size: 215.00699pt x 141.59933pt.
 (./paper.bbl)
 
@@ -614,30 +617,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./img/veen.png (PNG copy)>] (./paper.aux) ) 
+[4
+
+ <./img/veen.png (PNG copy)>] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
  4440 strings out of 492639
  63298 string characters out of 6135498
- 139450 words of memory out of 5000000
+ 140450 words of memory out of 5000000
  8255 multiletter control sequences out of 15000+600000
  46193 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,35p,272b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc
-/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
-/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
-e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (3 pages, 226897 bytes).
+{/usr/share/texmf-dist/fonts/enc/d
+vips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
+tmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (4 pages, 233492 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
