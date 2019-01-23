@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.1)  22 JAN 2019 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.1)  23 JAN 2019 11:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,10 +621,10 @@ Before submitting the final camera ready copy, remember to:
 
  <./img/veen.png (PNG copy)>] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 4440 strings out of 492639
- 63298 string characters out of 6135498
- 140450 words of memory out of 5000000
- 8255 multiletter control sequences out of 15000+600000
+ 4441 strings out of 492639
+ 63314 string characters out of 6135498
+ 140466 words of memory out of 5000000
+ 8256 multiletter control sequences out of 15000+600000
  46193 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,35p,272b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -639,7 +639,7 @@ are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (4 pages, 233492 bytes).
+Output written on paper.pdf (4 pages, 233715 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream

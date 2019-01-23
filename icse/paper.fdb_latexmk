@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1548157834 "paper.aux" "paper.bbl" "paper" 1548157834
+["bibtex paper"] 1548212523 "paper.aux" "paper.bbl" "paper" 1548212523
   "/usr/share/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1543695214 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "library.bib" 1547706048 1609 558fe85e31c1cc8cd707517ac96c8e54 ""
-  "paper.aux" 1548157834 1836 7233329627bc21c7866e3c9b34e3fdb6 ""
+  "paper.aux" 1548212523 1898 90bc4830cb26bc30c4e213afd3b31fb3 ""
   (generated)
-  "paper.blg"
   "paper.bbl"
-["pdflatex"] 1548157834 "paper.tex" "paper.pdf" "paper" 1548157834
+  "paper.blg"
+["pdflatex"] 1548212523 "paper.tex" "paper.pdf" "paper" 1548212523
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1543696176 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1543696176 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1543696176 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -98,10 +98,10 @@
   "img/ROCandPRC.png" 1547696324 54401 1144f5b246f89b0eb89b7004eb4bcfa9 ""
   "img/ratingHis.png" 1547632928 18316 4930df6582c39e7a2f72caa7756be255 ""
   "img/veen.png" 1547790908 19954 a99c3930872f6a0c39b497795bb22fae ""
-  "paper.aux" 1548157834 1836 7233329627bc21c7866e3c9b34e3fdb6 ""
-  "paper.bbl" 1548157834 2054 c1ace96d81dab547bc3f3c6557eef8c0 "bibtex paper"
-  "paper.tex" 1548157832 17235 6d41d7b02ca994bd2bab14233a25471f ""
+  "paper.aux" 1548212523 1898 90bc4830cb26bc30c4e213afd3b31fb3 ""
+  "paper.bbl" 1548212523 2054 c1ace96d81dab547bc3f3c6557eef8c0 "bibtex paper"
+  "paper.tex" 1548212521 17450 6839a37047d4eea370c8c623ec27606a ""
   (generated)
-  "paper.log"
   "paper.pdf"
   "paper.aux"
+  "paper.log"

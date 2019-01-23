@@ -129,32 +129,25 @@ answer Q2.
 \subsection{Metamorphic Testing}
 Metamorphosis Testing(MT) a method for generating test cases, as well as test
 results verification. The most importance component is the metamorphic
-relation(MR). MR is the target application's necessary properties of function in relation to multiple
-inputs and their expected outputs. When people want to assess the
-the accuracy of $\sin$ function. For example, $\sin(2.7)$ is very difficult to
+relation (MR). MR is the target application's necessary properties of function in relation to multiple
+inputs and their expected outputs.
+In software testing research field, an incapacity to decide, software product
+the correct output, is called the oracle problem. This usually means cannot
+provide exact correctness reference data. such as, machine translation. Huge and
+complexity systems is very common, no
+When people want to assess the the accuracy of $\sin$ function. For example, $\sin(2.7)$ is very difficult to
 make a correctness judgment from mathematics aspect. If using Metamorphic
 Testing method to testing $\sin$ function will reduce computational costs and
-more efficient.
-\begin{enumerate}
-\item set a Metamorphic relation: such as $\sin(\alpha) = \cos(\frac{\pi}{2} - \alpha)$
-\item
-
+more efficient. There is a testing procedures' example for $\sin$ function.
+\begin{enumerate}\label{itm:procedures}
+\item set a Metamorphic Relation: such as $$\sin(\alpha) = \cos(\frac{\pi}{2} - \alpha)$$
+\item $\sin(2.7)$ and $\cos(\frac{\pi}{2} - 2.7)$ should have same output, if the
+  outputs are different. We can say, the failure have been detected.
 \end{enumerate}
-However, when using
-Metamorphic Testing method set a metamorphic relation, which is  will less cost . If  make a correctness judgment
-
-which are expected relations among the inputs and
-outputs of multiple executions of the intended program’s functionality.
-
-are an approach for generating both test cases and test results. A central element is a set of metamorphosis
-relationships, which are necessary properties of the objective function or the algorithm in relation to multiple inputs and their expected
-outputs.
-
-
-Since its first publication, we have witnessed a rapidly increasing body of work examining metamorphic testing from
-various perspectives, including metamorphic relation identification, test case generation, integration with other software engineering
-techniques, and the validation and evaluation of software systems.
-
+However, when using \ref{itm:procedures}'s testing procedures. someone maybe
+ask, $\cos$ function also not reliable, how can use a unreliable function to
+test another function's correctness. There have the boundedness. However, both
+function have got failures at same time, that is small probability event.
 
 In software testing, an inability to determine if software is behaving
 correctly, or producing the correct output, is called the oracle problem [1]. Metamorphic testing (MT) is an approach that can alleviate

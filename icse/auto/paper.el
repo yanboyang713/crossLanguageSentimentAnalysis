@@ -17,6 +17,8 @@
     "xcolor")
    (TeX-add-symbols
     "BibTeX")
+   (LaTeX-add-labels
+    "itm:procedures")
    (LaTeX-add-bibliographies
     "library"))
  :latex)
