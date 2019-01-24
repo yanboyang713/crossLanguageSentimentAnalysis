@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.1)  23 JAN 2019 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.1)  23 JAN 2019 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -398,43 +398,197 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (./paper.aux)
+)
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+)
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box30
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+)) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen137
-\scratchbox=\box30
+\scratchbox=\box31
 \nofMPsegments=\count112
 \nofMParguments=\count113
-\everyMPshowfont=\toks21
+\everyMPshowfont=\toks23
 \MPscratchCnt=\count114
 \MPscratchDim=\dimen138
 \MPnumerator=\count115
 \makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks22
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -471,10 +625,6 @@ Package etexcmds Info: Could not find \expanded.
 (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -491,13 +641,22 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 54.
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 55.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -508,61 +667,61 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./img/ratingHis.png, id=11, 904.1278pt x 595.47469pt>
 File: ./img/ratingHis.png Graphic file (type png)
 <use ./img/ratingHis.png>
-Package pdftex.def Info: ./img/ratingHis.png  used on input line 187.
+Package pdftex.def Info: ./img/ratingHis.png  used on input line 181.
 (pdftex.def)             Requested size: 184.29036pt x 121.37346pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 192--198
 []\OT1/ptm/m/n/10 Using Google sen-ti-ment anal-y-sis tool to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 192--198
 \OT1/ptm/m/n/10 anal-y-sis $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10 , $\OML/cmm/m/
 it/10 P[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--209
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
 
  []
 
 [2 <./img/ratingHis.png (PNG copy)>]
-Underfull \hbox (badness 1509) in paragraph at lines 226--231
+Underfull \hbox (badness 1509) in paragraph at lines 220--225
 \OT1/ptm/m/n/10 bin-ing with Google En-glish SA scores (based on
  []
 
 <./img/ROCandPRC.png, id=20, 904.1278pt x 595.47469pt>
 File: ./img/ROCandPRC.png Graphic file (type png)
 <use ./img/ROCandPRC.png>
-Package pdftex.def Info: ./img/ROCandPRC.png  used on input line 244.
+Package pdftex.def Info: ./img/ROCandPRC.png  used on input line 238.
 (pdftex.def)             Requested size: 215.00699pt x 141.59933pt.
 
-Underfull \hbox (badness 1466) in paragraph at lines 232--247
+Underfull \hbox (badness 1466) in paragraph at lines 226--241
 \OT1/ptm/m/n/10 is based on a se-ries of dif-fer-ent bi-nary clas-si-fier
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 232--247
+Underfull \hbox (badness 1609) in paragraph at lines 226--241
 \OT1/ptm/m/n/10 with the true pos-i-tive rate (sen-si-tiv-ity) as the Y-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 232--247
+Underfull \hbox (badness 2547) in paragraph at lines 226--241
 \OT1/ptm/m/n/10 axis and the false pos-i-tive rate (1-specificity) as
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 232--247
+Underfull \hbox (badness 5446) in paragraph at lines 226--241
 \OT1/ptm/m/n/10 di-vided into two cat-e-gories, and then sta-tis-ti-cal
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 232--247
+Underfull \hbox (badness 1902) in paragraph at lines 226--241
 \OT1/ptm/m/n/10 data sets can be mis-lead-ing. An al-ter-na-tive to a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--247
+Underfull \hbox (badness 10000) in paragraph at lines 226--241
 []
  []
 
@@ -573,38 +732,159 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--329
+Underfull \hbox (badness 10000) in paragraph at lines 318--323
 []\OT1/ptm/m/n/10 Using Google sen-ti-ment anal-y-sis tool to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--329
+Underfull \hbox (badness 10000) in paragraph at lines 318--323
 \OT1/ptm/m/n/10 anal-y-sis $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10 , $\OML/cmm/m/
 it/10 P[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 324--329
+Underfull \hbox (badness 7326) in paragraph at lines 318--323
 \OML/cmm/m/it/10 P[]$ \OT1/ptm/m/n/10 and $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10
  . The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--329
+Underfull \hbox (badness 10000) in paragraph at lines 318--323
 \OT1/ptm/m/n/10 re-sult are $\OML/cmm/m/it/10 SA[]$\OT1/ptm/m/n/10 , $\OML/cmm/
 m/it/10 SA[]$\OT1/ptm/m/n/10 ,
  []
 
 [3 <./img/ROCandPRC.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 339--366
+Underfull \hbox (badness 10000) in paragraph at lines 333--360
 
  []
 
 <./img/veen.png, id=24, 904.1278pt x 595.47469pt>
 File: ./img/veen.png Graphic file (type png)
 <use ./img/veen.png>
-Package pdftex.def Info: ./img/veen.png  used on input line 367.
+Package pdftex.def Info: ./img/veen.png  used on input line 361.
 (pdftex.def)             Requested size: 215.00699pt x 141.59933pt.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 364
+.
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
+File: c70gbsn.fd 2015/04/18 4.8.4
+)
+(/usr/share/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
+File: c70gbsn.fdx 2015/04/18 4.8.4
+)
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
+[]\OT1/ptm/m/n/10 google and baidu 2.Trans-la-tion er-ror with noun
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
+\C70/gbsn/m/n/10/ff ^^L\OT1/ptm/m/n/10 misuse and in-cor-rect us-age,Sequential
+ chaos\C70/gbsn/m/n/10/30 ^^B \C70/gbsn/m/n/10/4f ‹
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 379--381
+\C70/gbsn/m/n/10/59 ‚\OT1/ptm/m/n/10 sententChinese\\C70/gbsn/m/n/10/60 ó \C70/
+gbsn/m/n/10/6c Õ \C70/gbsn/m/n/10/4e ^^M \C70/gbsn/m/n/10/95 ^^Y \C70/gbsn/m/n/
+10/ff ^^L \C70/gbsn/m/n/10/53 ï \C70/gbsn/m/n/10/60 Ü \C70/gbsn/m/n/10/82 ‚ \C7
+0/gbsn/m/n/10/59 O \C70/gbsn/m/n/10/62 Š \C70/gbsn/m/n/10/63 á \C70/gbsn/m/n/10
+/76 „ \C70/gbsn/m/n/10/4e ^^M
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--386
+[]\OT1/ptm/m/n/10 all 3 \C70/gbsn/m/n/10/6c ¡ \C70/gbsn/m/n/10/90 £ \C70/gbsn/m
+/n/10/4e H \C70/gbsn/m/n/10/70 Â \C70/gbsn/m/n/10/ff ^^L \C70/gbsn/m/n/10/6b Ô 
+\C70/gbsn/m/n/10/66 % Z \C70/gbsn/m/n/10/59 }\OT1/ptm/m/n/10 3.Misinterpretatio
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--386
+\OT1/ptm/m/n/10 of pro-fes-sional terms and lit-er-ary terms.\C70/gbsn/m/n/10/6
+b Ô \C70/gbsn/m/n/10/59 ‚\OT1/ptm/m/n/10 \\C70/gbsn/m/n/10/66 %
+ []
+
+
+Overfull \hbox (158.0pt too wide) in paragraph at lines 387--391
+[]\OT1/ptm/m/n/10 *************************************************************
+*******************
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 387--391
+\OT1/ptm/m/n/10 4.\C70/gbsn/m/n/10/67 ^^[ \C70/gbsn/m/n/10/65 ‡ \C70/gbsn/m/n/1
+0/75 ^^_ \C70/gbsn/m/n/10/61 ^^O\OT1/ptm/m/n/10 google only \C70/gbsn/m/n/10/6b
+ Ô \C70/gbsn/m/n/10/59 ‚\OT1/ptm/m/n/10 \\C70/gbsn/m/n/10/72 G \C70/gbsn/m/n/10
+/5b P \C70/gbsn/m/n/10/6c ¡ \C70/gbsn/m/n/10/4f ` \C70/gbsn/m/n/10/4e ì \C70/gb
+sn/m/n/10/8b ô \C70/gbsn/m/n/10/76 „ \C70/gbsn/m/n/10/90 £ \C70/gbsn/m/n/10/4e 
+H
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 387--391
+\C70/gbsn/m/n/10/96 ¾ \C70/gbsn/m/n/10/77 \OT1/ptm/m/n/10 "GoogleTranslation\C
+70/gbsn/m/n/10/7f û \C70/gbsn/m/n/10/8b Ñ \C70/gbsn/m/n/10/4e :\OT1/ptm/m/n/10 
+\the film did not you
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 397--406
+\OT1/ptm/m/n/10 stylis-tic mis-in-ter-pre-ta-tion.\C70/gbsn/m/n/10/53 Ÿ \C70/gb
+sn/m/n/10/65 ‡\OT1/ptm/m/n/10 \\C70/gbsn/m/n/10/5f ˆ \C70/gbsn/m/n/10/51 ™ \C70
+/gbsn/m/n/10/5b ž \C70/gbsn/m/n/10/ff ^^L \C70/gbsn/m/n/10/5d ò \C70/gbsn/m/n/1
+0/7e Ï \C70/gbsn/m/n/10/4e ^^M \C70/gbsn/m/n/10/66 / \C70/gbsn/m/n/10/75 5
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 397--406
+\C70/gbsn/m/n/10/4e * \C70/gbsn/m/n/10/79 > \C70/gbsn/m/n/10/4f ^^Z \C70/gbsn/m
+/n/10/8f Ù \C70/gbsn/m/n/10/4e * ^^V \C70/gbsn/m/n/10/75 L \C70/gbsn/m/n/10/54 
+Œ \C70/gbsn/m/n/10/4e ^^@ › º \C70/gbsn/m/n/10/76 „ \C70/gbsn/m/n/10/56 4 \C70/
+gbsn/m/n/10/81 8 \C70/gbsn/m/n/10/54 Œ \C70/gbsn/m/n/10/75 ^^_ \C70/gbsn/m/n/10
+/6d ;\OT1/ptm/m/n/10 ..."\C70/gbsn/m/n/10/4e -\OT1/ptm/m/n/10 \\C70/gbsn/m/n/10
+/56 4
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 397--406
+\C70/gbsn/m/n/10/81 8\OT1/ptm/m/n/10 "\C70/gbsn/m/n/10/8f Ù \C70/gbsn/m/n/10/4e
+ * \C70/gbsn/m/n/10/8b Í\OT1/ptm/m/n/10 ,\C70/gbsn/m/n/10/4e 	 * \C70/gbsn/m/n/
+10/7f û \C70/gbsn/m/n/10/8b Ñ \C70/gbsn/m/n/10/8f o \C70/gbsn/m/n/10/4e ö \C70/
+gbsn/m/n/10/90 ý \C70/gbsn/m/n/10/7f û \C70/gbsn/m/n/10/8b Ñ \C70/gbsn/m/n/10/4
+e :\OT1/ptm/m/n/10 \face"\C70/gbsn/m/n/10/68 9 \C70/gbsn/m/n/10/63 n \C70/gbsn/
+m/n/10/65 ‡
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--406
+\C70/gbsn/m/n/10/4e - \C70/gbsn/m/n/10/76 „ \C70/gbsn/m/n/10/53 Ÿ \C70/gbsn/m/n
+/10/61 ^^O\OT1/ptm/m/n/10 ,\C70/gbsn/m/n/10/5e ” \C70/gbsn/m/n/10/8b å \C70/gbs
+n/m/n/10/65 9 \C70/gbsn/m/n/10/8b Ñ\OT1/ptm/m/n/10 \Ugly face;Lewd ap-pear-ance
+."
+ []
+
+
+Overfull \hbox (64.34583pt too wide) in paragraph at lines 397--406
+\OT1/ptm/m/n/10 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 397--406
+\OT1/ptm/m/n/10 lo-ca-tion of at-tribu-tive\C70/gbsn/m/n/10/30 ^^A\OT1/ptm/m/n/
+10 Improper po-si-tion of ad-ver-bial
+ []
+
+[4 <./img/veen.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 440--446
+[]\OT1/ptm/m/n/10 3.\C70/gbsn/m/n/10/53 å \C70/gbsn/m/n/10/5b P \C70/gbsn/m/n/1
+0/7e Ó \C70/gbsn/m/n/10/67 „ \C70/gbsn/m/n/10/65 ¹ \C70/gbsn/m/n/10/97 b \C70/g
+bsn/m/n/10/95 î \C70/gbsn/m/n/10/98 ˜\OT1/ptm/m/n/10 .\C70/gbsn/m/n/10/88 h \C7
+0/gbsn/m/n/10/79 : \C70/gbsn/m/n/10/56 à \C70/gbsn/m/n/10/67 œ \C70/gbsn/m/n/10
+/51 s \C70/gbsn/m/n/10/7c û \C70/gbsn/m/n/10/4e ^^M
+ []
+
 (./paper.bbl)
 
 ** Conference Paper **
@@ -617,32 +897,77 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
- <./img/veen.png (PNG copy)>] (./paper.aux) ) 
+[5] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 4441 strings out of 492639
- 63314 string characters out of 6135498
- 140466 words of memory out of 5000000
- 8256 multiletter control sequences out of 15000+600000
- 46193 words of font info for 100 fonts, out of 8000000 for 9000
+ 6404 strings out of 492639
+ 85545 string characters out of 6135498
+ 164887 words of memory out of 5000000
+ 10027 multiletter control sequences out of 15000+600000
+ 63494 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,272b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/d
-vips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/
-fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
-tmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
-texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (4 pages, 233715 bytes).
+ 41i,11n,35p,503b,1024s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/g
+bsnu30.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/sh
+are/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf-dist/font
+s/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsn
+u/gbsnu51.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr
+/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf-dist/f
+onts/type1/arphic/gbsnu/gbsnu54.pfb></usr/share/texmf-dist/fonts/type1/arphic/g
+bsnu/gbsnu55.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu56.pfb></
+usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf-dis
+t/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf-dist/fonts/type1/arphi
+c/gbsnu/gbsnu5b.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb
+></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf-
+dist/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnu5f.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.
+pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/share/tex
+mf-dist/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf-dist/fonts/type1
+/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
+64.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb></usr/share/
+texmf-dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu68.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/sha
+re/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf-dist/fonts
+/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu
+/gbsnu6e.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/
+share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu75.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb></u
+sr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf-dist
+/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf-dist/fonts/type1/arphic
+/gbsnu/gbsnu79.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7b.pfb>
+</usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf-d
+ist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu7e.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7f.p
+fb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texm
+f-dist/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/share/texmf-dist/fonts/type1/
+arphic/gbsnu/gbsnu82.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8
+4.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/t
+exmf-dist/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbs
+nu8c.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/shar
+e/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf-dist/fonts/
+type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/
+gbsnu91.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/s
+hare/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbs
+nu/gbsnu98.pfb></usr/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></us
+r/share/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9c.pfb></usr/share/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
+are/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (5 pages, 494783 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 384 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

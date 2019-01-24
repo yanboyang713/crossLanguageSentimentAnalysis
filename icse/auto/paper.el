@@ -14,7 +14,8 @@
     "algorithmic"
     "graphicx"
     "textcomp"
-    "xcolor")
+    "xcolor"
+    "CJKutf8")
    (TeX-add-symbols
     "BibTeX")
    (LaTeX-add-labels

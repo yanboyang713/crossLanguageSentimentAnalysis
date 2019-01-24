@@ -7,10 +7,11 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{CJKutf8}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
-
+\begin{CJK*}{UTF8}{gbsn}
 \title{Difficult Text Analysis of Machine Translation Services base on
   Metamorphic Testing in Social Media}
 
@@ -359,7 +360,120 @@ failures distribution.
 
 \includegraphics[width=0.35\paperwidth]{./img/veen.png}
 
+\subsection{Language Analysis}
+翻译质量评价总结
+
+主要问题在于以下几个方面：
+第一、词汇问题：
+Google translation:
+1.Error points语序混乱,滥用词汇和用法不正确，顺序混乱，Missing vocabulary,Improper selection of words,The words are raw.
+例如sententChinese“2013最后一场电影 就为恶心画一句号吧”，Sentent
+GoogleTranslation“Let's take a look at the last movie of 2013.”The translation
+is fragmented and incomplete，The wrong translation of words refers to the
+emotional color and stylistic misinterpretation of words。 应翻译为“ The last
+movie is a full stop for nausea in 2013.”
+
+3 of then
+比如,“这片子真垃圾 就最后一点看起来比较有新意”GoogleTranslation和YandexTranslation都翻译了原文“ innovative”。但baiduTranslation用了“new”。
+
+google and baidu
+2.Translation error with noun ，misuse and incorrect usage,Sequential chaos。例如sententChinese“想法不错，可惜节奏把握的不好”，baiduTranslation“The idea is good, but the rhythm of the rhythm is not good”.应翻译为”The idea is good, but it is pity that the rhythm is not good”.
+
+
+all 3
+没那么烂，比春晚好
+3.Misinterpretation of professional terms and literary terms.比如“春晚”GoogleTranslation准确翻译为 “Spring Festival Gala”，但是YandexTranslation错误地翻译为“show ”。错误地翻译baiduTranslation用了“spring”。
+
+********************************************************************************
+4.望文生意
+google only
+比如“片子没你们说的那么难看”GoogleTranslation翻译为“the film did not you say so ugly”这个“难看”不可翻译为“ugly”，应该翻译为“Boring”；再如，“冯导的电影是非真多”不可以翻译成“Feng's film is not true”，应翻译为“there are a lot of dispute in Feng's film ”。Translation error with noun这个“是非”不可翻译为“is not true”和“right and wrong”,应翻译为“dispute”.
+
+5.目标语背景知识缺乏
+google only
+An expression habit that is not suitable for English,Statement is not smooth，
+比如GoogleTranslation当提到“戴高帽子”时，不可翻译为“wear that tall hat”，应翻译为“Flattery”.
+
+6.词语的感情色彩、语体误译。
+all 3
+Word color misinterpretation refers to the emotional color of words, stylistic
+misinterpretation.原文“很写实，已经不是电影了，明明就是戏剧化的焦点访谈节目，披
+露这个社会这个世界和一些人的嘴脸和生活…”中“嘴脸”这个词,三个翻译软件都翻译为
+“face”根据文中的原意,应该改译“Ugly face;Lewd appearance.”
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+第二、Grammatical errors
+1.Sequence disorder、Improper location of attributive、Improper position of adverbial (improper location of time adverbial, place adverbial and other adverbial)、Improper location of clauses.Ingredients are incomplete.The subject is incomplete, the predicate is incomplete, the attributive is incomplete, the adverbial is incomplete, the object is incomplete, etc.
+
+3 all
+比如，原文“明明是搞笑片最后弄成了教育片”baiduTranslation翻译为“It's a funny movie that finally makes an education film”.“that”improper collocation of the main guest Illogical.应该翻译为“Obviously it is a comedy,but it  made into education films finally”;
+GoogleTranslation翻译为“Think of a bad movie, but did not expect to be able to
+rot to this point”;YandexTranslation都翻译了原文“ Thought is a bad film, just
+didn't think it could be rotten to the point ”。baiduTranslation用了“That is a
+bad film, but did not expect to come to this rotten”。三种翻译工具都共同存在的问
+题是“I do think the it is a bad moive,but I did not expect to be able to rot to
+this point”Sequence disorder and Ingredients are incomplete（The subject is
+incomplete）;
+
+google only
+原文“为贪污腐败和商业大俗片辩护的一部元素太多深度太浅的电影”,GoogleTranslation原译“An  element too deep and too shallow to justify corruption and commercial tyranny.”改译“it is a film with too shallow meaning and max lot of element for defend corruption and commercial tyranny”
+
+
+google only
+2.句子结构方面问题.句子成分残缺不全,语序混乱.
+GoogleTranslation“几小杯葡萄汁，很不新鲜”，错误地翻译为“A few small cups of
+grape juice, very fresh”，应该翻译为“A few small cups of grape juice, it is not
+very fresh”;
+
+GoogleTranslation原句“个人意见，如果想看的同学们可以去买各种打折团购
+之类的票，因为真心不值票价”，错误地翻译为“Personal opinion, if you want to see
+the students can buy all kinds of discount buy tickets, because the true
+worthless fare”，应该翻译为“Personal opinion, if students who want to see the
+film  can buy all kinds of discount tickets, because it is worthless fare”.
+
+baiduTranslation原句“前半段还不错~讽刺的意味很重，最后的道歉有点多余了”，错误地
+翻译为“The first half was good - the irony was very heavy, and the last apology
+was a little redundant”.“-”Improper location of clauses.和“and”The misuse of
+conjunctions应该翻译为“The first half was good with heavy  irony，but the last
+apology was a little redundant”.
+
+
+3.句子结构方面问题.表示因果关系不清
+GoogleTranslation原文“我是个温和的人，实在是不忍心给太少的星。。。”原译“I am a
+gentle person, and I really do not have the heart to give too few stars. . .”改
+译“I can not ignorant conscience to give too few stars,because I am a gentle
+person”.An expression habit that is not suitable for English,Statement is not
+smooth。
+
+GoogleTranslation原文“为贪污腐败和商业大俗片辩护的一部元素太多深度太浅的电影”,原
+译“An  element too deep and too shallow to justify corruption and commercial
+tyranny.”改译“it is a film with too shallow meaning and max lot of element for
+defend corruption and commercial tyranny”.
+
+\section{Conclusion}
+Google Translation, Yandex Translation and Baidu Translation are basically
+fluent and understandable. However, all of three translation services have get the
+individual words are not properly selected and the language expression does not
+conform to the natural speaking. Some of the mistranslations almost overlap.
+
+\section{analysis of causes}
+Although the length of the movie commentary sentences is short, the vocabulary
+is not difficult and the sentences' structure seems simple, there have got
+lots of colloquial speech and many of words are not formal, which is the main
+reason for the low quality of translation results. Lots of compound
+sentence is hidded. It is more difficult for intelligent machines translation
+services.
+
+\section{future work}
+Due to the differences way of thinking between Chinese and English languages. In
+addition, cultural differences and the limitation of translation corpus.
+Machine translation tools have serious language problems. Machine translation
+researchers must be work with linguistic researchers, who should be paid more
+attention to the corpus, lexical analysis and grammatical analysis.
+
+\section{consideration and suggestion}
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{library}
+\end{CJK*}
 \end{document}
