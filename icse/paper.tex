@@ -72,7 +72,7 @@ email address}
   This research is based on the Metamorphic Testing method to establish a
   testing model which using machine translation service translate original test
   dataset from one language to another language. After, using sentiment analysis
-  tool to analyize original test dataset and translated dataset, the results
+  tool to analyize original test dataset and translated datasets, the results
   should be same polarization (positive or negative). If the results are
   opposite polarization, that means this sentence is difficult for machine
   translation.
@@ -82,12 +82,15 @@ email address}
 
 \begin{IEEEkeywords}
   Metamorphic Testing, machine translation, sentiment analysis, machine
-  translation quantity testing, evaluation of machine translation services difficult
+  translation quantity testing, evaluation of machine translation services
+  difficult, natural language
 \end{IEEEkeywords}
 
 \section{Introduction}
 Machine translation services has been becoming more and more widely used, also
-more and more popular. Most people encounter language and cultural barriers
+more and more popular. In especial, machine translation system has significantly increased
+international trade\cite{brynjolfsson2018does}.
+Most people encounter language and cultural barriers
 during cross-language communication. There are lots of text and documents on different languages need
 to translation every day. It would be impossible to translation the huge amount
 of data generated manually. Nowadays, there are lots of machine translation
@@ -96,7 +99,8 @@ Yandex, Baidu translation and Youdao translation and so on. In this research,
 only compare and evaluation Google translation, Yandex translation and Baidu
 translation difficults. Those three translation tools are typical and the most
 widespread to used. Google translation tool come from American, Yandex come from
-Russia, and Baidu come from China. Accounting to Pesu said machine translation
+Russia, and Baidu come from China. This three tools all come from the top three
+powerful country. Accounting to Pesu said machine translation
 tools can product better results on European languages compare with Asian
 language \cite{pesu2018monte}. So, Chinese to English translation tool is the main
 kind of translation languages to analysis translation difficults in the paper.
@@ -107,7 +111,7 @@ language is naturally difficult because of without a test oracle \cite{zhou2016m
 In this paper, achieving a testing modle to automatic assessment
 without language expert. Metamorphic testing(MT) is one of property-based
 software quality testing method, which alreadly be appoved effective for
-addressing the non-oracle problem, such as testing the quality of search engine
+addressing the oracle problem, such as testing the quality of search engine
 and the quality of Unmanned Aerial Vehicle(UAV) flight control application and so on.
 Therefore, decideing metamorphic testing to find machine translation services
 difficults in non-oracle sitation.
@@ -128,14 +132,18 @@ answer Q2.
 
 \section{Background}
 \subsection{Metamorphic Testing}
-Metamorphosis Testing(MT) a method for generating test cases, as well as test
-results verification. The most importance component is the metamorphic
-relation (MR). MR is the target application's necessary properties of function in relation to multiple
-inputs and their expected outputs.
+Metamorphosis Testing (MT) is a method for generating test cases, as well as test
+results verification \cite{zhou2017introduction}. The most importance component is the metamorphic
+relation (MR) \cite{chen2003fault}. MR is the target application's necessary
+properties of function in relation to multiple inputs and their expected outputs.
+MT has been researched through more and more researchers constantly strive
+toward and adopted by industries and organizations such as Adobe, NASA and the
+National Institute of Standards and Technology \cite{zhou2018metamorphic}.
 In software testing research field, an incapacity to decide, software product
-the correct output, is called the oracle problem. This usually means cannot
-provide exact correctness reference data. such as, machine translation. Huge and
-complexity systems is very common, no
+the correct output, is called the oracle problem \cite{brown2018metamorphic}.
+This usually means cannot provide exact correctness reference data. such as,
+machine translation. Huge and complexity systems, does not have
+reference data for proving function's correctness, is very common.
 When people want to assess the the accuracy of $\sin$ function. For example, $\sin(2.7)$ is very difficult to
 make a correctness judgment from mathematics aspect. If using Metamorphic
 Testing method to testing $\sin$ function will reduce computational costs and
@@ -143,46 +151,59 @@ more efficient. There is a testing procedures' example for $\sin$ function.
 \begin{enumerate}\label{itm:procedures}
 \item set a Metamorphic Relation: such as $$\sin(\alpha) = \cos(\frac{\pi}{2} - \alpha)$$
 \item $\sin(2.7)$ and $\cos(\frac{\pi}{2} - 2.7)$ should have same output, if the
-  outputs are different. We can say, the failure have been detected.
+  outputs are different. We can say, this MR have been break, maybe the failure
+  have been detected.
 \end{enumerate}
-However, when using \ref{itm:procedures}'s testing procedures. someone maybe
+However, when using \ref{itm:procedures}'s testing procedures. Someone maybe
 ask, $\cos$ function also not reliable, how can use a unreliable function to
 test another function's correctness. There have the boundedness. However, both
 function have got failures at same time, that is small probability event.
-
-In software testing, an inability to determine if software is behaving
-correctly, or producing the correct output, is called the oracle problem [1]. Metamorphic testing (MT) is an approach that can alleviate
-the oracle problem [6, 10], MT has been investigated and adopted by
-a growing number of researchers and practitioners [7, 16, 20, 21, 28],
-successfully uncovering software problems, even in extensively
-tested systems [8, 9, 19]. Central to MT is a set of metamorphic
-relations (MRs), which are expected relations among the inputs and
-outputs of multiple executions of the intended program’s functionality. Instead of examining the behaviour or output for an individual
-input, MT checks the SUT against selected MRs, with violations of
-an MR indicating the presence of a fault.
-An example MR for a database management system is that the
-system should return the same results for a query with the search
-condition “A and B” and a query with the search condition “B and
-A”.
 \subsection{Sentiment Analysis}
+Sentiment analysis is a part of text data mining. The aim of sentiment analysis
+is to determine the attitude of speakers or writers with respect to particular
+topics or the overall contextual polarity or emotional reaction to a text
+document. It is usually equated with opinion mining, which involves the use of
+natural language processing and machine learning to ascertain the possibility of
+positive or negative opinions \cite{yadollahi2017current}. Sentiment analysis is useful for analyzing a
+huge amount of data relating to personal opinions. It can be used in an
+e-business context. For example, business managers can analysis customers’
+attitudes, as to whether they like or dislike their product or service. Also,
+government can use sentiment analysis to analyze citizen perspectives.
+In this paper, we will using Google Sentiment Analysis tool to prove the the
+quantity of Machine Translation. The details of Testing Modle will talk in \ref{testingModle} .
 
-\section{domonstration the current quantity of Chinese to English translation services}
+\section{domonstration the current quantity of Chinese to English translation
+  services} \label{currentQuantity}
 
 \subsection{Test Sample}
-All of test sample came from Douban, one of biggest social networking service
+All of test sample came from Douban\footnote{Douban Website:
+  https://www.douban.com/}, one of biggest social networking service
 platforms in China. This social website attracts more than one hundred million
 active visitors per month, and has amassed over sixty-five million registered
-users. We then employ the Douban public Application Programming Interfaces
+users \cite{doubanStat}. We then employ the Douban public Application Programming Interfaces
 (APIs) to access Chinses-written comments. A typical data structure of harvested
 comment is shown as a tuple: [Rating, Raw comments]. Totally, comments have got
 46180 in the corpus. User rating total have 5 groups, which are 10, 20, 30, 40
 and 50, from negative to positive.
 The test sample distribution diagram on below.
-\centerline{\includegraphics[width=0.3\paperwidth]{./img/ratingHis.png}}
+\begin{figure}[h]
+  \centering
+\includegraphics[width=0.3\paperwidth]{./img/ratingHis.png}
+\caption{User Rating Histogram}
+\label{fig:userRatingHistogram}
+\end{figure}
 As you can see, the majority of comments allocate on rating 30. In addition,
 there have got more negative comments compare with positive comments.
 
-\subsection{Testing procedures}
+\subsection{Testing procedures} \label{testingModle}
+\begin{figure}[h]
+  \centering
+\includegraphics[width=0.35\paperwidth]{./img/model.png}
+\caption{Testing Procedures}
+\label{fig:testingProcedures}
+\end{figure}
+One the below, will explain more details for figure \ref{fig:testingProcedures}.
+
 \begin{enumerate}
   \item using three of machine translation services to translate Chinese
     original movie comments to English translated movie comments.
@@ -194,13 +215,16 @@ there have got more negative comments compare with positive comments.
     P^{\prime}_{(Baidu Translation)}$. Google sentiment analysis APIs will get 2
     values, which are Score and Manitude. The range of Score is between -1 and
     1. If Score more close to 1 means this movie comment more positive, as well
-    as, if Score more close to -1 means this movie comment more negative.
-  \item Using user rating values (10, 20, 30, 40 or 50) to check Google
-    Sentiment Analysis(SA) results $P_{(Origin Data)} $ is True or False. For example, user rating = 10 and Google Chinese SA score between -1
+    as, if Score more close to -1 means this movie comment more negative. In
+    this paper, we have not analysis Manitude, which for distinction mix and neutral.
+  \item\label{itm:testingProcedure3} Using user rating values (10, 20, 30, 40 or 50) to check Google
+    Sentiment Analysis(SA) results $P_{(Origin Data)} $ is True or False. For
+    example, user rating = 10 and Google Chinese SA score between -1
     and -0.6 (mean True) user ranking = 10 and Google Chinese SA score bigger
-    than -0.6 (mean False). The decideing True table on below. Else Not in True
-    table all False.\\
-    \begin{center}
+    than -0.6 (mean False). The decideing True table on below.\\
+     \begin{table}[h]
+      \caption {The Range of Score: True/ False}
+     \begin{center}
       \begin{tabular}{|c|c|c|c|}
         \hline
         user rating & Google SA score & True/False \\
@@ -214,9 +238,31 @@ there have got more negative comments compare with positive comments.
         40 & $[ \, 0, 0.8 ] \,$ & True \\
         \hline
         50 & $[ \, 0.4, 1 ] \,$ & True \\
+        \hline \hline
+        10 & $( \, -0.4, 1 ] \,$ & False \\
+        \hline
+        20 & $[ \, -1, -0.8) \,$ & False \\
+        \hline
+        20 & $( \, -0.8, 1] \,$ & False \\
+        \hline
+        30 & $[ \, -1, -0.4) \,$ & False \\
+        \hline
+        30 & $( \, 0.4, 1] \,$ & False \\
+        \hline
+        40 & $[ \, -1, 0) \,$ & False \\
+        \hline
+        40 & $( \, 0.8, 1] \,$ & False \\
+        \hline
+        50 & $[ \, -1, 0.4) \,$ & False \\
+        \hline
         \hline
       \end{tabular}
     \end{center}
+  \end{table}
+
+    As you can see, the Google SA score ranges have got some overlap because
+    overlap can decrease the results, machine translation evaluation
+    correctness, influence by the accuracy of Google Sentiment Analysis tool.
   \item Using those True or False values as vector combining with Google English
     SA scores (based on $P^{\prime}_{(Google Translation)}$), Google English SA
     scores (based on $ P^{\prime}_{(Yandex Translation)}$) and Google English SA
@@ -224,7 +270,8 @@ there have got more negative comments compare with positive comments.
     characteristic (ROC) graphics and 3 Precision-recall curves (PRC) graphics.
 
     ROC curve is often used in evaluation the clinical performance of a
-    biochemical test. The ROC curve is based on a series of different binary
+    biochemical test \cite{zweig1993receiver}. The ROC curve is based on a
+    series of different binary
     classifier with the true positive rate (sensitivity) as the Y-axis and the
     false positive rate (1-specificity) as the X-axis \cite{ROC}. The traditional
     evaluation must be divided into two categories, and then statistical
@@ -235,9 +282,14 @@ there have got more negative comments compare with positive comments.
     ROC curves based on imbalanced data sets can be misleading. An alternative
     to a ROC curve is a precision-recall curve (PRC). PRC might be a better
     choice for imbalanced datasets \cite{davis2006relationship}.
-    \includegraphics[width=0.35\paperwidth]{./img/ROCandPRC.png}
     This graphic show those three of machine translation tools all achieve poor
     translation results.
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.35\paperwidth]{./img/ROCandPRC.png}
+\caption{ROC and PRC graphics}
+\label{fig:ROCandPRC}
+\end{figure}
   \item Calculate Area Under The Curve (AUC) values for ROC and PRC.
     \begin{table}[h]
       \caption {Google Translation}
@@ -252,7 +304,7 @@ there have got more negative comments compare with positive comments.
         \hline
       \end{tabular}
     \end{center}
-  \end{table}\\
+  \end{table}
    \begin{table}[h]
      \caption {Yandex Translation}
      \begin{center}
@@ -266,7 +318,7 @@ there have got more negative comments compare with positive comments.
          \hline
        \end{tabular}
      \end{center}
-   \end{table}\\
+   \end{table}
   \begin{table}[h]
     \caption {Baidu Translation}
     \begin{center}
@@ -281,58 +333,61 @@ there have got more negative comments compare with positive comments.
       \end{tabular}
     \end{center}
   \end{table}\\
-  The AUC is between 1.0 and 0.5. The better diagnostic effect will be close to 1.
-  \begin{itemize}
-  \item AUC has lower accuracy from 0.5 to 0.7
-  \item AUC has a certain accuracy from 0.7 to 0.9
-  \item AUC has higher accuracy at above 0.9
-  \end{itemize}
+  The AUC is between 1.0 and 0.5. The better diagnostic effect will be close to
+  1. The ranking of accuracy is show on Table: \ref{accuracyJudgment}\\\\
+  \begin{table}[h]\label{accuracyJudgment}
+    \caption {ROC and PRC accuracy judgment}
+     \begin{center}
+       \begin{tabular}{|c|c|}
+         \hline
+         AUC value & Accuracy \\
+         \hline\hline
+         $[ \, 0.5, 0.7] \,$ & lower accuracy \\
+         \hline
+         $[ \, 0.7, 0.9] \,$ & certain accuracy \\
+         \hline
+         $[ \, 0.9, 1] \,$ & higher accuracy \\
+         \hline
+       \end{tabular}
+     \end{center}
+   \end{table}
   When AUC=0.5, it means that the diagnostic method is completely ineffective
   and has no diagnostic value \cite{baiduROC}.
-  \begin{itemize}
-  \item For ROC AUCS: It shows \textbf{Google Translation tool} better than
-    \textbf{Baidu Translation tool} better than \textbf{Yandex Translation tool}
-    \item For PRC AUCS: It shows \textbf{Googl Translation tool} better than
-      \textbf{Yandex Translation tool} better than \textbf{Baidu Translation
-        tool}
-  \end{itemize}
-
-\begin{itemize}
-\item The number of true value: 23042
-\item The number of false value: 23138
-\end{itemize}
-
 \end{enumerate}
-Alought the dataset is looks balanced, ROC diagram can be trusted. The ranking
-of machine translation services' quantity are NOT reliable. The reason is three of translation services
-have lower accuracy. In another word, working not properly correct.
+  \subsection{Current Translation Tool Results Analysis}
+  In the testing Procedures \ref{itm:testingProcedure3}, which is the judgment of Google Chinese
+    Sentiment Analysis(SA) results is True or False, there are totally have find
+    23042 of true value, as well as 23138 of false value. Alought the dataset is
+    looks balanced, ROC diagram can be trusted. The ranking of machine
+    translation services' quantity are NOT reliable. The reason is three of
+    translation services have lower accuracy. In another word, working not
+    properly correct. However, there are still have the ranking of machine
+    translation services' quantity on the below.
+\subsubsection{For ROC AUCS}
+\textbf{It shows Google Translation tool better than Baidu Translation tool better than Yandex Translation tool}
+\subsubsection{For PRC AUCS}
+\textbf{It shows Googl Translation tool better than Yandex Translation tool better than Baidu Translation tool}
 
-\subsection{finding the difficults of machine translation}
+\section{finding the difficults of machine translation}
 \subsection{Testing procedures}
-\begin{enumerate}
-    \item using three of machine translation services to translate Chinese
-    original movie comments to English translated movie comments.
-    $$P_{(Origin Data)} \rightarrow P^{\prime}_{(Google Translation)}$$
-    $$P_{(Origin Data)} \rightarrow P^{\prime}_{(Yandex Translation)}$$
-    $$P_{(Origin Data)} \rightarrow P^{\prime}_{(Baidu Translation)}$$
-  \item Using Google sentiment analysis tool to analysis $P_{(Origin Data)}$,
-    $P^{\prime}_{(Google Translation)}$, $ P^{\prime}_{(Yandex Translation)}$ and $
-    P^{\prime}_{(Baidu Translation)}$. The result are $SA_{(Origin Data)}$,
-    $SA^{\prime}_{(Google Translation)}$, $ SA^{\prime}_{(Yandex Translation)}$ and $
-    SA^{\prime}_{(Baidu Translation)}$
-  \item This three of relations should NOT be opposite attitude
-\begin{itemize}
-  \item R1: $$SA_{(Origin Data)} \longleftrightarrow SA^{\prime}_{(Google Translation)}$$
-  \item R2: $$SA_{(Origin Data)} \longleftrightarrow SA^{\prime}_{(Yandex Translation)}$$
-  \item R3: $$SA_{(Origin Data)} \longleftrightarrow SA^{\prime}_{(Baidu Translation)}$$
-\end{itemize}
-
-\end{enumerate}
-
+The first two step is same with, showing the current quantity of Machine
+Translation Tools in Section \ref{currentQuantity}. Which are get translated
+datasets and sentiment analysis for 4 datasets(Chinese Origin dataset, Yandex
+translation dataset, Google translation dataset and Baidu translation dataset).
+The only different is filting all of opposite polarization (very positive or
+very negative) datasets and create three of Metamorphic Relation (MR).
+\subsubsection{MR1}
+$$SA_{(Origin Data)} \approx SA^{\prime}_{(Google Translation)}$$
+\subsubsection{MR2}
+$$SA_{(Origin Data)} \approx SA^{\prime}_{(Yandex Translation)}$$
+\subsubsection{MR3}
+$$SA_{(Origin Data)} \approx SA^{\prime}_{(Baidu Translation)}$$
 \subsection{Analysis}
-R1, R2 and R3 have got failures decideing by one side greater than 0.7 and
+MR1, MR2 and MR3 have got failures decideing by one side greater than 0.7 and
 another side smaller than -0.7. In this paper, using veen diagram for show
 failures distribution.
+\includegraphics[width=0.35\paperwidth]{./img/veen.png}
+
   \begin{table}[h]
     \caption {Translation Failures Distribution}
     \begin{center}
@@ -358,7 +413,6 @@ failures distribution.
     \end{center}
   \end{table}\\
 
-\includegraphics[width=0.35\paperwidth]{./img/veen.png}
 
 \subsection{Language Analysis}
 翻译质量评价总结

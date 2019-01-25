@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 0 "paper.aux" "paper.bbl" "paper" 1548246507
+["bibtex paper"] 1548420580 "paper.aux" "paper.bbl" "paper" 1548421811
   "/usr/share/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1543695214 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "library.bib" 1547706048 1609 558fe85e31c1cc8cd707517ac96c8e54 ""
-  "paper.aux" 1548246506 2328 710067f01ab53e8075712468bfb3a0fc ""
+  "library.bib" 1548408355 3734 308dc3acb7e11cd8fb74a3bce5a95e32 ""
+  "paper.aux" 1548420812 4236 d3703917121cc1376a3f03d7c1961b00 ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1548246506 "paper.tex" "paper.pdf" "paper" 1548246507
+["pdflatex"] 1548421811 "paper.tex" "paper.pdf" "paper" 1548421811
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1543696176 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1543696176 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1543696176 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -165,6 +165,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1543696176 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1543696176 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1543696176 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1543696176 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1543696176 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1543696176 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1543696176 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -227,16 +228,17 @@
   "/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1543696176 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1543696176 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1543696176 33301 a3134070eacafb10b1f371612ce2650d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1546306986 2969938 5f36858c1d6a6969aec067136c2512cb ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1546306968 7910427 32e990f6ce6f5e79629159311d508cfe ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1548303317 2969938 5f36858c1d6a6969aec067136c2512cb ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1548303300 7910428 92c2270ef6aedb789caf696ccdacd79a ""
   "IEEEtran.cls" 1440654524 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "img/ROCandPRC.png" 1547696324 54401 1144f5b246f89b0eb89b7004eb4bcfa9 ""
+  "img/model.png" 1548387264 27651 41822323c4a8cc32bdc320ae21c9a20b ""
   "img/ratingHis.png" 1547632928 18316 4930df6582c39e7a2f72caa7756be255 ""
   "img/veen.png" 1547790908 19954 a99c3930872f6a0c39b497795bb22fae ""
-  "paper.aux" 1548246506 2328 710067f01ab53e8075712468bfb3a0fc ""
-  "paper.bbl" 1548212523 2054 c1ace96d81dab547bc3f3c6557eef8c0 "bibtex paper"
-  "paper.tex" 1548246498 24734 66f7f3a050a14b85535a9c2b05cf0f62 ""
+  "paper.aux" 1548420812 4236 d3703917121cc1376a3f03d7c1961b00 ""
+  "paper.bbl" 1548420580 3726 7aea54ae155590433eca572dea35e52d "bibtex paper"
+  "paper.tex" 1548421157 26945 ac339ea8d80f99f3f6f190c4eeb1400e ""
   (generated)
-  "paper.pdf"
-  "paper.log"
   "paper.aux"
+  "paper.log"
+  "paper.pdf"

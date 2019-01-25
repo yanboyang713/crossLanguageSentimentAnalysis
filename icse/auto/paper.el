@@ -19,7 +19,14 @@
    (TeX-add-symbols
     "BibTeX")
    (LaTeX-add-labels
-    "itm:procedures")
+    "itm:procedures"
+    "currentQuantity"
+    "fig:userRatingHistogram"
+    "testingModle"
+    "fig:testingProcedures"
+    "itm:testingProcedure3"
+    "fig:ROCandPRC"
+    "accuracyJudgment")
    (LaTeX-add-bibliographies
     "library"))
  :latex)
