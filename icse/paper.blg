@@ -14,45 +14,45 @@ Database file #1: library.bib
 Warning--empty journal in zhou2017introduction
 
 Done.
-You've used 13 entries,
+You've used 18 entries,
             4087 wiz_defined-function locations,
-            899 strings with 9538 characters,
-and the built_in function-call counts, 8765 in all, are:
-= -- 709
-> -- 190
-< -- 65
-+ -- 99
-- -- 33
-* -- 415
-:= -- 1373
-add.period$ -- 29
-call.type$ -- 13
-change.case$ -- 13
-chr.to.int$ -- 141
-cite$ -- 14
-duplicate$ -- 649
-empty$ -- 720
-format.name$ -- 44
-if$ -- 2017
+            931 strings with 10332 characters,
+and the built_in function-call counts, 12495 in all, are:
+= -- 1015
+> -- 249
+< -- 101
++ -- 135
+- -- 40
+* -- 579
+:= -- 1927
+add.period$ -- 41
+call.type$ -- 18
+change.case$ -- 18
+chr.to.int$ -- 228
+cite$ -- 19
+duplicate$ -- 918
+empty$ -- 1049
+format.name$ -- 53
+if$ -- 2905
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 117
-newline$ -- 64
-num.names$ -- 13
-pop$ -- 274
+int.to.str$ -- 18
+missing$ -- 157
+newline$ -- 79
+num.names$ -- 18
+pop$ -- 362
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 674
+skip$ -- 974
 stack$ -- 0
-substring$ -- 344
-swap$ -- 500
-text.length$ -- 18
+substring$ -- 552
+swap$ -- 714
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 13
+type$ -- 18
 warning$ -- 1
-while$ -- 42
-width$ -- 15
-write$ -- 145
+while$ -- 62
+width$ -- 20
+write$ -- 192
 (There was 1 warning)

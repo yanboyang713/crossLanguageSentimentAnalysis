@@ -12,8 +12,8 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
-\title{Difficult Text Analysis of Machine Translation Services base on
-  Metamorphic Testing in Social Media}
+\title{The paradox of Machine Translation base on Sentiment Analysis polarity:
+  using Metamorphic Testing}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Boyang Yan}
 \IEEEauthorblockA{\textit{Research Center of Network and Communications} \\
@@ -55,67 +55,89 @@ email address}
 \maketitle
 
 \begin{abstract}
-  A huge amount of text comments are posted on different topics in Social Media
-  every day. These topics are discussed in different languages by different
-  language speakers. Most people encounter language and culture barriers when
-  engaging in cross-language communication.
-  Cross-language machine translation is useful for global integration.
-  However, most of people are chosen human translation services.
-  The reason is human translation services are accuracy and reliable compare
-  with machine translation.
-  Most research only focuses on ranking the quantity of machine translation
-  services but little research has conducted on difficult translation text
-  evaluation.
-  This research explores what kind of text is difficult to translate for machine
-  translation services base on movie comments data. It is useful for improve the quality
-  of machine translation services to fill this research gap.
-  This research is based on the Metamorphic Testing method to establish a
-  testing model which using machine translation service translate original test
-  dataset from one language to another language. After, using sentiment analysis
-  tool to analyize original test dataset and translated datasets, the results
-  should be same polarization (positive or negative). If the results are
-  opposite polarization, that means this sentence is difficult for machine
-  translation.
-  As a result, people will able to use this testing model finding difficult
-  sentences and doing specific optimiztion.
+A huge amount of text comments are posted on different topics in Social Media
+ every day. These topics are discussed in different languages by
+ different language speakers. It is necessary for people to use machine
+ translation tools in global integration. However, accuracy and reliable of
+ machine translation tools services is paying close attention by users. The
+ quantity of machine translation services and difficult translation text
+ evaluation have been a hot area of research for several years. It is important
+ for improving the quality of machine translation services to narrow the
+ research gap. The purpose of the paper is to explore what kind of text is
+ difficult to translate for machine translation services base on movie comments
+ data in Douban Movie Community Website. Metamorphic Testing is main method for
+ establishing a testing model which using Google Sentiment Analysis tool to
+ analyze original Chinese movie comments dataset and English translated
+ datasets, which are Google Translation dataset, Yandex Translation dataset and
+ Baibu Translation dataset, both side (Chinese and English) should be same
+ emotional polarization (positive or negative). If the results are opposite
+ polarization, that means this sentence is difficult for machine translation. As
+ a result, people will able to use this testing model finding difficult
+ sentences and doing specific optimiztion. The research result shows that the
+ three translation tools overall quality are poor based on Receiver operating
+ characteristic(ROC) curve and precision-recall curve (PRC).
+ In addition, there are outstanding language problems in machine translation,
+ computer science researchers must be combined with linguistic researchers, so
+ further research of Machine translation should pay enough attention to
+ linguistics research, the expansion of corpus, vocabulary differentiation,
+ grammatical analysis and so on, should be deeply and comprehensively studied.
+
 \end{abstract}
 
 \begin{IEEEkeywords}
-  Metamorphic Testing, machine translation, sentiment analysis, machine
+  Metamorphic Testing, machine translation, MT4MT, sentiment analysis, machine
   translation quantity testing, evaluation of machine translation services
-  difficult, natural language
+  difficult, natural language, Receiver operating characteristic(ROC) curve,
+  precision-recall curve (PRC)
 \end{IEEEkeywords}
 
 \section{Introduction}
-Machine translation services has been becoming more and more widely used, also
-more and more popular. In especial, machine translation system has significantly increased
-international trade\cite{brynjolfsson2018does}.
-Most people encounter language and cultural barriers
-during cross-language communication. There are lots of text and documents on different languages need
+Most people encounter language and cultural barriers during cross-language
+communication. There are lots of text and documents on different languages need
 to translation every day. It would be impossible to translation the huge amount
 of data generated manually. Nowadays, there are lots of machine translation
 tools are available in the world, such as Google translation, Bing translation,
-Yandex, Baidu translation and Youdao translation and so on. In this research,
-only compare and evaluation Google translation, Yandex translation and Baidu
-translation difficults. Those three translation tools are typical and the most
-widespread to used. Google translation tool come from American, Yandex come from
-Russia, and Baidu come from China. This three tools all come from the top three
-powerful country. Accounting to Pesu said machine translation
-tools can product better results on European languages compare with Asian
-language \cite{pesu2018monte}. So, Chinese to English translation tool is the main
-kind of translation languages to analysis translation difficults in the paper.
-Evaluation of machine translation services difficults usually need language
-expert, who need well-known both languages, to participate. However, language
-expert also involves human emotional judgment. Automatic assessment human
-language is naturally difficult because of without a test oracle \cite{zhou2016metamorphic}.
-In this paper, achieving a testing modle to automatic assessment
-without language expert. Metamorphic testing(MT) is one of property-based
-software quality testing method, which alreadly be appoved effective for
-addressing the oracle problem, such as testing the quality of search engine
-and the quality of Unmanned Aerial Vehicle(UAV) flight control application and so on.
-Therefore, decideing metamorphic testing to find machine translation services
-difficults in non-oracle sitation.
-And more specifically, this research raise two questions.
+Yandex, Baidu translation and Youdao translation and so on. Machine translation
+services has been becoming more and more widely used, also more and more
+popular. It is necessary for global integration to use Cross-language machine
+translation tools. In especial, machine translation system has significantly
+increased international trade \cite{brynjolfsson2018does}. Most research only
+focuses on ranking the quantity of machine translation services in some field
+\cite{pesu2018monte, aiken2010efficacy, koehn2006manual, somers2005round,
+  shigenobu2007evaluation} but little research has conducted on difficult
+translation text evaluation. In this paper, all of testing data (Origin Chinese
+dataset) from DOUBAN, which is an Social Media website about books, movies,
+music, to study the translation quality of different translation tools.
+Douban film is China's largest and most authoritative
+film sharing and comment community \cite{Douban}.
+Social Media has been becoming more and more widely used.
+Accounting to Perrin’s survey, there are only $7%$ American adults are use
+social media in 2005. However, social media usage increase rapidly, there are
+$65%$ American adults are use social media until 2015 \cite{perrin2015social}.
+Social Media website comment text from the language word level has its unique
+style, such as the text has colloquial vocabulary for the convenience of
+expression. At present, it is urgent to carry out in-depth study
+on this field, which may open up the new field of theoretical research.
+In this study, we only fouced on three of Machine Translation tools, which are
+Google, Yandex and Baidu.
+Google translation tool come from American, Yandex come from Russia, and Baidu
+come from China. This three tools all come from the top three powerful country.
+Accounting to Pesu said machine translation tools can product better results on
+European languages compare with Asian language \cite{pesu2018monte}. So, form
+Chinese to English translation tool is the main kind of translation languages to
+analysis translation difficults in the paper. Evaluation of machine translation
+services difficults usually need language expert, who need well-known both languages, to
+participate. However, language expert also involves human emotional judgment.
+Automatic assessment human language is naturally difficult because of without a
+test oracle \cite{zhou2016metamorphic}. In this paper, achieving a testing modle to automatic
+assessment without language expert. Metamorphic testing(MT) is one of
+property-based software quality testing method, which alreadly be appoved
+effective for addressing the oracle problem, such as testing the quality of
+search engine and the quality of Unmanned Aerial Vehicle(UAV) flight control
+application and so on. Therefore, decideing metamorphic testing to find machine
+translation services difficults in non-oracle sitation. And more specifically,
+this research raise two questions.
+
 \begin{itemize}
   \item Q1: What is current sitation of the quantity of Chinese to English
     machine translation?
@@ -123,11 +145,9 @@ And more specifically, this research raise two questions.
 \end{itemize}
 
 The rest of paper is organized as three parts. Firstly, domonstration the
-quantity of Chinese to English translation services, which are Google
-translation, Yandex translation and Baidu translation. This part addresses Q1.
+quantity of Chinese to English translation services. This part addresses Q1.
 secondly, describtion testing model about finding the difficults of machine
-translation.
-Thirdly, analyzes the experimental results and discussion. This part will
+translation. Thirdly, analyzes the experimental results and discussion. This part will
 answer Q2.
 
 \section{Background}
@@ -387,7 +407,6 @@ MR1, MR2 and MR3 have got failures decideing by one side greater than 0.7 and
 another side smaller than -0.7. In this paper, using veen diagram for show
 failures distribution.
 \includegraphics[width=0.35\paperwidth]{./img/veen.png}
-
   \begin{table}[h]
     \caption {Translation Failures Distribution}
     \begin{center}
@@ -411,121 +430,206 @@ failures distribution.
         \hline
       \end{tabular}
     \end{center}
-  \end{table}\\
+  \end{table}\\\\
+
+\section{Language Analysis}
+Google Translation, Yandex Translation and Baibu Translation are created by
+different countries for different audiences, that is to say, the users of groups
+are different. But Google Translation, Yandex Translation and Baidu Translation
+exist lexical and grammatical problems, and some mistranslation is almost
+coincide. The following aspects are the main common problems.
+\subsection{Vocabulary Errors}
+ The points of mistake are mainly manifested as the abuse of vocabulary,
+ incorrect usage, the chaotic sequence, missing vocabulary,as well as improper
+ selection of words.\\
+ Examples:
+ \subsubsection{fragmention sentence}
+\begin{itemize}
+\item Chinese \underline{Origin Movie comment} is:
+  \begin{center}
+    ``2013最后一场电影 就为恶心画一句号吧''
+  \end{center}
+\item The \underline{correct of the translation} is:\\
+    ``This is the last movie in 2013. Let's make a full stop for all of nauseating  movie''
+\item The \underline{Google Translation} is:
+  \begin{center}
+    ``Let's take a look at the last movie of 2013''
+  \end{center}
+\end{itemize}
+  This is extremely negative comment. The hidded meaning is, this is nauseating
+  movie. The Google translated sentence is fragmented and incomplete only
+  translated the first part of original sentence.
+
+ \subsubsection{misunderstand of vocabulary}
+\begin{itemize}
+\item Chinese \underline{Origin Movie comment} is:
+  \begin{center}
+    ``这片子真垃圾 就最后一点看起来比较有新意''
+  \end{center}
+\item The \underline{correct of the translation} is:\\
+  ``This is really crap movie. However, the last part of movie is considerable innovative.
+\item The \underline{Google Translation} is:\\
+  ``This piece of real garbage on the last point looks more innovative''
+\item The \underline{Yandex Translation} is:\\
+  ``This film is really garbage it finally looks relatively new''
+\item The \underline{Baidu Translation} is:\\
+  ``The film is really garbage and it looks new at the last point.''
+\end{itemize}
+The original Chinese sentence front part is negative, but the back half sentence
+is positive. This three of machine translation tools have got lots of vocabulary
+misunderstand. such as, $$ movie \rightarrow piece $$ $$last\ part\ of\ movie \rightarrow finally\
+or\ the\ last\ point$$
+
+Besides,
+\begin{itemize}
+\item Chinese \underline{Origin Movie comment} is:
+  \begin{center}
+    ``剧本不好，梗比较生硬，有点无厘头。''
+  \end{center}
+\item The \underline{correct of the translation} is:\\
+  ``The scenario is not good, the punchline of movie is stiff and a little bit
+  does not make sense.''
+\item The \underline{Google Translation} is:\\
+  ``The script is not good, terrier stiffer, a bit nonsense.''
+\item The \underline{Yandex Translation} is:\\
+  ``The script is bad, stem relatively stiff, a bit does not make sense.''
+\item The \underline{Baidu Translation} is:\\
+  ``The script is not good, the stem is relatively stiff, a little silly.''
+\end{itemize}
+The original Chinese sentence is clear negative. All of three tools have got
+problem with punchline of movie, ``梗'' is the internet lingo word. All of tools
+need to improve the Internet lingo words. In addition, three of translation
+tools also have got others misinterpretation of professional terms and literary
+terms. such as ``春晚'' (Spring Festival Gala Show).
+
+\subsection{Grammatical Errors}
+The machine translation have got lots of grammatical mistake, such as sequence
+disorder, improper location of adverbial attributive. The subject, the
+predicate, the attributive, the adverbial, and the object is incomplete, etc.
+\subsubsection{Illogical connect}
+\begin{itemize}
+\item Chinese \underline{Origin Movie comment} is:
+  \begin{center}
+    ``明明是搞笑片最后弄成了教育片''
+  \end{center}
+\item The \underline{correct of the translation} is:\\
+  ``Obviously it is a comedy,but it made into educational films finally''
+\item The \underline{Baidu Translation} is:\\
+  ``It's a funny movie that finally makes an education film''
+\end{itemize}
+The ``that'' is illogical to connect Subject part and subordinate clause.
+\subsubsection{Incomplete ingredients}
+Origin Chinese sentence is ``中间确实无聊得很，但是结尾不赖''. The original
+sentence meaning ``It's really boring in the middle part, but it's not bad at
+the end''. The Yandex Translation ``The middle of really boring very, however at the end''.
+\subsubsection{Sequence Disorder}
+``想过是烂片，只是没想到能烂到这种地步，太应付了，一个星期拍完的吧''
+Google
+``Think of a bad movie, but did not expect to be able to rot to this point, too
+coping, a week finished it''
+Yandex
+``Thought is a bad film, just didn't think it could be rotten to the point where
+too cope with, a week finished.''
+baidu
+``That is a bad film, but did not expect to come to this rotten, too for a week, finished.''
 
 
-\subsection{Language Analysis}
-翻译质量评价总结
+The problem of sentence structure.Incomplete sentence composition, confusion of
+words order.
 
-主要问题在于以下几个方面：
-第一、词汇问题：
-Google translation:
-1.Error points语序混乱,滥用词汇和用法不正确，顺序混乱，Missing vocabulary,Improper selection of words,The words are raw.
-例如sententChinese“2013最后一场电影 就为恶心画一句号吧”，Sentent
-GoogleTranslation“Let's take a look at the last movie of 2013.”The translation
-is fragmented and incomplete，The wrong translation of words refers to the
-emotional color and stylistic misinterpretation of words。 应翻译为“ The last
-movie is a full stop for nausea in 2013.”
-
-3 of then
-比如,“这片子真垃圾 就最后一点看起来比较有新意”GoogleTranslation和YandexTranslation都翻译了原文“ innovative”。但baiduTranslation用了“new”。
-
-google and baidu
-2.Translation error with noun ，misuse and incorrect usage,Sequential chaos。例如sententChinese“想法不错，可惜节奏把握的不好”，baiduTranslation“The idea is good, but the rhythm of the rhythm is not good”.应翻译为”The idea is good, but it is pity that the rhythm is not good”.
+For example, original sentence meaning”A few small cups of grape
+juice, it is not very fresh”.GoogleTranslation ”A few small cups of grape juice,
+very fresh”in completely different meaning;
 
 
-all 3
-没那么烂，比春晚好
-3.Misinterpretation of professional terms and literary terms.比如“春晚”GoogleTranslation准确翻译为 “Spring Festival Gala”，但是YandexTranslation错误地翻译为“show ”。错误地翻译baiduTranslation用了“spring”。
-
-********************************************************************************
-4.望文生意
-google only
-比如“片子没你们说的那么难看”GoogleTranslation翻译为“the film did not you say so ugly”这个“难看”不可翻译为“ugly”，应该翻译为“Boring”；再如，“冯导的电影是非真多”不可以翻译成“Feng's film is not true”，应翻译为“there are a lot of dispute in Feng's film ”。Translation error with noun这个“是非”不可翻译为“is not true”和“right and wrong”,应翻译为“dispute”.
-
-5.目标语背景知识缺乏
-google only
-An expression habit that is not suitable for English,Statement is not smooth，
-比如GoogleTranslation当提到“戴高帽子”时，不可翻译为“wear that tall hat”，应翻译为“Flattery”.
-
-6.词语的感情色彩、语体误译。
-all 3
-Word color misinterpretation refers to the emotional color of words, stylistic
-misinterpretation.原文“很写实，已经不是电影了，明明就是戏剧化的焦点访谈节目，披
-露这个社会这个世界和一些人的嘴脸和生活…”中“嘴脸”这个词,三个翻译软件都翻译为
-“face”根据文中的原意,应该改译“Ugly face;Lewd appearance.”
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-第二、Grammatical errors
-1.Sequence disorder、Improper location of attributive、Improper position of adverbial (improper location of time adverbial, place adverbial and other adverbial)、Improper location of clauses.Ingredients are incomplete.The subject is incomplete, the predicate is incomplete, the attributive is incomplete, the adverbial is incomplete, the object is incomplete, etc.
-
-3 all
-比如，原文“明明是搞笑片最后弄成了教育片”baiduTranslation翻译为“It's a funny movie that finally makes an education film”.“that”improper collocation of the main guest Illogical.应该翻译为“Obviously it is a comedy,but it  made into education films finally”;
-GoogleTranslation翻译为“Think of a bad movie, but did not expect to be able to
-rot to this point”;YandexTranslation都翻译了原文“ Thought is a bad film, just
-didn't think it could be rotten to the point ”。baiduTranslation用了“That is a
-bad film, but did not expect to come to this rotten”。三种翻译工具都共同存在的问
-题是“I do think the it is a bad moive,but I did not expect to be able to rot to
-this point”Sequence disorder and Ingredients are incomplete（The subject is
-incomplete）;
-
-google only
-原文“为贪污腐败和商业大俗片辩护的一部元素太多深度太浅的电影”,GoogleTranslation原译“An  element too deep and too shallow to justify corruption and commercial tyranny.”改译“it is a film with too shallow meaning and max lot of element for defend corruption and commercial tyranny”
+Take another example,original
+sentence meaning “ The first story is good, but the other is too
+contrived”.
+YandexTranslation”On the first story good the other is too
+contrived”;
 
 
-google only
-2.句子结构方面问题.句子成分残缺不全,语序混乱.
-GoogleTranslation“几小杯葡萄汁，很不新鲜”，错误地翻译为“A few small cups of
-grape juice, very fresh”，应该翻译为“A few small cups of grape juice, it is not
-very fresh”;
+Besides,For example,original sentence meaning “The first half was
+good with heavy irony, but the last apology was a little
+redundant”.
 
-GoogleTranslation原句“个人意见，如果想看的同学们可以去买各种打折团购
-之类的票，因为真心不值票价”，错误地翻译为“Personal opinion, if you want to see
-the students can buy all kinds of discount buy tickets, because the true
-worthless fare”，应该翻译为“Personal opinion, if students who want to see the
-film  can buy all kinds of discount tickets, because it is worthless fare”.
+BaiduTranslation”The first half was good - the irony was very heavy,
+and the last apology was a little redundant”. Improper location of clauses”-”.
+The misuse of conjunctions”and”.
 
-baiduTranslation原句“前半段还不错~讽刺的意味很重，最后的道歉有点多余了”，错误地
-翻译为“The first half was good - the irony was very heavy, and the last apology
-was a little redundant”.“-”Improper location of clauses.和“and”The misuse of
-conjunctions应该翻译为“The first half was good with heavy  irony，but the last
-apology was a little redundant”.
+The problem of sentence structure.Causality is unclear. For example,original
+sentence meaning "I can not ignorant conscience to give too few stars,because I
+am a gentle person”.GoogleTranslation "I am a gentle person, and I really do not
+have the heart to give too few stars. . .”
+
+Take another example,original sentence meaning “Bad,I will never see Feng
+Xiaogang's movie again.”  YandexTranslation “Sucks, feel Feng Xiaogang movie
+later never to see.”
 
 
-3.句子结构方面问题.表示因果关系不清
-GoogleTranslation原文“我是个温和的人，实在是不忍心给太少的星。。。”原译“I am a
-gentle person, and I really do not have the heart to give too few stars. . .”改
-译“I can not ignorant conscience to give too few stars,because I am a gentle
-person”.An expression habit that is not suitable for English,Statement is not
-smooth。
+从以上以豆瓣电影评论为分析对象来讨论这三个翻译软件的译文共同的问题，从整体上看，
+无论是用词还是语法都一定的错误导致许多译文意思不准确，内容残缺，结构错误。
 
-GoogleTranslation原文“为贪污腐败和商业大俗片辩护的一部元素太多深度太浅的电影”,原
-译“An  element too deep and too shallow to justify corruption and commercial
-tyranny.”改译“it is a film with too shallow meaning and max lot of element for
-defend corruption and commercial tyranny”.
+ From the overall points of view, above the Douban film review as the analysis
+ object to discuss GoogleTranslation, YandexTranslation and BaiduTranslation
+ tools common problems, whether the usage of words or grammar are a certain
+ error caused by many translation inaccurate meaning, incomplete content, and
+ the wrong structure.
 
-\section{Conclusion}
-Google Translation, Yandex Translation and Baidu Translation are basically
-fluent and understandable. However, all of three translation services have get the
-individual words are not properly selected and the language expression does not
-conform to the natural speaking. Some of the mistranslations almost overlap.
+ The reasons are colloquial language characters of Douban film review text and
+ insufficient machine vocabulary.Although the length of the movie commentary
+ sentences is short, the vocabulary is not difficult and the sentences’structure
+ seems simple, there have got lots of colloquial speech and many of words are
+ not formal, which is the main reason for the low quality of translation
+ results. Lots of compound sentence is hidded. It is more difficult for
+ intelligent machines translation services.Although the length of the movie
+ commentary sentences is short, the vocabulary is not difficult and the
+ sentences’structure seems simple, there have got lots of colloquial speech and
+ many of words are not formal, which is the main reason for the low quality of
+ translation results. Lots of compound sentence is hidded. It is more difficult
+ for intelligent machines translation services.
 
-\section{analysis of causes}
-Although the length of the movie commentary sentences is short, the vocabulary
+ Although the length of the movie commentary sentences is short, the vocabulary
 is not difficult and the sentences' structure seems simple, there have got
 lots of colloquial speech and many of words are not formal, which is the main
 reason for the low quality of translation results. Lots of compound
 sentence is hidded. It is more difficult for intelligent machines translation
 services.
 
+Although the online translation text comments and review is short in length, but
+more colloquial is serious, the use of words is not standard, so vocabulary
+translation is more difficult.Although the sentence structure seems simple, but
+hides the compound sentence, but the sentence pattern is rich and
+complex.Besides,Differences in thinking between Chinese and English is more
+difficult for intelligent machines, which is the main difficulty in the quality
+difficulties of translation
+
+ \section{Conclusion and Limitations}
+In general, Google Translation, Yandex Translation and Baidu Translation tools
+can still translate the basic meaning of a sentence. They are basically fluent
+and understandable. However, all of three Machine Translation tools are poor
+quality and similar. As you can seen, this tesing model is possible to detected Machine
+Translation failures without language expert. But, there have got limitation in
+the accuracy of Sentment Analysis tool, which difficult to distinguish minimal
+change of emotion. As a results, this testing model will missing most of Machine
+Translation failures, particularly, neutral emotional sentences. This tesing
+model is good for decideing strong emotion sentences translation correctness.
+Accounding to failures of machine translated sentence. The main problem is all
+of three translation services have get the individual words are not properly
+selected and the language expression does not conform to the natural speaking.
+They do not recognize the characteristics of colloquial text. Some of the
+mistranslations are almost overlap. So it is not possible to correctly handle
+the special meaning of certain common words in a particular text. And the
+colloquial language of movie comments should adopt different translation methods
+in order to perfect the content of the translation. It is still necessary to
+strengthen the processing of sentence structure and translation expression.
+
 \section{future work}
 Due to the differences way of thinking between Chinese and English languages. In
-addition, cultural differences and the limitation of translation corpus.
-Machine translation tools have serious language problems. Machine translation
+addition, cultural differences and the limitation of translation corpus. Machine
+translation tools have serious language problems. Machine translation
 researchers must be work with linguistic researchers, who should be paid more
 attention to the corpus, lexical analysis and grammatical analysis.
-
-\section{consideration and suggestion}
-
 
 \bibliographystyle{IEEEtran}
 \bibliography{library}

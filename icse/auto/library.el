@@ -15,6 +15,12 @@
     "zhou2017introduction"
     "yadollahi2017current"
     "doubanStat"
-    "zweig1993receiver"))
+    "zweig1993receiver"
+    "aiken2010efficacy"
+    "koehn2006manual"
+    "shigenobu2007evaluation"
+    "somers2005round"
+    "Douban"
+    "perrin2015social"))
  :bibtex)
 
