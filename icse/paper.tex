@@ -111,9 +111,9 @@ music, to study the translation quality of different translation tools.
 Douban film is China's largest and most authoritative
 film sharing and comment community \cite{Douban}.
 Social Media has been becoming more and more widely used.
-Accounting to Perrin’s survey, there are only $7%$ American adults are use
+Accounting to Perrin's survey, there are only $7\%$ of American adults are use
 social media in 2005. However, social media usage increase rapidly, there are
-$65%$ American adults are use social media until 2015 \cite{perrin2015social}.
+$65\%$ American adults are use social media until 2015 \cite{perrin2015}.
 Social Media website comment text from the language word level has its unique
 style, such as the text has colloquial vocabulary for the convenience of
 expression. At present, it is urgent to carry out in-depth study
@@ -205,13 +205,13 @@ users \cite{doubanStat}. We then employ the Douban public Application Programmin
 comment is shown as a tuple: [Rating, Raw comments]. Totally, comments have got
 46180 in the corpus. User rating total have 5 groups, which are 10, 20, 30, 40
 and 50, from negative to positive.
-The test sample distribution diagram on below.
-\begin{figure}[h]
+The test sample distribution diagram on below.\\
+\begin{wrapfigure}
   \centering
-\includegraphics[width=0.3\paperwidth]{./img/ratingHis.png}
-\caption{User Rating Histogram}
-\label{fig:userRatingHistogram}
-\end{figure}
+  \includegraphics[width=0.3\paperwidth]{./img/ratingHis.png}
+  \label{fig:userRatingHistogram}
+\end{wrapfigure}\\
+
 As you can see, the majority of comments allocate on rating 30. In addition,
 there have got more negative comments compare with positive comments.
 
@@ -242,7 +242,7 @@ One the below, will explain more details for figure \ref{fig:testingProcedures}.
     example, user rating = 10 and Google Chinese SA score between -1
     and -0.6 (mean True) user ranking = 10 and Google Chinese SA score bigger
     than -0.6 (mean False). The decideing True table on below.\\
-     \begin{table}[h]
+     \begin{table}[h!]
       \caption {The Range of Score: True/ False}
      \begin{center}
       \begin{tabular}{|c|c|c|c|}
@@ -523,84 +523,39 @@ Origin Chinese sentence is ``中间确实无聊得很，但是结尾不赖''. Th
 sentence meaning ``It's really boring in the middle part, but it's not bad at
 the end''. The Yandex Translation ``The middle of really boring very, however at the end''.
 \subsubsection{Sequence Disorder}
-``想过是烂片，只是没想到能烂到这种地步，太应付了，一个星期拍完的吧''
-Google
-``Think of a bad movie, but did not expect to be able to rot to this point, too
-coping, a week finished it''
-Yandex
-``Thought is a bad film, just didn't think it could be rotten to the point where
+\begin{itemize}
+\item Chinese \underline{Origin Movie comment} is:
+  \begin{center}
+    ``想过是烂片，只是没想到能烂到这种地步，太应付了，一个星期拍完的吧''
+  \end{center}
+\item The \underline{correct of the translation} is:\\
+  ``I was have thought this is worse movie, but did not think it could be worse
+  like this. It's working perfunctorily. Is it only using one week to finish all?''
+\item The \underline{Google Translation} is:\\
+  ``Think of a bad movie, but did not expect to be able to rot to this point,
+  too coping, a week finished it''
+\item The \underline{Yandex Translation} is:\\
+  ``Thought is a bad film, just didn't think it could be rotten to the point where
 too cope with, a week finished.''
-baidu
-``That is a bad film, but did not expect to come to this rotten, too for a week, finished.''
+\item The \underline{Baidu Translation} is:\\
+  ``That is a bad film, but did not expect to come to this rotten, too for a week, finished.''
+\end{itemize}
+This is not only have professional terms word translation problem. This
+translation have incomplete sentence composition and confusion of words order.
 
+From the overall points of view, above of movie comments as the analysis
+object to discuss Google Translation, Yandex Translation and Baidu Translation
+tools have got common problems. The usage of words or grammar are a certain
+error caused by many translation inaccurate meaning, incomplete content, and
+the wrong structure.
 
-The problem of sentence structure.Incomplete sentence composition, confusion of
-words order.
-
-For example, original sentence meaning”A few small cups of grape
-juice, it is not very fresh”.GoogleTranslation ”A few small cups of grape juice,
-very fresh”in completely different meaning;
-
-
-Take another example,original
-sentence meaning “ The first story is good, but the other is too
-contrived”.
-YandexTranslation”On the first story good the other is too
-contrived”;
-
-
-Besides,For example,original sentence meaning “The first half was
-good with heavy irony, but the last apology was a little
-redundant”.
-
-BaiduTranslation”The first half was good - the irony was very heavy,
-and the last apology was a little redundant”. Improper location of clauses”-”.
-The misuse of conjunctions”and”.
-
-The problem of sentence structure.Causality is unclear. For example,original
-sentence meaning "I can not ignorant conscience to give too few stars,because I
-am a gentle person”.GoogleTranslation "I am a gentle person, and I really do not
-have the heart to give too few stars. . .”
-
-Take another example,original sentence meaning “Bad,I will never see Feng
-Xiaogang's movie again.”  YandexTranslation “Sucks, feel Feng Xiaogang movie
-later never to see.”
-
-
-从以上以豆瓣电影评论为分析对象来讨论这三个翻译软件的译文共同的问题，从整体上看，
-无论是用词还是语法都一定的错误导致许多译文意思不准确，内容残缺，结构错误。
-
- From the overall points of view, above the Douban film review as the analysis
- object to discuss GoogleTranslation, YandexTranslation and BaiduTranslation
- tools common problems, whether the usage of words or grammar are a certain
- error caused by many translation inaccurate meaning, incomplete content, and
- the wrong structure.
-
- The reasons are colloquial language characters of Douban film review text and
- insufficient machine vocabulary.Although the length of the movie commentary
- sentences is short, the vocabulary is not difficult and the sentences’structure
- seems simple, there have got lots of colloquial speech and many of words are
- not formal, which is the main reason for the low quality of translation
- results. Lots of compound sentence is hidded. It is more difficult for
- intelligent machines translation services.Although the length of the movie
- commentary sentences is short, the vocabulary is not difficult and the
- sentences’structure seems simple, there have got lots of colloquial speech and
- many of words are not formal, which is the main reason for the low quality of
- translation results. Lots of compound sentence is hidded. It is more difficult
- for intelligent machines translation services.
-
- Although the length of the movie commentary sentences is short, the vocabulary
-is not difficult and the sentences' structure seems simple, there have got
-lots of colloquial speech and many of words are not formal, which is the main
-reason for the low quality of translation results. Lots of compound
-sentence is hidded. It is more difficult for intelligent machines translation
-services.
-
-Although the online translation text comments and review is short in length, but
+The reasons are colloquial language characters of Douban film review comments and
+insufficient machine translation vocabulary collection library. Although the
+online translation text comments and review is short in length, but
 more colloquial is serious, the use of words is not standard, so vocabulary
-translation is more difficult.Although the sentence structure seems simple, but
+translation is more difficult. Although the sentence structure seems simple, but
 hides the compound sentence, but the sentence pattern is rich and
-complex.Besides,Differences in thinking between Chinese and English is more
+complex. Besides,Differences in thinking between Chinese and English is more
 difficult for intelligent machines, which is the main difficulty in the quality
 difficulties of translation
 
